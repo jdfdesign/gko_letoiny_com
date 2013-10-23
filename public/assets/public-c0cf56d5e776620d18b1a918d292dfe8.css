@@ -451,8 +451,8 @@ img {
 .img-thumbnail, .thumbnail {
   padding: 4px;
   line-height: 1.42857;
-  background-color: #69655a;
-  border: 1px solid #dddddd;
+  background-color: transparent;
+  border: 1px solid transparent;
   border-radius: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -10819,9 +10819,19 @@ body {
 /* line 157, ../../app/assets/stylesheets/public.css.scss */
 .thumbnail {
   height: 200px;
+  text-align: center;
+}
+/* line 160, ../../app/assets/stylesheets/public.css.scss */
+.thumbnail:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+/* line 164, ../../app/assets/stylesheets/public.css.scss */
+.thumbnail a {
+  color: #44413a;
 }
 
-/* line 161, ../../app/assets/stylesheets/public.css.scss */
+/* line 169, ../../app/assets/stylesheets/public.css.scss */
 .img-thumbnail, .thumbnail {
   display: block;
   max-width: 100%;

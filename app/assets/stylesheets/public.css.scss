@@ -156,6 +156,14 @@ body {
 
 .thumbnail {
   height: 200px;
+  text-align: center; 
+  &:hover {
+    @include opacity(.8);
+  }
+  
+  a {
+    color: $theme-color;
+  }
 }
 
 .img-thumbnail {

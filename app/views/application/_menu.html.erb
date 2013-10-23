@@ -21,7 +21,7 @@
           <% end %>
         <% end %>
         
-        <% if section.alt.present? %>
+        <% if !section.alt.blank? %>
           <li class="text">
             <%= section.alt.html_safe %>
           </li>

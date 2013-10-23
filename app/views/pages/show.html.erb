@@ -7,7 +7,7 @@
       <div class="carousel slide" id="carousel" data-interval="3000">
         <div class="carousel-inner">
           <% resource.images.each_with_index do |img, idx| %>
-            <div class="item <%= 'active' if idx == 0 %>"><%= image_fu(img) %></div>
+            <div class="item <%= 'active' if idx == 0 %>"><%= image_fu(img, current_site.preferred_image_carousel_size) %></div>
           <% end %>
         </div>
         <a class="left carousel-control" href="#carousel" data-slide="prev">
