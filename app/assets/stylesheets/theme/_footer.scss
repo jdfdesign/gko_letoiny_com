@@ -1,0 +1,131 @@
+.nav-social-links {
+  > li {
+    float: left;
+    > a {
+      color: lighten($theme-color, 20%);
+      background-color: transparent;
+      &:hover,
+      &:focus {
+        color: white;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+#social-links-container {
+  background-color: darken($body-bg, 10%);
+  padding-top: $line-height-computed * 2;
+  padding-bottom: $line-height-computed * 2;
+}
+.widget.widget-social-links {
+  form {
+    margin: 0;
+  }
+  .widget-heading {
+    float: left;
+    margin-bottom: 0;
+    color: $theme-color;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: $font-family-sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .nav {
+    margin: 0;
+    position: relative;
+    li {
+      float: left;
+      margin-left: 12px;
+      a {
+        width: 40px;
+        height: 40px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 20px;
+        &:hover,
+        &:focus {
+          background-color: $theme-color;
+        }
+      }
+    }
+  }
+
+}
+#footer { 
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: $toolbar-height * 2; 
+  background-color: lighten($theme-color, 20%);
+  font-size: ceil($font-size-base * 0.7); 
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 300;
+  a { 
+    color: $theme-light-color;
+  	&:hover,
+    &:focus {
+      color: white; 
+      background-color: transparent;
+    }
+  }
+  hr {
+    margin: 8px 0;
+    border-color: $theme-color;
+  }
+  .widget-heading {
+  	color: $theme-color;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: $font-family-sans-serif;
+    letter-spacing: 1px;
+    margin-top: $line-height-computed * 2;
+    margin-bottom: 0;
+  }
+  .widget-browse {
+    .nav {
+      margin: 0;
+    }
+    .nav > li {
+      display:block;
+      float: none; 
+      @include clearfix;
+    }
+    .nav > li > a {
+      padding: 2px; 
+      color: $theme-light-color;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: transparent;
+      &:hover,
+      &:focus {
+        color: white; 
+        background-color: transparent;
+      }
+    }
+
+    // Active nav items
+    .nav > .active > a,
+    .nav > .active > a:hover,
+    .nav > .active > a:focus {
+      color: darken($theme-color, 10%);
+      background-color: transparent;
+    }
+  }
+  
+  @media (min-width: $grid-float-breakpoint) { 
+    padding-top: $line-height-computed * 2;
+    hr {
+      margin: $line-height-computed 0;
+    }
+    .widget-heading {
+      margin-top: 0;
+    }
+  }
+}
+.credits {
+  padding-top: $line-height-computed;
+}
+

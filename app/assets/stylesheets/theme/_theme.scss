@@ -1,0 +1,29 @@
+$selector-width: 215px;
+$selector-toggle-width: 35px;
+
+#style-selector {
+  background: #fff;
+  width: $selector-width;
+  position: fixed;
+  right: -$selector-width;
+  top: 100px;
+  z-index: $zindex-modal + 1;
+  padding: 20px;
+}
+#style-toggle {
+  position: absolute;
+  top: 0;
+  right: $selector-width;
+  @include square($selector-toggle-width);
+  background: #fff;
+  cursor: pointer; 
+  text-align: center;
+  padding: 10px;
+}
+#style-selector.active {
+  right: 0; 
+}
+
+
+
+

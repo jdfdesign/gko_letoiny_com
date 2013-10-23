@@ -1,0 +1,43 @@
+<%# resource_cache resource do %> 
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <% if resource.images.try(:any?) %>
+      <div class="carousel slide" id="carousel" data-interval="3000">
+        <div class="carousel-inner">
+          <% resource.images.each_with_index do |img, idx| %>
+            <div class="item <%= 'active' if idx == 0 %>"><%= image_fu(img) %></div>
+          <% end %>
+        </div>
+        <a class="left carousel-control" href="#carousel" data-slide="prev">
+          <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel" data-slide="next">
+          <span class="icon-next"></span>
+        </a> 
+      </div>
+    <% end %>
+    <%= render_page_title(resource.title) %>
+    <%= render_copy_text(resource.body) %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12"> 
+    <%
+      if resource.children.in_menu.any?
+        sections = resource.children.in_menu
+      else
+        sections = resource.parent.children.in_menu
+      end 
+    %>
+    <% if sections.try(:any?) %>
+    <nav class="nav nav-wine-list">
+      <%= render 'menu', :sections => sections %>
+    </nav>
+    <% end %> 
+    </div>
+  </div>
+</div> 
+
+<%# end %>

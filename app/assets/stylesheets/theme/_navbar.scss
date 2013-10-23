@@ -1,0 +1,198 @@
+
+$logo-height: 82px;
+$logo-width: 182px;
+
+
+/* Navbar
+-------------------------------------------------- */ 
+.navbar {
+  @extend .navbar-default;
+  font-family: $font-family-serif;
+  .logo-affiliate {
+    text-align: center;
+    padding: $line-height-computed*2 0;
+    @include opacity(.5);
+    @include transition(opacity 0.4s ease-in-out);
+    &:hover {
+      @include opacity(1);
+    }
+  }
+  @media (min-width: $grid-float-breakpoint) {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: absolute;
+    right: auto;
+    left: 0;
+    top: 0;
+    z-index: $zindex-navbar-fixed;
+    padding-top: 0;
+    width: $navbar-fixed-left;
+   .container {
+     padding-left: 0;
+     padding-right: 0;
+   }
+  }
+  @media (min-width: $theme-break-point) {
+    min-height: 0;
+    height: auto !important;
+    background-color: rgba(68, 65, 58, .85);
+  }
+}
+/* Navbar Header
+-------------------------------------------------- */
+.navbar-header {
+  @media (min-width: $grid-float-breakpoint) { 
+    float: none;
+  }
+} 
+/* Navbar Header
+-------------------------------------------------- */
+.nav-locales {
+  font-family: $font-family-sans-serif; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  text-align: center;
+  li.dropdown-toggle > a {
+    margin : 0;
+    background-color: $theme-medium-color; 
+    color: $theme-light-color;
+    font-weight: 300;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: $theme-medium-color;
+    }
+  }
+  .dropdown-menu {
+    width: 100%;
+     > li > a {
+      font-size: 11px;
+      font-weight: 300;                              
+    }                               
+  }
+
+}
+
+.navbar-brand {
+  margin: 0;
+  padding-top: 4px; 
+  padding-bottom: 4px;
+  @media (min-width: $grid-float-breakpoint) { 
+    margin: 0;
+    padding-left: 0; 
+    padding-right: 0;
+    padding-top: $line-height-computed * 2; 
+    padding-bottom: $line-height-computed * 2;
+    position: relative;
+    min-width: $logo-width;
+    width: 100%;
+    min-height: $logo-height;
+    float: none; 
+    text-align: center;
+    .navbar > .container & {
+      margin-left: 0;
+    }
+    
+  }
+}
+.navbar-toggle {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* Navbar Menu
+-------------------------------------------------- */
+.navbar-collapse {
+  @media (min-width: $grid-float-breakpoint) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.navbar-nav {
+  li {
+    border-top: 1px solid $theme-medium-color;
+    &:last-child {
+      border-bottom: 1px solid $theme-medium-color;
+    }
+    > a {
+      font-size: 11px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 8px 15px;
+      //text-shadow: none;
+    }
+  } 
+
+  .dropdown-menu { 
+    li {
+      border-top: 1px solid $theme-medium-color;
+    }
+    li > a {
+      font-size: 11px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 8px 15px;
+    }
+    li.text {
+      display: none;
+    }
+  }
+  @media (min-width: $grid-float-breakpoint) {
+    width:100%;
+    > li {
+      display:block;
+      float: none; 
+      position: relative;
+      > a {
+        text-align: center;
+        padding: 4px 14px;
+      }
+    }
+    .dropdown {
+      &:hover {
+        .dropdown-menu{
+          display: block; 
+        }
+      } 
+    }
+    .dropdown-menu {
+      top: -2px;
+      left: $navbar-fixed-left - 2; // position it to the right side
+      margin: 0;
+      padding: 0; // remove the padding
+      max-width: 400px;
+      min-width: 500px;
+      width: 500px;
+      li.text { 
+        border-top: 1px solid $theme-light-color;
+        display: block;
+        background-color: $theme-medium-color; 
+        padding: 20px;
+        font-size: 12px;
+        color: $theme-light-color;
+        font-family: $font-family-sans-serif;
+        letter-spacing: 1px;
+        h2 {
+          font-family: $font-family-sans-serif; 
+          text-align: left;
+          font-size: 14px;
+          margin: 0 0 12px 0;
+        }
+      } 
+      @media (min-width: $screen-lg-desktop) {
+        background-color: rgba(68, 65, 58, .85);
+        li.text { 
+           background-color: rgba(105, 101, 90, .85);
+        }
+      }
+    }
+
+  }
+}
+.no-touch {
+  
+}
+

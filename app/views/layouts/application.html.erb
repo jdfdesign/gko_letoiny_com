@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<%= render 'html_tag' %>
+<%= render 'head' %>
+<body class='<%= @body_id %>'>
+  <div class="page-wrapper">
+  	<%= render 'header' %>
+    <section class="main-content <%= @body_id %>">
+      <%= yield %>
+    </section>
+  </div> 
+  <%= render 'footer' %>
+  <%= render 'toolbar' %>
+  <%= render 'supersized' %>
+  
+  <!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<%= yield :before_javascript_libraries %>
+	<%= javascript_include_tag "public" %>
+	<%= yield :after_javascript_libraries %>
+	<%= render 'google_analytics' %>
+	<script type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+
+/* ==================================================
+   DropDown
+================================================== */
+
+.dropmenu {
+	cursor: pointer;
+	width: 270px;
+	height: 46px;
+	line-height: 1;
+	position: relative;
+	overflow: hidden;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+	background: #323A45;
+	
+	-webkit-transition: background 0.15s ease-in-out 0s;	
+	   -moz-transition: background 0.15s ease-in-out 0s;
+		 -o-transition: background 0.15s ease-in-out 0s;
+		    transition: background 0.15s ease-in-out 0s;
+}
+
+.dropmenu p {
+	display: block;
+    font-size: 14px;
+	font-weight: 500;
+	color: #FFFFFF;
+    padding: 16px 0 16px 16px;
+	margin-bottom: 0;	
+}
+
+.dropmenu i {
+	position: absolute;
+	top: 0;
+	right: 16px;
+	
+	font-size: 16px;
+	color: #FFFFFF;
+	line-height: 46px;
+	margin: 0;	
+	
+	-webkit-transition: all 0.15s ease-in-out 0s;	
+	   -moz-transition: all 0.15s ease-in-out 0s;
+		 -o-transition: all 0.15s ease-in-out 0s;
+		    transition: all 0.15s ease-in-out 0s;
+}
+
+.dropmenu:hover,
+.dropmenu:hover,
+.dropmenu.open,
+.dropmenu.open {
+	background-color: #F97E76;
+}
+
+.dropmenu.open i {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.dropmenu-active {
+	display: none;
+	position: absolute;
+	top: 45px;
+	width: 270px;
+	
+	
+	-webkit-border-radius: 0 0 2px 2px;
+	-moz-border-radius: 0 0 2px 2px;
+	border-radius: 0 0 2px 2px;
+	
+	background: #323A45;
+	color: #FFFFFF;
+	
+	z-index: 10;
+}
+
+.dropmenu-active ul {
+	margin: 0;
+	padding: 0;	
+}
+
+.dropmenu-active ul li {
+	list-style: none;	
+}
+
+.dropmenu-active ul li a {
+	display: block;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: 500;
+    padding: 8px 0 8px 16px;	
+}
+
+.dropmenu-active ul li a:hover {
+	color: #F97E76;
+}
+
+.dropmenu-active ul li:first-child a {
+	padding-top: 16px;	
+}
+
+.dropmenu-active ul li:last-child a {
+	padding-bottom: 16px;	
+}

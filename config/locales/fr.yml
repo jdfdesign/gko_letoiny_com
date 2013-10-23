@@ -1,0 +1,28 @@
+fr:
+  book_table_title: Réserver une table au Gaiac
+  click_to_enlarge: Cliquer pour agrandir
+  full_hotel_address: "Hotel Le Toiny<br/>Anse de Toiny<br/>97133 Saint-Barthélemy<br/>Guadeloupe<br/>T. (590)590278888<br/>F. (590)590278930<br/>Email. reservations@letoiny.com"
+  tollfree_address: "Appeler nous gratuitement depuis les U.S. ou le Canada au (800) 680 0832" 
+  book_table_tab: "Réserver une table au Gaiac"
+  book_hotel_tab: "Demande d'informations"
+  tool_free_btn: "Appeler nous gratuitement depuis les US ou le Canada au (800) 680 0832"
+  facebook_btn: "Visiter notre page Facebook"
+  pinterest_btn: "Visiter notre page Pinterest"
+  linkedin_btn: "Visiter notre page LinkedIn"
+  google_plus_btn: "Visiter notre page Google Plus"
+  twitter_btn: "Suiver nous sur notre compte twitter"
+  r_and_c: "<b>Qui sommes-nous?</b><br>Créée il y a plus de cinquante ans par l’union de grands<br\>hôteliers et chefs cuisiniers, Relais & Châteaux est une association qui s’impose aujourd’hui comme une référence d’excellence dans les domaines de la restauration et de l’hôtellerie. Relais & Châteaux a redéfini l’hôtellerie haut de gamme en mettant l’accent sur les expériences clients. Ces derniers sont invités à un voyage des sens menant à une compréhension approfondie de ce qu’est l’art de vivre."
+  locale_select_title: Langages
+  simple_form:
+    labels:
+      hotel_reservation:
+        welcome_champagne_moet_chanfon: "Moet Chanfon"
+        welcome_champagne_perrier_rose: "Perrier Rose"
+        welcome_european_bouquet: "European bouquet"
+        welcome_european_bouquet_price: "Price"  
+        welcome_exotic_bouquet: "Exotic bouquet"
+        welcome_exotic_bouquet_price: "Price"                        
+        welcome_colorful_fruit_plate: "Fruit plate"
+        welcome_cheese_cracker_plate: "Cracker plate"
+
+

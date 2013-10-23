@@ -1,0 +1,32 @@
+<div class="modal hide fade" id="inquiry-modal">
+  <div class="modal-header">
+    <a href="#" class="close" data-dismiss="modal">&times;</a>
+    <h3><%= t("form.inquiry.title")%></h3>
+  </div>
+  <%= simple_form_for(:inquiry, :url => inquiries_path,
+    :html => {:data => { :remote => true, :type => :json }, 
+    :method => :post, :class => [:inquiry]}) do |form| %>
+    <div class="modal-body">
+      <div class='row-fluid'>
+        <div class='span6'>
+          <%= form.input :name, :hint => '', :input_html => { :class => 'span12' } %>
+          <%= form.input :email, :hint => false, :input_html => { :class => 'span12' } %>
+          <%= form.input :phone, :hint => false, :required => false, :input_html => { :class => 'span12' } %>
+          <%= form.input :message, :as => :text, :hint => false, :input_html => {:class => 'span12', :rows => 6} %>
+          <%= form.input :ghost, :label => false, :hint => false, :required => false, :wrapper_html => {:class => 'hide'} %>
+        </div>
+        <div class="span6">
+          <p><b><%= t("tollfree_address").html_safe %></b></p>
+          <p><%= t("full_hotel_address").html_safe %></p>
+        </div>
+      </div>
+    </div>
+    <div class='row-fluid'>
+      <div class='span12'>
+        <div class='modal-footer'>
+          <%= form.button :submit, t("send_inquiry"), :disable_with => "Saving...", :class => "btn btn-block btn-primary" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

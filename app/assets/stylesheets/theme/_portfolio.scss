@@ -1,0 +1,16 @@
+#categories-filter {
+  margin: $line-height-computed*2 0;
+}
+.post-images {
+  img {
+    margin-bottom: $line-height-computed;
+  }
+}
+.post-description {
+  font-weight: 400;
+  h4 {
+    font-weight: 400;
+    font-style: italic;
+    margin-top: $line-height-computed;
+  }
+}

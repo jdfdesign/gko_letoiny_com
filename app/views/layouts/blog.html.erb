@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<%= content_for :meta do %>
+  <%= raw %(<meta name="msvalidate.01" content="C4921EADBBF35C2BD8F4BE9E9F78C4F6" />) -%>
+  <%= raw %(<meta name="p:domain_verify" content="dd60259abb01729eb3a4a9d5bb56910b"/>) -%>
+  <%= raw %(<meta name="robots" content="noodp">) -%> 
+<% end %>
+<%= render 'html_tag' %>
+<%= render 'head' %>
+<body id='<%= @body_id %>'>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div id="wrapper-wide-body">
+	<%= render 'header' %>
+	<% if content_for?(:page_content) %>
+    <%= yield :page_content %>
+  <% else %> 
+    <div id='content-container' class='container-fluid'>
+    <!--<div class='wrapper-content'>-->
+      <div id="content" class='row-fluid'>
+        <div id='main-column' class='content-sidebar'>
+          <div class="main-content-inner">
+            <%= render 'layouts/messages' %> 
+            <%= yield %>
+          </div>
+        </div>
+        <aside id='sidebar' class='right'>
+          <div id='sidebar-header'><%= yield :left_sidebar %></div>
+          <div id='sidebar-content'><%= yield :sidebar %></div>
+        </aside>
+      </div>
+    </div>
+    <% end %>  
+    <%= render 'footer' %>
+  </div>
+  <%= render 'layouts/modals' %> 
+  <!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+	<%= javascript_include_tag "public" %>
+	<%= yield :after_javascript_libraries %>
+
+	<%= render 'google_analytics' %>
+	<script type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+
+</body>
+</html>

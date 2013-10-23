@@ -1,0 +1,29 @@
+<% if features = current_site.features.live -%>
+<% rand_id = "carousel_#{rand(10000)}" %>
+<div class="container carousel-container">
+  <div class="row">
+    <div class="col-xs-12"> 
+<div class="carousel slide" id="<%= rand_id %>" data-interval="4000">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <% features.each_with_index do |feature, index| %>
+        <div class="item text-center <%= 'active' if index == 0 %>">
+          <% if image = feature.thumbnail(current_site.preferred_features_image_size) %>
+              <%= image_tag(image.url) %>
+          <% end %>
+          <%= "<h4>#{feature.title}</h4> ".html_safe if feature.title.present? %>
+          <%= "<p>#{feature.body}</p>".html_safe if feature.body.present? %>
+          <% if feature.owner and url = feature.owner.public_url %>
+            <%= link_to(t("features.view_more"), url, :class => 'btn btn-link') %>
+          <% end %>
+        </div>
+    <% end %>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#<%= rand_id %>" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#<%= rand_id %>" data-slide="next">&rsaquo;</a>
+</div>
+</div>
+</div>
+</div>
+<% end -%> 

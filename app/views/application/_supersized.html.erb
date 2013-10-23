@@ -1,0 +1,7 @@
+<% content_for :before_javascript_libraries do %>
+  <% if site.home.images.order(:position).any? && !is_mobile_device? %>
+    <script type="text/javascript">
+      var supersized_slides = [<%= raw site.home.images.order(:position).map{|c| "{image: '#{c.url}'}" }.join(",").to_s %>]
+    </script>
+  <% end %>
+<% end %>

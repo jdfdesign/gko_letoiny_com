@@ -1,0 +1,16 @@
+<div class="toolbar">
+  <div class="row">
+    <div class="col-xs-10 col-sm-6">
+        <p>North America Toll-free: 1-800-680-0832</p>
+    </div>
+    <div class="col-xs-2 logo-affiliate visible-xs">
+      <%= link_to(image_tag("logo_relais_chateaux_white.png"), "http://www.relaischateaux.com", 
+          :id => "rc-logo-bootm", :target => "_blank", :class => 'hidden-sm', 
+          :title => t("r_and_c").html_safe, 
+          :data => { :placement => 'right', :html => "true", :toggle => "tooltip"}) %> 
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= render_menu('tools') %> 
+    </div> 
+  </div>   
+</div>

@@ -1,0 +1,36 @@
+// Dropdowns
+// -------------------------
+$navbarDropdownBackground:            $navbar-default-bg;
+$navbarDropdownBorder:                $dropdown-border;
+$navbarDropdownDividerTop:            $dropdown-divider-bg;
+$navbarDropdownDividerBottom:         $dropdown-divider-bg;
+
+$navbarDropdownLinkColor:             $navbar-default-link-color;
+$navbarDropdownLinkColorHover:        $navbar-default-link-hover-color;
+$navbarDropdownLinkColorActive:       $navbar-default-link-active-color;
+
+$navbarDropdownLinkBackgroundActive:  $theme-color;
+$navbarDropdownLinkBackgroundHover:   $theme-color;
+
+
+// Navbar (gko addon)
+// -------------------------
+$navbarLinkBackground:            transparent;	
+// Footer (gko addon)
+// -------------------------
+$footerHeight:                    40px;
+$footerBackground:                darken($body-bg, 5%);
+$footerText:                      white;
+$footerLinkColor:                 white;
+$footerLinkBackground:       	  transparent;
+$footerLinkColorHover:            white;
+$footerLinkBackgroundHover:       transparent;
+// Copyright (gko addon)
+// -------------------------
+$copyrightHeight:                    40px;
+$copyrightBackground:                $footerBackground;
+$copyrightText:                      $footerText;
+$copyrightLinkColor:                 $footerLinkColor;
+$copyrightLinkBackground:            $footerLinkBackground;
+$copyrightLinkColorHover:            $footerLinkColorHover;
+$copyrightLinkBackgroundHover:       $footerLinkBackgroundHover;

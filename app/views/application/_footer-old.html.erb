@@ -1,0 +1,28 @@
+<%# cache [I18n.locale, site,'footer25'] do %>
+  <footer id='footer-container' class='container-fluid'>
+	  <div id='footer' class='row-fluid'>
+		  <div class="pull-left">
+		  <%= render_menu('pipe') %> 
+		  </div>
+		  <div class="pull-right">
+		  <div id='socials-container'>
+			  <ul id='socials' class="nav">
+			  <li><a href="#" id="toolfree" title="<%= t("tool_free_btn") %>" rel="tooltip"><i class="icon-phone"></i></a></li>
+			  <li><a href="http://pinterest.com/letoiny/" id="pinterest" title="<%= t("pinterest_btn") %>" rel="tooltip" target="_blank"><i class="icon-pinterest-sign"></i></a></li>
+			  <li><a href="http://www.facebook.com/HOTELLETOINYSTBARTH?v=page_getting_started" id="facebook" title="<%= t("facebook_btn") %>" rel="tooltip" target="_blank"><i class="icon-facebook"></i></a></li>
+			  <li><a href="http://twitter.com/#!/letoiny" id="twitter" title="<%= t("twitter_btn") %>" rel="tooltip" target="_blank"  data-html="true"><i class="icon-twitter"></i></a></li> 
+			  <li><a href="//plus.google.com/115045866829907114523?prsrc=3" target="_top" data-placement="left" rel="tooltip" title="<%= t("google_plus_btn") %>">
+        <i class="icon-google-plus"></i></a></li>
+			  </ul> 
+		  </div>
+
+		  <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+      <script type="IN/FollowCompany" data-id="2937262" data-counter="right"></script>
+		  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FHotel-Le-Toiny-St-Barth%2F102215559842737%3Fv%3Dinfo%23%21%2Fpages%2FHotel-Le-Toiny-St-Barth%2F102215559842737%3Fv%3Dwall&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=dark&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:40px; margin-right: 12px; padding-top: 8px;" allowtransparency="true" id="fcb"></iframe>
+
+		  </div>
+	  </div>
+    <p class="address hidden-desktop">Hotel Le Toiny St. Barth, Anse de Toiny, 97133 Saint Barthelemy, French West Indies, Caribbean<br/>Tel: +590 (0)590 27 88 88 - Fax: +590 (0) 590 27 89 30 - <%= mail_to "reservations@letoiny.com" %></p>
+    
+  </footer>
+<%# end %>

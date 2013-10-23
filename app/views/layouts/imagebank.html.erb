@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<%= render 'html_tag' %>
+<%= render 'head' %>
+<body id='<%= @body_id %>'>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div id="wrapper-wide-body">
+	<%= render 'header' %>
+	<% if content_for?(:page_content) %>
+      <%= yield :page_content %>
+    <% else %>  
+      <div class='container-fluid'>
+        <!--<div class='wrapper-content'>-->
+          <div class='row-fluid'>
+ 			<div class="span8">
+				<%= render 'layouts/messages' %> 
+				<%= yield %>
+			</div>
+            <aside id='sidebar' class='span4'>
+              <div id='sidebar-header'><%= yield :left_sidebar %></div>
+              <div id='sidebar-content'><%= yield :sidebar %></div>
+            </aside>
+        </div>
+      </div>
+      <% end %>  
+      <%= link_to(image_tag("logo_relais_chateaux_white.png"), "http://www.relaischateaux.com/fr/search-book/hotel-restaurant/toiny/", :id => "logo_relais_chateaux", :target => "_blank", :class => 'visible-desktop', :title => t("r_and_c").html_safe, :rel => "tooltip", :data => { :placement => 'left', :html => "true"}) %>
+      <%= render 'footer' %>
+  </div>
+  <%= render 'layouts/modals' %> 
+  <!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+	<%= yield :after_javascript_libraries %>
+	<%= render 'google_analytics' %>
+<body>
+</html>

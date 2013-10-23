@@ -1,0 +1,30 @@
+<%# cache [I18n.locale, site, 'site_header2'] do %>
+<!-- Header
+================================================== -->
+<header class="navbar hide-on-print">
+  <div class="container">
+    <div class="navbar-header">
+      <%= render 'locales_select' %>
+      <h1 class="navbar-brand">
+        <%= link_to(image_tag('logo.png'), root_url, :alt => site.title) %>
+      </h1>
+      <%= content_tag(:h4, site.subtitle.html_safe, :id => "site-subtitle") if site.subtitle.present? %>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav class="collapse navbar-collapse">
+      <%= render 'menu', :sections => site.primary_menu, :menu_name => 'navbar-nav' %>
+    </nav>
+    <div class="logo-affiliate hidden-xs">
+    <%= link_to(image_tag("logo_relais_chateaux_white.png"), "http://www.relaischateaux.com", 
+        :id => "rc-logo", :target => "_blank", :class => 'visible-sm', 
+        :title => t("r_and_c").html_safe, 
+        :data => { :placement => 'left', :html => "true", :toggle => "tooltip"}) %>
+    </div> 
+  </div>
+</header>
+<%# end %>

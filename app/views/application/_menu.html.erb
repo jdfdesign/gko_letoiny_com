@@ -1,0 +1,34 @@
+<ul class="nav navbar-nav">
+  <% sections.each do |section| %>
+    <% next unless section
+       has_children = section.children.in_menu.try(:any?)
+       li_classes = []
+       #li_classes << "active" if !section.is_a?(Redirect) #and active_url?(section.public_url)
+       li_classes << "dropdown" if has_children
+       li_classes << section.menu_css_class if section.menu_css_class.present?
+       li_classes = li_classes.join(" ")
+    %>
+    <li id="<%= dom_id(section) %>" class="<%= li_classes unless li_classes.blank? %>">
+      <%= menu_link(section, :dropdown => has_children, :caret => "&nbsp;<i class='icon-angle-right'></i>") -%> 
+      <% if !section.leaf? && has_children %>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+        <% section.children.in_menu.each do |c| %>
+          <li><%= menu_link(c) -%></li> 
+          <% if c.alt.present? %>
+            <li class="text">
+              <%= c.alt.html_safe %>
+            </li>
+          <% end %>
+        <% end %>
+        
+        <% if section.alt.present? %>
+          <li class="text">
+            <%= section.alt.html_safe %>
+          </li>
+        <% end %>
+      </ul>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+

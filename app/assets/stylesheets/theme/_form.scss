@@ -1,0 +1,37 @@
+/* Form
+-------------------------------------------------- */
+.contact {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: $theme-light-color;
+  .container {
+    padding: 0;
+  }
+  .inner {
+    max-width: 800px;
+    @include center-block();
+  }
+  .form-title {
+    border-bottom: 1px solid $theme-color;
+    display: block;
+    overflow: hidden;
+    margin-bottom: $line-height-computed;
+  }
+  h3 {
+    float:left;
+    margin: 0;
+  }
+  .close {
+    line-height: 48px;
+  }
+  form { 
+    
+    label {
+      color: $theme-color;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 11px;
+    }
+  }
+  
+}
