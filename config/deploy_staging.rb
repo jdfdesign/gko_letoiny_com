@@ -33,9 +33,9 @@ set :password, '066GSyia9u' # account password
 set :user, 'jdf' # account username
 set :dbpassword, '4s/lNLN.RK:/'# database user password
 set :dbuser, 'jdf_db'# database user name
-set :repository,  "git@github.com:jdfdesign/gko_hotel_letoiny_com.git" #Github repository  
+set :repository,  "git@github.com:jdfdesign/gko_letoiny_com.git" #Github repository  
 set :deploy_dir, "/home/#{user}/ror/letoiny" #deploy directory 
-set :branch, 'new-design'
+set :branch, 'master'
 set :stage, 'production'
 set :application, "#{stage}"
 set :rails_env, "#{stage}"
