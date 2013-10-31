@@ -6,31 +6,28 @@
         <div class="widget widget-browse">
           <h5 class="widget-heading">FIND OUT MORE</h5>
           <hr/>
-          <nav class="pipe-menu-container"> 
-            <%= render_menu('pipe') %>
-          </nav>        
+          <ul class="nav">
+            <% site.sections.roots.find_by_name('pipe').children.in_menu.each do |section| %>
+              <li id="<%= dom_id(section) %>">
+                <%= menu_link(section) -%>
+              </li> 
+              <% section.children.in_menu.each do |c| %>
+                <li class="submenu"><%= menu_link(c) -%></li>
+              <% end %> 
+            <% end %>
+          </ul>      
         </div>
       </div>
       <div class="col-sm-3">
         <div class="widget widget-lastest-post">
             <h5 class="widget-heading">Recent news</h5>
             <hr/>
+            <% current_site.features.live.each_with_index do |feature, index| %>
             <div class="post">
-                <div class="date">
-                    Wed, 12 Dec
-                </div>
-                <a href="blogpost.html" class="title">
-                    Randomised words which don't look embarrasing hidden.
-                </a>
+               <%= "<p><strong>#{feature.title}</strong></p> ".html_safe if feature.title.present? %>
+               <%= "<p class='title'>#{feature.body}</p>".html_safe if feature.body.present? %>
             </div>
-            <div class="post">
-                <div class="date">
-                    Mon, 12 Dec
-                </div>
-                <a href="blogpost.html" class="title">
-                    Randomised words which don't look embarrasing hidden.
-                </a>
-            </div>
+            <% end %>
         </div>
       </div>
       <div class="col-sm-3">

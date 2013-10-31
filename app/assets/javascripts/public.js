@@ -1,3 +1,4 @@
+//= require jquery_ujs
 //= require supersized.3.2.7.js
 
 // make console.log safe to use
@@ -73,6 +74,15 @@ jQuery(function($) {
     THEME.fix();
     THEME.carousel();
     THEME.supersized();
+    
+    $("#contact_us").on("click", function(e) {
+      window.open('https://www.formstack.com/forms/?1464607-UGKf87Ck2h');
+      e.preventDefault();
+    })
+    $("#table-booking").on("click", function(e) {
+      window.open('http://www.formstack.com/forms/?1464587-Dog5K8aIvq');
+      e.preventDefault();
+    })
   })  
 
 })

@@ -10132,6 +10132,10 @@ a .icon-flip-vertical:before {
     width: 500px;
   }
   /* line 169, ../../app/assets/stylesheets/theme/_navbar.scss */
+  .navbar-nav .dropdown-menu li.submenu > a {
+    padding-left: 40px;
+  }
+  /* line 172, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text {
     border-top: 1px solid #d5d4d2;
     display: block;
@@ -10142,12 +10146,13 @@ a .icon-flip-vertical:before {
     font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
   }
-  /* line 178, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 181, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text h2 {
     font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: left;
     font-size: 14px;
     margin: 0 0 12px 0;
+    text-transform: uppercase;
   }
 }
 @media (min-width: 768px) and (min-width: 1200px) {
@@ -10155,7 +10160,7 @@ a .icon-flip-vertical:before {
   .navbar-nav .dropdown-menu {
     background-color: rgba(68, 65, 58, 0.85);
   }
-  /* line 187, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 191, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text {
     background-color: rgba(105, 101, 90, 0.85);
   }
@@ -10383,22 +10388,26 @@ a .icon-flip-vertical:before {
   color: #282723;
   background-color: transparent;
 }
+/* line 117, ../../app/assets/stylesheets/theme/_footer.scss */
+#footer .widget-browse .nav > li.submenu > a {
+  padding-left: 20px;
+}
 @media (min-width: 768px) {
   /* line 57, ../../app/assets/stylesheets/theme/_footer.scss */
   #footer {
     padding-top: 42px;
   }
-  /* line 120, ../../app/assets/stylesheets/theme/_footer.scss */
+  /* line 124, ../../app/assets/stylesheets/theme/_footer.scss */
   #footer hr {
     margin: 21px 0;
   }
-  /* line 123, ../../app/assets/stylesheets/theme/_footer.scss */
+  /* line 127, ../../app/assets/stylesheets/theme/_footer.scss */
   #footer .widget-heading {
     margin-top: 0;
   }
 }
 
-/* line 128, ../../app/assets/stylesheets/theme/_footer.scss */
+/* line 132, ../../app/assets/stylesheets/theme/_footer.scss */
 .credits {
   padding-top: 21px;
 }
@@ -10653,18 +10662,18 @@ img {
   width: device-width;
 }
 
-/* line 32, ../../app/assets/stylesheets/public.css.scss */
+/* line 33, ../../app/assets/stylesheets/public.css.scss */
 .placeholder {
   color: #999999;
 }
 
 /* FIX FOR GMAP BUG
 -------------------------------------------------- */
-/* line 38, ../../app/assets/stylesheets/public.css.scss */
+/* line 39, ../../app/assets/stylesheets/public.css.scss */
 #map-canvas {
   height: 400px;
 }
-/* line 40, ../../app/assets/stylesheets/public.css.scss */
+/* line 41, ../../app/assets/stylesheets/public.css.scss */
 #map-canvas img {
   max-width: none;
   vertical-align: middle;
@@ -10674,48 +10683,48 @@ img {
 
 /* GLOBAL STYLE
 -------------------------------------------------- */
-/* line 53, ../../app/assets/stylesheets/public.css.scss */
+/* line 54, ../../app/assets/stylesheets/public.css.scss */
 a:focus,
 .btn:focus {
   outline: 0;
 }
 
-/* line 56, ../../app/assets/stylesheets/public.css.scss */
+/* line 57, ../../app/assets/stylesheets/public.css.scss */
 ::selection {
   background-color: #69655a;
   color: #fff;
 }
 
-/* line 60, ../../app/assets/stylesheets/public.css.scss */
+/* line 61, ../../app/assets/stylesheets/public.css.scss */
 a {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-/* line 64, ../../app/assets/stylesheets/public.css.scss */
+/* line 65, ../../app/assets/stylesheets/public.css.scss */
 a[data-pin-log="button_pinit_floating"] {
   z-index: 1000000;
 }
 
-/* line 68, ../../app/assets/stylesheets/public.css.scss */
+/* line 69, ../../app/assets/stylesheets/public.css.scss */
 html {
   overflow-y: scroll;
   height: 100%;
 }
 
-/* line 72, ../../app/assets/stylesheets/public.css.scss */
+/* line 73, ../../app/assets/stylesheets/public.css.scss */
 body {
   font-weight: 300;
   height: 100%;
 }
 
-/* line 77, ../../app/assets/stylesheets/public.css.scss */
+/* line 78, ../../app/assets/stylesheets/public.css.scss */
 .page-wrapper {
   min-height: 100%;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 77, ../../app/assets/stylesheets/public.css.scss */
+  /* line 78, ../../app/assets/stylesheets/public.css.scss */
   .page-wrapper {
     display: block;
     margin-left: auto;
@@ -10724,19 +10733,19 @@ body {
   }
 }
 
-/* line 85, ../../app/assets/stylesheets/public.css.scss */
+/* line 86, ../../app/assets/stylesheets/public.css.scss */
 .main-content {
   background-color: #f1ede4;
   padding-top: 21px;
 }
 @media (min-width: 768px) {
-  /* line 85, ../../app/assets/stylesheets/public.css.scss */
+  /* line 86, ../../app/assets/stylesheets/public.css.scss */
   .main-content {
     margin-left: 250px;
   }
 }
 @media (min-width: 1020px) {
-  /* line 85, ../../app/assets/stylesheets/public.css.scss */
+  /* line 86, ../../app/assets/stylesheets/public.css.scss */
   .main-content {
     padding: 21px;
     margin-left: 271px;
@@ -10745,12 +10754,12 @@ body {
   }
 }
 
-/* line 98, ../../app/assets/stylesheets/public.css.scss */
+/* line 99, ../../app/assets/stylesheets/public.css.scss */
 .main-content.home {
   background-color: transparent;
 }
 
-/* line 101, ../../app/assets/stylesheets/public.css.scss */
+/* line 102, ../../app/assets/stylesheets/public.css.scss */
 .page-title {
   padding: 21px 0 0 0;
   font-size: 36px;
@@ -10758,21 +10767,21 @@ body {
   letter-spacing: 1px;
 }
 
-/* line 107, ../../app/assets/stylesheets/public.css.scss */
+/* line 108, ../../app/assets/stylesheets/public.css.scss */
 .copy-text {
   font-size: 16px;
   font-weight: 300;
 }
-/* line 110, ../../app/assets/stylesheets/public.css.scss */
+/* line 111, ../../app/assets/stylesheets/public.css.scss */
 .copy-text ul {
   list-style: disc outside;
   margin-left: 30px;
 }
-/* line 111, ../../app/assets/stylesheets/public.css.scss */
+/* line 112, ../../app/assets/stylesheets/public.css.scss */
 .copy-text ol {
   margin-left: 30px;
 }
-/* line 112, ../../app/assets/stylesheets/public.css.scss */
+/* line 113, ../../app/assets/stylesheets/public.css.scss */
 .copy-text h3 {
   text-transform: uppercase;
   font-size: 18px;
@@ -10780,58 +10789,58 @@ body {
   text-align: left;
   letter-spacing: 1px;
 }
-/* line 119, ../../app/assets/stylesheets/public.css.scss */
+/* line 120, ../../app/assets/stylesheets/public.css.scss */
 .copy-text a {
   color: #69655a;
   text-decoration: underline;
 }
-/* line 123, ../../app/assets/stylesheets/public.css.scss */
+/* line 124, ../../app/assets/stylesheets/public.css.scss */
 .copy-text a:hover, .copy-text a:focus {
   text-decoration: none;
   color: #d5d4d2;
   background-color: #69655a;
 }
 
-/* line 133, ../../app/assets/stylesheets/public.css.scss */
+/* line 134, ../../app/assets/stylesheets/public.css.scss */
 .carousel-container {
   position: absolute;
   bottom: 100px;
   min-width: 80%;
 }
-/* line 137, ../../app/assets/stylesheets/public.css.scss */
+/* line 138, ../../app/assets/stylesheets/public.css.scss */
 .carousel-container .carousel {
   color: #d5d4d2;
   background-color: rgba(68, 65, 58, 0.85);
   width: 100%;
   min-height: 260px;
 }
-/* line 142, ../../app/assets/stylesheets/public.css.scss */
+/* line 143, ../../app/assets/stylesheets/public.css.scss */
 .carousel-container .carousel img {
   float: left;
   max-width: 150px;
   margin-right: 20px;
 }
-/* line 147, ../../app/assets/stylesheets/public.css.scss */
+/* line 148, ../../app/assets/stylesheets/public.css.scss */
 .carousel-container .carousel .btn-link {
   color: #d5d4d2;
 }
 
-/* line 157, ../../app/assets/stylesheets/public.css.scss */
+/* line 158, ../../app/assets/stylesheets/public.css.scss */
 .thumbnail {
   height: 200px;
   text-align: center;
 }
-/* line 160, ../../app/assets/stylesheets/public.css.scss */
+/* line 161, ../../app/assets/stylesheets/public.css.scss */
 .thumbnail:hover {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
-/* line 164, ../../app/assets/stylesheets/public.css.scss */
+/* line 165, ../../app/assets/stylesheets/public.css.scss */
 .thumbnail a {
   color: #44413a;
 }
 
-/* line 169, ../../app/assets/stylesheets/public.css.scss */
+/* line 170, ../../app/assets/stylesheets/public.css.scss */
 .img-thumbnail, .thumbnail {
   display: block;
   max-width: 100%;

@@ -166,6 +166,9 @@ $logo-width: 182px;
       max-width: 400px;
       min-width: 500px;
       width: 500px;
+      li.submenu > a {
+        padding-left: 40px;
+      }
       li.text { 
         border-top: 1px solid $theme-light-color;
         display: block;
@@ -180,6 +183,7 @@ $logo-width: 182px;
           text-align: left;
           font-size: 14px;
           margin: 0 0 12px 0;
+          text-transform: uppercase;
         }
       } 
       @media (min-width: $screen-lg-desktop) {

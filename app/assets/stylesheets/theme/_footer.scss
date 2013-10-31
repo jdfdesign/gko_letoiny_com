@@ -113,6 +113,10 @@
       color: darken($theme-color, 10%);
       background-color: transparent;
     }
+    
+    .nav > li.submenu > a {
+      padding-left: 20px;
+    }
   }
   
   @media (min-width: $grid-float-breakpoint) { 

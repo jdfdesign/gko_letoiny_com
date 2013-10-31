@@ -7,7 +7,7 @@ group :assets do
 end
 
 group :production do
-  git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.7.03" do
+  git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.05" do
    gem 'gko_core'
    gem 'gko_auth'
    gem "gko_documents"
@@ -21,7 +21,7 @@ group :production do
    #gem 'gko_newsletters'
    gem 'gko_image_bank'
   end
-  #gem 'gko_concierge', '0.0.11', :git => 'git@github.com:jdfdesign/gko_concierge.git'
+  gem 'gko_concierge', '0.0.12', :git => 'git@github.com:jdfdesign/gko_concierge.git'
 end
 
 #group :development do

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131023140844) do
+ActiveRecord::Schema.define(:version => 20131031142709) do
 
   create_table "assets", :force => true do |t|
     t.integer  "site_id"
@@ -241,9 +241,7 @@ ActiveRecord::Schema.define(:version => 20131023140844) do
     t.string   "address"
     t.string   "address2"
     t.string   "city"
-    t.integer  "state_id"
     t.string   "zip"
-    t.integer  "country_id"
     t.string   "phone"
     t.integer  "guest_count"
     t.integer  "child_count"
@@ -264,6 +262,8 @@ ActiveRecord::Schema.define(:version => 20131023140844) do
     t.datetime "created_at",                  :null => false
     t.datetime "updated_at",                  :null => false
     t.text     "food_comments"
+    t.string   "country"
+    t.string   "state"
   end
 
   add_index "hotel_reservations", ["site_id"], :name => "index_hotel_reservations_on_site_id"
@@ -611,7 +611,7 @@ ActiveRecord::Schema.define(:version => 20131023140844) do
   create_table "text_element_translations", :force => true do |t|
     t.integer  "text_element_id"
     t.string   "locale"
-    t.text     "content"
+    t.text     "value"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end
@@ -620,12 +620,13 @@ ActiveRecord::Schema.define(:version => 20131023140844) do
 
   create_table "text_elements", :force => true do |t|
     t.integer "section_id"
-    t.string  "name"
-    t.text    "content"
+    t.string  "key"
+    t.text    "value"
     t.integer "position",   :default => 1
+    t.string  "value_type"
   end
 
-  add_index "text_elements", ["name"], :name => "index_text_elements_on_name"
+  add_index "text_elements", ["key"], :name => "index_text_elements_on_name"
   add_index "text_elements", ["section_id"], :name => "index_text_elements_on_section_id"
 
   create_table "theme_assets", :force => true do |t|

@@ -1,14 +1,14 @@
 GIT
   remote: git@github.com:jdfdesign/gko_cms3.git
-  revision: 04a62951201f1db7aabe555d863ae6d0021eacc1
-  tag: v0.7.03
+  revision: 0a852c226fd94ba888b654d680f93889b1330e8b
+  tag: v0.8.05
   specs:
-    gko_auth (0.7.03)
+    gko_auth (0.8.05)
       cancan (~> 1.6.10)
       devise (~> 2.2.3)
-    gko_blog (0.7.03)
-    gko_categories (0.7.03)
-    gko_core (0.7.03)
+    gko_blog (0.8.05)
+    gko_categories (0.8.05)
+    gko_core (0.8.05)
       RedCloth (= 4.2.9)
       activesupport-slices (= 0.0.2)
       acts_as_indexed (~> 0.7.7)
@@ -52,18 +52,24 @@ GIT
       uglifier (>= 1.0.3)
       uuid (= 2.3.5)
       will_paginate (~> 3.0.2)
-    gko_documents (0.7.03)
+    gko_documents (0.8.05)
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
-    gko_features (0.7.03)
-    gko_hotel (0.7.03)
-      gko_core (= 0.7.03)
-      gko_inquiries (= 0.7.03)
-    gko_image_bank (0.7.03)
-    gko_inquiries (0.7.03)
+    gko_features (0.8.05)
+    gko_hotel (0.8.05)
+      gko_core (= 0.8.05)
+      gko_inquiries (= 0.8.05)
+    gko_image_bank (0.8.05)
+    gko_inquiries (0.8.05)
       filters_spam (~> 0.2)
-    gko_stickers (0.7.03)
-    gko_twits (0.7.03)
+    gko_stickers (0.8.05)
+    gko_twits (0.8.05)
+
+GIT
+  remote: git@github.com:jdfdesign/gko_concierge.git
+  revision: ea0cf6a747ce6e3f659c77d5ccb228854c49c257
+  specs:
+    gko_concierge (0.0.12)
 
 GEM
   remote: http://rubygems.org/
@@ -250,7 +256,7 @@ GEM
     simple_form (2.1.0)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
-    spreadsheet (0.9.0)
+    spreadsheet (0.9.1)
       ruby-ole (>= 1.0)
     sprockets (2.2.2)
       hike (~> 1.2)
@@ -290,6 +296,7 @@ DEPENDENCIES
   gko_auth!
   gko_blog!
   gko_categories!
+  gko_concierge (= 0.0.12)!
   gko_core!
   gko_documents!
   gko_features!

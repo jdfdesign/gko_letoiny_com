@@ -8,9 +8,9 @@ $theme-break-point: 1020px;
 $toolbar-height: 40px;
 $navbar-fixed-left: 250px;                   
 
-@import "theme/font"; 
+@import "theme/font";
+@import "theme/additionnal-variables"; 
 @import "theme/bootstrap-variables";
-@import "theme/additionnal-variables";
 @import "bootstrap/bootstrap";
 @import "font-awesome-3.2.1/font-awesome";
 @import "theme/navbar";
@@ -18,6 +18,7 @@ $navbar-fixed-left: 250px;
 @import "theme/footer";
 @import "theme/carousel";         
 @import "theme/supersized";
+
 
 /* FIX FOR IE DEVICE_WIDTH BUG
 -------------------------------------------------- */
