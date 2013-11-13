@@ -12,7 +12,9 @@
   
   @media (min-width: $grid-float-breakpoint) {
     height: $toolbar-height;
-    border-top: 0;
+    border-top: 0; 
+    top: 0;
+    bottom: auto;
   }
   
   p {

@@ -24,7 +24,28 @@ jQuery(function($) {
       appendChild(msViewportStyle);
     }
   };
-  
+  /* ==================================================
+  	Formstack
+  ================================================== */
+  THEME.formstack = function(title, source){
+    $('<div class="modal fade">' +
+      '<div class="modal-dialog">' +
+        '<div class="modal-content">' +
+          '<div class="modal-header">' +
+            '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>' +
+            '<h4 class="modal-title" id="myModalLabel">' + title + '</h4>' +
+          '</div>' +
+          '<div class="modal-body">' +
+            '<iframe src="' + source + '" title="' + title + '" width="' + ($(window).width() - 60) + '" height="' + ($(window).height() - 60) + '" scrolling="yes" frameBorder="0"></iframe>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+    '</div>').appendTo($('body')).on('show.bs.modal', function(e) {
+      $(this).find('.modal-dialog:first').css({'width': $(window).width() - 60, 'height': $(window).height() - 60});
+      }).on('hidden.bs.modal', function (e) {
+        $(this).remove();
+      }).modal( { backdrop: 'static', show: true } );
+  };
   /* ==================================================
   	Carousel
   ================================================== */
@@ -75,12 +96,12 @@ jQuery(function($) {
     THEME.carousel();
     THEME.supersized();
     
-    $("#contact_us").on("click", function(e) {
-      window.open('https://www.formstack.com/forms/?1464607-UGKf87Ck2h');
+    $("#contact_us").on("click", function(e) { 
+      THEME.formstack($(this).text(), 'https://www.formstack.com/forms/?1464607-UGKf87Ck2h');
       e.preventDefault();
     })
     $("#table-booking").on("click", function(e) {
-      window.open('http://www.formstack.com/forms/?1464587-Dog5K8aIvq');
+      THEME.formstack($(this).text(), 'http://www.formstack.com/forms/?1464587-Dog5K8aIvq');
       e.preventDefault();
     })
   })  

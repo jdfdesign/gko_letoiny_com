@@ -1,0 +1,18 @@
+.modal-body {
+  padding: 0;
+}
+.modal-content {
+  overflow: hidden;
+}
+.fsForm .fsFieldRow td.fsRowBody, .fsForm .fsSpacerRow td.fsRowBody { 
+  background: transparent !important; 
+}
+.fsForm .fsFieldRow div.fsRowBody, .fsForm .fsSpacerRow div.fsRowBody { 
+  background: transparent !important; 
+}
+.fsboxshadow .fsBody .fsForm {
+  box-shadow: none;
+}
+.fsBody .fsForm, .fsForm .fsFieldRow .fsRowBody, .fsForm .fsSpacerRow .fsRowBody {
+  background: transparent !important;
+}
