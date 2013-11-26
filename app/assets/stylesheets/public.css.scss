@@ -16,7 +16,8 @@ $navbar-fixed-left: 250px;
 @import "theme/navbar";
 @import "theme/toolbar"; 
 @import "theme/footer";
-@import "theme/carousel";         
+@import "theme/carousel";
+@import "theme/modal";         
 @import "theme/supersized";
 
 
@@ -78,6 +79,7 @@ body {
 .page-wrapper {
   min-height: 100%;
   position: relative;
+  
   @media (min-width: $grid-float-breakpoint) {
     @include center-block;
     max-width: 1000px;
@@ -88,6 +90,7 @@ body {
   padding-top: $line-height-computed;
   @media (min-width: $grid-float-breakpoint) {
     margin-left: $navbar-fixed-left;
+    margin-top: $toolbar-height;
   }
   @media (min-width: $theme-break-point) { 
     padding: $line-height-computed;
