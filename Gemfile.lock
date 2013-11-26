@@ -1,14 +1,14 @@
 GIT
   remote: git@github.com:jdfdesign/gko_cms3.git
-  revision: 69f7e4b7ecbb1de26e6cd4204499014426172973
-  tag: v0.8.09.rc2
+  revision: 7ddce5034a43590917da1326f6fc103f572c9d8b
+  tag: v0.8.09.rc3
   specs:
-    gko_auth (0.8.09.rc2)
+    gko_auth (0.8.09.rc3)
       cancan (~> 1.6.10)
       devise (~> 2.2.3)
-    gko_blog (0.8.09.rc2)
-    gko_categories (0.8.09.rc2)
-    gko_core (0.8.09.rc2)
+    gko_blog (0.8.09.rc3)
+    gko_categories (0.8.09.rc3)
+    gko_core (0.8.09.rc3)
       RedCloth (= 4.2.9)
       activesupport-slices (= 0.0.2)
       acts_as_indexed (~> 0.7.7)
@@ -50,18 +50,18 @@ GIT
       uglifier (>= 1.0.3)
       uuid (= 2.3.5)
       will_paginate (~> 3.0.2)
-    gko_documents (0.8.09.rc2)
+    gko_documents (0.8.09.rc3)
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
-    gko_features (0.8.09.rc2)
-    gko_hotel (0.8.09.rc2)
-      gko_core (= 0.8.09.rc2)
-      gko_inquiries (= 0.8.09.rc2)
-    gko_image_bank (0.8.09.rc2)
-    gko_inquiries (0.8.09.rc2)
+    gko_features (0.8.09.rc3)
+    gko_hotel (0.8.09.rc3)
+      gko_core (= 0.8.09.rc3)
+      gko_inquiries (= 0.8.09.rc3)
+    gko_image_bank (0.8.09.rc3)
+    gko_inquiries (0.8.09.rc3)
       filters_spam (~> 0.2)
-    gko_stickers (0.8.09.rc2)
-    gko_twits (0.8.09.rc2)
+    gko_stickers (0.8.09.rc3)
+    gko_twits (0.8.09.rc3)
 
 GIT
   remote: git@github.com:jdfdesign/gko_concierge.git
