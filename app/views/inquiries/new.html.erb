@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <%= render_page_title(resource.title) %>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-xs-12 col-sm-4'>
+      <%= render_copy_text(resource.body) %>
+      <p><b><%= t("tollfree_address").html_safe %></b></p>
+      <p><%= t("full_hotel_address").html_safe %></p>
+    </div>
+    <div class='col-xs-12 col-sm-8'>
+      <%= simple_form_for(:inquiry, :url => inquiries_path,
+              :html => {:data => { :remote => true, :type => :json }, 
+              :method => :post, :class => [:inquiry]}) do |form| %>
+        <%= form.input :name, :hint => '', :input_html => { :class => 'col-xs-12' } %>
+        <%= form.input :email, :hint => false, :input_html => { :class => 'col-xs-12' } %>
+        <%= form.input :phone, :hint => false, :required => false, :input_html => { :class => 'col-xs-12' } %>
+        <%= form.input :message, :as => :text, :hint => false, :input_html => {:class => 'col-xs-12', :rows => 6} %>
+        <%= form.input :ghost, :label => false, :hint => false, :required => false, :wrapper_html => {:class => 'hide'} %>
+        <%= form.button :submit, t("send_inquiry"), :disable_with => "Saving...", :class => "btn btn-block btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div> 
+

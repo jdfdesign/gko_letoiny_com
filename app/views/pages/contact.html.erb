@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <%= render_page_title(resource.title) %>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-xs-12 col-sm-4'>
+      <%= render_copy_text(resource.body) %>
+      <p><b><%= t("tollfree_address").html_safe %></b></p>
+      <p><%= t("full_hotel_address").html_safe %></p>
+    </div>
+    <div class='col-xs-12 col-sm-8'>
+      
+      <form id="contact-form" action="/inquiries" method="post" data-remote="true">
+         <input type="text" name="inquiry[ghost]" id="inquiry_ghost" value="" class="form-control hide"> 
+        <div class="row">	
+          <div class="col-xs-12 form-group">
+            <input type="text" name="inquiry[first_name]" id="inquiry_first_name" value="" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.first_name') %>">
+          </div>
+          <div class="col-xs-12 form-group">
+            <input type="text" name="inquiry[last_name]" id="inquiry_last_name" value="" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.last_name') %>">
+          </div>
+          <div class="col-xs-12 form-group">
+            <input type="text" name="inquiry[email]" id="inquiry_email" value="" class="form-control required email" placeholder="<%= t('simple_form.labels.inquiry.email') %>">
+          </div>
+          <div class="col-xs-12 form-group">
+            <input type="text" name="inquiry[phone]" id="inquiry_phone" value="" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.phone') %>">
+          </div>
+          <div class="col-xs-12 form-group">
+            <div class ="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <select class="select required" id="inquiry_services" name="inquiry[services]">
+                    <option value="">How may we be of service? *</option>
+                    <option value="Reserve a Suite">Reserve a Suite</option>
+                    <option value="Reserve a Table at Le Gaiac">Reserve a Table at Le Gaiac</option>
+                    <option value="Serenity Spa Cottage">Serenity Spa Cottage</option>
+                    <option value="Weddings &amp;amp; Events">Weddings &amp;amp; Events</option>
+                    <option value="Boutique">Boutique</option>
+                    <option value="Fitness">Fitness</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+            <input type="text" name="inquiry[other_value]" id="inquiry_other_value" value="" class="form-control required other_value" placeholder="<%= t('simple_form.labels.inquiry.other_value') %>">
+            </div>
+          </div>
+          <div class="col-xs-12 form-group">
+            <textarea name="inquiry[message]" id="inquiry_message" rows="20" cols="30" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.message') %>"></textarea>
+          </div>
+          <div class="col-xs-12 form-group">
+            <input type="hidden" name="submitted" id="submitted" class="button" value="SEND"><button id="submit" class="btn btn-primary btn-block" type="submit"><%= t("gko.inquiry_submit") %></button>
+          </div>
+          <div class="col-xs-12 form-group">
+            <p id="error" data-alert="" class="alert"><%= t("gko.inquiry_error") %></p>
+            <p id="thanks" data-alert="" class="alert alert-success"><%= t("gko.inquiry_thanks") %></p>
+            <p id="timedout" data-alert="" class="alert"><%= t("gko.inquiry_connection_time_out") %></p>
+            <p id="state" data-alert="" class="alert"></p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div> 

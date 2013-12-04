@@ -1,0 +1,13 @@
+<% content_for :after_javascript_libraries do %>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('input.ghost').hide();
+	});
+</script>
+<% end %>
+<%# cache [I18n.locale, site,'modals6'] do %>
+<!-- Les modals
+================================================== -->
+<%= render "inquiries/modal_restaurant_form" %>
+<%= render "inquiries/modal_contact_form" %>
+
