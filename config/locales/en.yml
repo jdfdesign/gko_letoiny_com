@@ -1,20 +1,31 @@
 en: 
-  book_table_title: Book a table at Le Gaiac
-  click_to_enlarge: Click to enlarge
   full_hotel_address: "Hotel Le Toiny<br/>Anse de Toiny<br/>97133 Saint-Barthélemy<br/>Guadeloupe<br/>T. (590)590278888<br/>F. (590)590278930<br/>Email. reservations@letoiny.com"
   tollfree_address: "North America Toll-free: 1-800-680-0832"
-  book_table_tab: "Book a table at Le Gaiac"
-  book_hotel_tab: "Book a room" 
   tool_free_btn: "Call us for free from US and Canada at (800) 680 - 0832"
   facebook_btn: "Visit our Facebook page"
   pinterest_btn: "Visit our Pinterest page"
   linkedin_btn: "Visit our LinkedIn page"
   google_plus_btn: "Visit our Google Plus page "
   twitter_btn: "Follow us on Twitter"
+  form:
+    services:
+      prompt: How may we be of service? *
+      reserve_a_suite: Reserve a Suite
+      reserve_a_table: Reserve a Table at Le Gaiac
+      serenity_spa_cottage: Serenity Spa Cottage
+      weddings_events: Weddings and Events
+      boutique: Boutique
+      fitness: Fitness
+      other: Other
   r_and_c: "<b>Who We Are?</b><br>Established over half a century ago, Relais & Châteaux is an association of the world’s finest hoteliers, chefs and restaurateurs that has set the standard for excellence in hospitality. Relais & Châteaux has redefined luxury hospitality by emphasizing holistic experiences that transport its guests, taking them on a sensual journey and introducing them to a deeper, truer understanding of the Art of Living."
   locale_select_title: Languages
   simple_form:
     labels:
+      inquiry:
+        other_value: Fill by the service of your choice
+        special_requests: Special Requests
+        special_considerations: Special Considerations & Arrangements
+        staying_place: Where are you staying in St Barth?
       hotel_reservation:
         welcome_champagne_moet_chanfon: "Moet Chanfon"
         welcome_champagne_perrier_rose: "Perrier Rose"

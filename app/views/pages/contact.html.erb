@@ -16,39 +16,34 @@
          <input type="text" name="inquiry[ghost]" id="inquiry_ghost" value="" class="form-control hide"> 
         <div class="row">	
           <div class="col-xs-12 form-group">
-            <input type="text" name="inquiry[first_name]" id="inquiry_first_name" value="" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.first_name') %>">
+            <input type="text" name="inquiry[first_name]" id="inquiry_first_name" value="" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.first_name') %> *">
           </div>
           <div class="col-xs-12 form-group">
-            <input type="text" name="inquiry[last_name]" id="inquiry_last_name" value="" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.last_name') %>">
+            <input type="text" name="inquiry[last_name]" id="inquiry_last_name" value="" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.last_name') %> *">
           </div>
           <div class="col-xs-12 form-group">
-            <input type="text" name="inquiry[email]" id="inquiry_email" value="" class="form-control required email" placeholder="<%= t('simple_form.labels.inquiry.email') %>">
+            <input type="text" name="inquiry[email]" id="inquiry_email" value="" class="form-control required email" placeholder="<%= t('simple_form.labels.inquiry.email') %> *">
           </div>
           <div class="col-xs-12 form-group">
-            <input type="text" name="inquiry[phone]" id="inquiry_phone" value="" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.phone') %>">
+            <input type="text" name="inquiry[phone]" id="inquiry_phone" value="" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.phone') %> *">
           </div>
           <div class="col-xs-12 form-group">
-            <div class ="row">
-              <div class="col-xs-12 col-sm-6">
-                <div class="form-group">
-                  <select class="select required" id="inquiry_services" name="inquiry[services]">
-                    <option value="">How may we be of service? *</option>
-                    <option value="Reserve a Suite">Reserve a Suite</option>
-                    <option value="Reserve a Table at Le Gaiac">Reserve a Table at Le Gaiac</option>
-                    <option value="Serenity Spa Cottage">Serenity Spa Cottage</option>
-                    <option value="Weddings &amp;amp; Events">Weddings &amp;amp; Events</option>
-                    <option value="Boutique">Boutique</option>
-                    <option value="Fitness">Fitness</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
+            <select class="select required" id="inquiry_services" name="inquiry[services]">
+              <option value=""><%= t("form.services.prompt") %></option>
+              <option value="reserve_a_suite"><%= t("form.services.reserve_a_suite") %></option>
+              <option value="reserve_a_table"><%= t("form.services.reserve_a_table") %></option>
+              <option value="serenity_spa_cottage"><%= t("form.services.serenity_spa_cottage") %></option>
+              <option value="weddings_events"><%= t("form.services.weddings_events") %></option>
+              <option value="boutique"><%= t("form.services.boutique") %></option>
+              <option value="fitness"><%= t("form.services.fitness") %></option>
+              <option value="other"><%= t("form.services.other") %></option>
+            </select>
+          </div>
+          <div class="col-xs-12 form-group hidden">
             <input type="text" name="inquiry[other_value]" id="inquiry_other_value" value="" class="form-control required other_value" placeholder="<%= t('simple_form.labels.inquiry.other_value') %>">
-            </div>
           </div>
           <div class="col-xs-12 form-group">
-            <textarea name="inquiry[message]" id="inquiry_message" rows="20" cols="30" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.message') %>"></textarea>
+            <textarea name="inquiry[message]" id="inquiry_message" rows="20" cols="30" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.special_requests') %>"></textarea>
           </div>
           <div class="col-xs-12 form-group">
             <input type="hidden" name="submitted" id="submitted" class="button" value="SEND"><button id="submit" class="btn btn-primary btn-block" type="submit"><%= t("gko.inquiry_submit") %></button>
