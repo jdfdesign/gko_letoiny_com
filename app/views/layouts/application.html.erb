@@ -4,6 +4,7 @@
 <body class='<%= @body_id %>'>
   <div class="page-wrapper">
   	<%= render 'header' %>
+    <%= yield :news %>
     <section class="main-content <%= @body_id %>">
       <%= yield %>
     </section>
@@ -11,6 +12,7 @@
   <%= render 'footer' %>
   <%= render 'toolbar' %>
   <%= render 'supersized' %>
+  <%= render 'modals' %>
   
   <!-- Le javascript
   ================================================== -->

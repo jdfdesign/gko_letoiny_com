@@ -18,10 +18,10 @@ $gray-lighter:           lighten(#000, 93.5%);// !default // #eee
 // Brand colors
 // -------------------------
 
-$brand-primary:         #428bca;// !default
-$brand-success:         #5cb85c;// !default
+$brand-primary:         $theme-color;//#428bca;// !default
+$brand-success:         #22B573;//#5cb85c;// !default
 $brand-warning:         #f0ad4e;// !default
-$brand-danger:          #d9534f;// !default
+$brand-danger:          #ff3333;//#d9534f;// !default
 $brand-info:            #5bc0de;// !default
 
 // Scaffolding
@@ -44,7 +44,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif;// !default
 $font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;// !default
 $font-family-base:        $font-family-sans-serif;// !default
 
-$font-size-base:          15px;// !default
+$font-size-base:          14px;// !default
 $font-size-large:         ceil($font-size-base * 1.25);// !default // ~18px
 $font-size-small:         ceil($font-size-base * 0.85);// !default // ~12px
 
@@ -443,19 +443,19 @@ $alert-border-radius:         $border-radius-base;// !default
 $alert-link-font-weight:      bold;// !default
 
 $alert-success-bg:            $state-success-bg;// !default
-$alert-success-text:          $state-success-text;// !default
+$alert-success-text:          #fff;//$state-success-text;// !default
 $alert-success-border:        $state-success-border;// !default
 
 $alert-info-bg:               $state-info-bg;// !default
-$alert-info-text:             $state-info-text;// !default
+$alert-info-text:             #fff;//$state-info-text;// !default
 $alert-info-border:           $state-info-border;// !default
 
 $alert-warning-bg:            $state-warning-bg;// !default
-$alert-warning-text:          $state-warning-text;// !default
+$alert-warning-text:          #fff;// $state-warning-text;// !default
 $alert-warning-border:        $state-warning-border;// !default
 
 $alert-danger-bg:             $state-danger-bg;// !default
-$alert-danger-text:           $state-danger-text;// !default
+$alert-danger-text:           #fff;//$state-danger-text;// !default
 $alert-danger-border:         $state-danger-border;// !default
 
 
@@ -558,12 +558,12 @@ $breadcrumb-active-color:     $gray-light;// !default
 // Carousel
 // ------------------------
 
-$carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);// !default
+$carousel-text-shadow:                        none; //0 1px 2px rgba(0,0,0,.6);// !default
 
 $carousel-control-color:                      #fff;// !default
-$carousel-control-width:                      15%;// !default
-$carousel-control-opacity:                    .5;// !default
-$carousel-control-font-size:                  20px;// !default
+$carousel-control-width:                      32px;//15%;// !default
+$carousel-control-opacity:                    1;//.5;// !default
+$carousel-control-font-size:                  28px;//20px;// !default
 
 $carousel-indicator-active-bg:                #fff;// !default
 $carousel-indicator-border-color:             #fff;// !default
@@ -573,9 +573,9 @@ $carousel-caption-color:                      #fff;// !default
 
 // Close
 // ------------------------
-$close-color:                 #000;// !default
+$close-color:                 #fff;//#000;// !default
 $close-font-weight:           bold;// !default
-$close-text-shadow:           0 1px 0 #fff;// !default
+$close-text-shadow:           none;//0 1px 0 #fff;// !default
 
 
 // Code

@@ -1,4 +1,6 @@
 //= require jquery_ujs
+//= require bootstrap-datepicker
+//= require remote_form
 //= require supersized.3.2.7.js
 
 // make console.log safe to use
@@ -27,7 +29,7 @@ jQuery(function($) {
   /* ==================================================
   	Formstack
   ================================================== */
-  THEME.formstack = function(title, source){
+  /*THEME.formstack = function(title, source){
     $('<div class="modal fade">' +
       '<div class="modal-dialog">' +
         '<div class="modal-content">' +
@@ -45,7 +47,7 @@ jQuery(function($) {
       }).on('hidden.bs.modal', function (e) {
         $(this).remove();
       }).modal( { backdrop: 'static', show: true } );
-  };
+  };*/
   /* ==================================================
   	Carousel
   ================================================== */
@@ -96,14 +98,26 @@ jQuery(function($) {
     THEME.carousel();
     THEME.supersized();
     
-    $("#contact_us").on("click", function(e) { 
+    $(".homepage").css('margin-top', $(window).height() + 80);
+    $(".homepage.featured").css('margin-top', Math.max(0, $(window).height() - $(".news-wrapper").height() - 80));
+    $("#inquiry_services").change(function() {
+      if($( this ).val() == "other") {
+        $("#inquiry_other_value").parent().removeClass('hidden');
+      } else {
+        $("#inquiry_other_value").parent().addClass('hidden');
+      }
+    });
+    $('.form-control.date').datepicker({});
+    /*$("#contact_us").on("click", function(e) { 
       THEME.formstack($(this).text(), 'https://www.formstack.com/forms/?1464607-UGKf87Ck2h');
       e.preventDefault();
     })
     $("#table-booking").on("click", function(e) {
       THEME.formstack($(this).text(), 'http://www.formstack.com/forms/?1464587-Dog5K8aIvq');
       e.preventDefault();
-    })
+    })*/
+      
+    
   })  
 
 })

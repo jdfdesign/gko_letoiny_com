@@ -1,37 +1,81 @@
-/* Form
--------------------------------------------------- */
-.contact {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  background-color: $theme-light-color;
-  .container {
-    padding: 0;
-  }
-  .inner {
-    max-width: 800px;
-    @include center-block();
-  }
-  .form-title {
-    border-bottom: 1px solid $theme-color;
-    display: block;
-    overflow: hidden;
-    margin-bottom: $line-height-computed;
-  }
-  h3 {
-    float:left;
-    margin: 0;
-  }
-  .close {
-    line-height: 48px;
-  }
-  form { 
-    
-    label {
-      color: $theme-color;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 11px;
-    }
-  }
-  
+/* CONTACT STYLES
+-------------------------------------------------- */ 
+#submit {
+   background-color: $brand-primary;
+   text-transform: uppercase;
+   font-weight: normal;
+   font-weight: 400;
+   letter-spacing: 2px;
+   font-size: 11px;
+   @include transition(all 0.4s ease-in-out);
+   &:hover {
+     background-color: lighten($brand-primary, 10%);
+     border-color: lighten($brand-primary, 10%);
+   }
+}   
+.form-control {
+  @include box-shadow(none); 
+  @include transition(all 0.4s ease-in-out); 
+  &:focus {
+    outline: 0;
+    background: lighten(#989898, 10%);
+    border-color: lighten(#989898, 10%);
+    @include box-shadow(none);
+  } 
+}
+.form-group{
+  position: relative;
+}
+input {
+  font-weight: normal;
+}
+input[type="text"] { 
+  margin-bottom: 15px;
+  height: $input-height-large;
+}
+textarea.form-control {
+  height: $input-height-large * 2; 
+  resize: none;
+  border: 1px solid $input-border;
+}
+select {
+  height: $input-height-large;
+  line-height: $input-height-large;
+  border: 1px solid $input-border;
+  border-radius: $input-border-radius; 
+  color: $input-color;
+  background: url(image_path("arrow-down-black.png")) no-repeat right $input-bg;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 1em;
+  outline: none;
+  -webkit-appearance: none; 
+}
+span.error, 
+span.valid {
+  position: absolute;
+  top: 0; 
+  right: 1em;
+  width: $line-height-computed * 2;
+  height: $line-height-computed * 2; 
+  background-position: center center;
+  background-size: $line-height-computed; 
+  background-repeat: no-repeat;
+}
+span.error {
+  background-image: image_path("error.svg");
+}
+span.valid {
+  background-image: image_path("valid.svg");
+}
+.alert {
+  display: none;
+  border: 0; 
+  border-radius: 0; 
+  background-color: $brand-danger;
+  color: #fff;
+}
+.alert-success{
+  background-color: $brand-success;
+  color: #fff;
 }

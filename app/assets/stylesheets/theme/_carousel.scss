@@ -28,18 +28,12 @@
   color: white;
 }
 .carousel-control {
-  border-radius: 0;
   border: 1px solid $theme-light-color;
-  
   background-color: transparent;
-  color: white;
   top: 50%;
-  font-size: 30px;
   line-height: 30px; 
-  vertical-align: middle;
-  @include square(30px);
-  @include opacity(1);
-  
+  @include square($carousel-control-width);
+
   &.right,
   &.left {
     background-image: none;

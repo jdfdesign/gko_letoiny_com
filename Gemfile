@@ -36,5 +36,5 @@ group :development do
   gem "gko_stickers", :path => '~/Github/gko_cms3/gko_stickers'
   gem "gko_image_bank", :path => '~/Github/gko_cms3/gko_image_bank'
   gem "gko_features", :path => '~/Github/gko_cms3/gko_features'
-  #gem "gko_concierge", :path => '~/Github/gko/gko_concierge'
+  gem "gko_concierge", :path => '~/Github/gko/gko_concierge'
 end

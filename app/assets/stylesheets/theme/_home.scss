@@ -1,0 +1,36 @@
+.main-content.home { 
+  background-color: transparent;
+}
+.homepage {
+  margin-top: 600px; // set by js
+}
+
+.homepage-content {
+  background-color: rgba(241, 237, 228, 1);
+  @media (min-width: $theme-break-point) { 
+    background-color: rgba(241, 237, 228, .85);
+    padding: $line-height-computed;
+  }
+}
+.alert-info {
+  background-color: rgba(68, 65, 58, .85);
+  color: $theme-light-color;
+  margin-bottom: $line-height-computed;
+  .btn-link {
+    color: $theme-light-color;
+  }
+}
+.alert-content-wrapper {
+  display: table;
+  vertical-align: middle;
+  .alert-content {
+    display: table-cell;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+
+
+
+
