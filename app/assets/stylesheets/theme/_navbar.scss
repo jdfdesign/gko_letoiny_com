@@ -48,17 +48,18 @@ $logo-width: 182px;
 } 
 /* Navbar Header
 -------------------------------------------------- */
-.nav-locales {
+.dropdown-locales {
   font-family: $font-family-sans-serif; 
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 11px;
   text-align: center;
-  li.dropdown-toggle > a {
+  .dropdown-toggle {
     margin : 0;
     background-color: $theme-medium-color; 
     color: $theme-light-color;
     font-weight: 300;
+    width: 100%;
     &:hover,
     &:focus {
       text-decoration: none;
