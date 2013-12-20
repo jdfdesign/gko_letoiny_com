@@ -1,4 +1,6 @@
 class TableBooking < MailForm::Base
+  
+  attributes :site_id
   attributes :first_name, :validate => true
   attributes :last_name, :validate => true
   attributes :email, :validate => true, :email => true
@@ -7,6 +9,7 @@ class TableBooking < MailForm::Base
   attributes :location, :validate => true
   attributes :day, :validate => true
   attributes :service, :validate => true
+  attributes :other_value
   attributes :message
   attributes :nickname, :captcha => true
   

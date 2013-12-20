@@ -81,13 +81,6 @@ PATH
     gko_features (0.8.09.rc12)
 
 PATH
-  remote: ~/Github/gko_cms3/gko_hotel
-  specs:
-    gko_hotel (0.8.09.rc12)
-      gko_core (= 0.8.09.rc12)
-      gko_inquiries (= 0.8.09.rc12)
-
-PATH
   remote: ~/Github/gko_cms3/gko_image_bank
   specs:
     gko_image_bank (0.8.09.rc12)
@@ -336,7 +329,6 @@ DEPENDENCIES
   gko_core!
   gko_documents!
   gko_features!
-  gko_hotel!
   gko_image_bank!
   gko_inquiries!
   gko_stickers!

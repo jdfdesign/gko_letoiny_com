@@ -12,8 +12,7 @@
     </div>
     <div class='col-xs-12 col-sm-8'>
       
-      <form id="contact-form" action="/inquiries" method="post" data-remote="true">
-        <input type="text" name="table_booking[ghost]" id="table_booking_ghost" value="" class="form-control hide"> 
+      <form id="table-booking-form" action="/table_bookings" method="post" data-remote="true">
         <div class="row">	
           <div class="col-xs-12 form-group">
             <input type="text" name="table_booking[first_name]" id="table_booking_first_name" value="" class="form-control required" placeholder="<%= t('simple_form.labels.table_booking.first_name') %> *">
@@ -66,6 +65,7 @@
           <div class="col-xs-12 form-group">
             <textarea name="table_booking[message]" id="table_booking_message" rows="20" cols="30" class="form-control required" placeholder="<%= t('simple_form.labels.table_booking.special_considerations') %>"></textarea>
           </div>
+          <input type="text" name="table_booking[nickname]" id="table_booking_nickname" value="" class="form-control nickname hidden">
           <div class="col-xs-12 form-group">
             <input type="hidden" name="submitted" id="submitted" class="button" value="SEND">
             <button id="submit" class="btn btn-primary btn-block" type="submit"><%= t("gko.table_booking_submit") %></button>
