@@ -2,27 +2,67 @@ fr:
   book_table_title: Réserver une table au Gaiac
   click_to_enlarge: Cliquer pour agrandir
   full_hotel_address: "Hotel Le Toiny<br/>Anse de Toiny<br/>97133 Saint-Barthélemy<br/>Guadeloupe<br/>T. (590)590278888<br/>F. (590)590278930<br/>Email. reservations@letoiny.com"
-  tollfree_address: "Appeler nous gratuitement depuis les U.S. ou le Canada au (800) 680 0832" 
+  tollfree_address: "Appeler nous gratuitement depuis les U.S. ou le Canada au (800)&nbsp;680&nbsp;0832" 
   book_table_tab: "Réserver une table au Gaiac"
   book_hotel_tab: "Demande d'informations"
-  tool_free_btn: "Appeler nous gratuitement depuis les US ou le Canada au (800) 680 0832"
+  tool_free_btn: "Appeler nous gratuitement depuis les US ou le Canada au (800)&nbsp;680&nbsp;0832"
   facebook_btn: "Visiter notre page Facebook"
   pinterest_btn: "Visiter notre page Pinterest"
   linkedin_btn: "Visiter notre page LinkedIn"
   google_plus_btn: "Visiter notre page Google Plus"
   twitter_btn: "Suiver nous sur notre compte twitter"
+  info_form_thanks: "Your inquiry has been sent."
+  table_booking_thanks: "Your inquiry has been sent."
   form:
-    reserve_a_suite: Reserve a Suite
-    reserve_a_table: Reserve a Table at Le Gaiac
-    serenity_spa_cottage: Serenity Spa Cottage
-    weddings_events: Weddings &amp;amp; Events
-    boutique: Boutique
-    fitness: Fitness
-    other: Other
+    services:
+      prompt: Comment pouvons-nous vous aider? *
+      reserve_a_suite: Réserver une suite
+      reserve_a_table: Réserver une table au Gaiac
+      serenity_spa_cottage: Serenity Spa Cottage
+      weddings_events: Mariages et évènements
+      boutique: Boutique
+      fitness: Fitness
+      other: Autres
+  form:
+    services:
+      prompt: "Service"
+      reserve_a_suite: Reserve a Suite
+      reserve_a_table: Reserve a Table at Le Gaiac
+      serenity_spa_cottage: Serenity Spa Cottage
+      weddings_events: Weddings &amp;amp; Events
+      boutique: Boutique
+      fitness: Fitness
+      other: Other
   r_and_c: "<b>Qui sommes-nous?</b><br>Créée il y a plus de cinquante ans par l’union de grands<br\>hôteliers et chefs cuisiniers, Relais & Châteaux est une association qui s’impose aujourd’hui comme une référence d’excellence dans les domaines de la restauration et de l’hôtellerie. Relais & Châteaux a redéfini l’hôtellerie haut de gamme en mettant l’accent sur les expériences clients. Ces derniers sont invités à un voyage des sens menant à une compréhension approfondie de ce qu’est l’art de vivre."
   locale_select_title: Langages
+  helpers:
+    submit:
+      table_booking:
+        create: "Envoyer"
+      info_form:
+        create: "Envoyer"
   simple_form:
     labels:
+      table_booking:
+        name: "Nom"
+        first_name: "Prénom"
+        last_name: "Nom"
+        email: "Email"
+        phone: "Téléphone"
+        guest_count: "Nombre de personne"
+        location: "Où séjournez vous à St Barth ?"
+        day: "Date"
+        service: "Service"
+        message: "Commentaires"
+      info_form:
+        name: "Nom"
+        first_name: "Prénom"
+        last_name: "Nom"
+        email: "Email"
+        phone: "Téléphone"
+        subject: "Sujet"
+        other_value: "Autres"
+        message: "Commentaires"
       hotel_reservation:
         welcome_champagne_moet_chanfon: "Moet Chanfon"
         welcome_champagne_perrier_rose: "Perrier Rose"

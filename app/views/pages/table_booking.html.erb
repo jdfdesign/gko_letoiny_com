@@ -10,74 +10,8 @@
       <p><b><%= t("tollfree_address").html_safe %></b></p>
       <p><%= t("full_hotel_address").html_safe %></p>
     </div>
-    <div class='col-xs-12 col-sm-8'>
-      
-      <form id="table-booking-form" action="/table_bookings" method="post" data-remote="true">
-        <div class="row">	
-          <div class="col-xs-12 form-group">
-            <input type="text" name="table_booking[first_name]" id="table_booking_first_name" value="" class="form-control required" placeholder="<%= t('simple_form.labels.table_booking.first_name') %> *">
-          </div>
-          <div class="col-xs-12 form-group">
-            <input type="text" name="table_booking[last_name]" id="table_booking_last_name" value="" class="form-control required" placeholder="<%= t('simple_form.labels.table_booking.last_name') %> *">
-          </div>
-          <div class="col-xs-12 form-group">
-            <input type="text" name="table_booking[email]" id="table_booking_email" value="" class="form-control required email" placeholder="<%= t('simple_form.labels.table_booking.email') %> *">
-          </div>
-          <div class="col-xs-12 form-group">
-            <input type="text" name="table_booking[phone]" id="table_booking_phone" value="" class="form-control required" placeholder="<%= t('simple_form.labels.table_booking.phone') %> *">
-          </div>
-          <div class="col-xs-12 form-group">
-            <input type="text" name="table_booking[location]" id="table_booking_location" value="" class="form-control required" placeholder="<%= t('simple_form.labels.table_booking.location') %> *">
-          </div>
-          <div class="col-xs-12 form-group">
-            <div class="input-group">
-              <input type="text" class="form-control date" placeholder="<%= t('simple_form.labels.table_table_booking.day') %> *">
-              <span class="input-group-addon"><i class="icon-th"></i></span>
-            </div>
-          </div>
-          <div class="col-xs-12 form-group">
-            <% table_table_booking_format = I18n.locale == :en ? "%I.%M %p" : "%H.%M" %>
-            <select class="select required" id="table_booking_service" name="table_booking[service]">
-              <optgroup label="<%= t(:"simple_form.labels.table_table_booking.lunch")  %>">
-                <option value="12"><%= l(Time.zone.local(2011,4,12,12,0), :format => table_table_booking_format) %></option>
-                <option value="12"><%= l(Time.zone.local(2011,4,12,12,30), :format => table_table_booking_format) %></option>
-                <option value="13"><%= l(Time.zone.local(2011,4,12,13,0), :format => table_table_booking_format) %></option>
-                <option value="13.30"><%= l(Time.zone.local(2011,4,12,13,30), :format => table_table_booking_format) %></option>
-                <option value="14"><%= l(Time.zone.local(2011,4,12,14,0), :format => table_table_booking_format) %></option>
-                <option value="14.30"><%= l(Time.zone.local(2011,4,12,14,30), :format => table_table_booking_format) %></option>
-              </optgroup>
-              <optgroup label="<%= t(:"simple_form.labels.table_table_booking.dinner")  %>">
-                <option value="19"><%= l(Time.zone.local(2011,4,12,19,0), :format => table_table_booking_format) %></option>
-                <option value="19.30"><%= l(Time.zone.local(2011,4,12,19,30), :format => table_table_booking_format) %></option>
-                <option value="20"><%= l(Time.zone.local(2011,4,12,20,0), :format => table_table_booking_format) %></option>
-                <option value="20.30"><%= l(Time.zone.local(2011,4,12,20,30), :format => table_table_booking_format) %></option>
-                <option value="21"><%= l(Time.zone.local(2011,4,12,21,0), :format => table_table_booking_format) %></option>
-                <option value="21.30"><%= l(Time.zone.local(2011,4,12,21,30), :format => table_table_booking_format) %></option>
-              </optgroup> 
-            </select>
-          </div>
-          <div class="col-xs-12 form-group">
-            <input type="number" max="20" maxlength="2" min="1" step="1" name="table_booking[guest_count]" id="table_booking_guest_count" value="" class="form-control required" placeholder="<%= t('simple_form.labels.table_table_booking.guest_count') %> *">
-          </div>
-          <div class="col-xs-12 form-group hidden">
-            <input type="text" name="table_booking[other_value]" id="table_booking_other_value" value="" class="form-control required other_value" placeholder="<%= t('simple_form.labels.table_booking.other_value') %>">
-          </div>
-          <div class="col-xs-12 form-group">
-            <textarea name="table_booking[message]" id="table_booking_message" rows="20" cols="30" class="form-control required" placeholder="<%= t('simple_form.labels.table_booking.special_considerations') %>"></textarea>
-          </div>
-          <input type="text" name="table_booking[nickname]" id="table_booking_nickname" value="" class="form-control nickname hidden">
-          <div class="col-xs-12 form-group">
-            <input type="hidden" name="submitted" id="submitted" class="button" value="SEND">
-            <button id="submit" class="btn btn-primary btn-block" type="submit"><%= t("gko.table_booking_submit") %></button>
-          </div>
-          <div class="col-xs-12 form-group">
-            <p id="error" data-alert="" class="alert"><%= t("gko.table_booking_error") %></p>
-            <p id="thanks" data-alert="" class="alert alert-success"><%= t("gko.table_booking_thanks") %></p>
-            <p id="timedout" data-alert="" class="alert"><%= t("gko.table_booking_connection_time_out") %></p>
-            <p id="state" data-alert="" class="alert"></p>
-          </div>
-        </div>
-      </form>
+    <div id="table_booking_form_container" class='col-xs-12 col-sm-8'>
+      <%= render 'table_booking_form' %>
     </div>
   </div>
 </div> 

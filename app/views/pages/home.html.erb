@@ -3,7 +3,7 @@
 <div class="container homepage <%= 'featured' if features.any? %>">
   <div class="row">
     <div class="col-xs-12">
-      <%  if features.any? -%>
+      <% if features.any? -%>
         <div class="news-wrapper">
           <% features.each_with_index do |feature, index| %>
             <div class="alert alert-info fade in">
@@ -24,11 +24,12 @@
         <% end %>
         </div>
       <% end -%>
-      <div class="homepage-content">
-        
-        <%= render_page_title(resource.title) %>
-        <%= render_copy_text(resource.body) %>
-      </div>
+      <% if resource.body.present? %>
+        <div class="homepage-content">
+          <%= render_page_title(resource.title) %>
+          <%= render_copy_text(resource.body) %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

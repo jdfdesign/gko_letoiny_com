@@ -29,6 +29,9 @@
 input {
   font-weight: normal;
 }
+input[type="number"],
+input[type="email"],
+input[type="tel"],
 input[type="text"] { 
   margin-bottom: 15px;
   height: $input-height-large;
@@ -68,14 +71,16 @@ span.error {
 span.valid {
   background-image: image_path("valid.svg");
 }
-.alert {
-  display: none;
-  border: 0; 
-  border-radius: 0; 
-  background-color: $brand-danger;
-  color: #fff;
-}
-.alert-success{
-  background-color: $brand-success;
-  color: #fff;
+form {
+  .alert {
+    display: none;
+    border: 0; 
+    border-radius: 0; 
+    background-color: $brand-danger;
+    color: #fff;
+  }
+  .alert-success{
+    background-color: $brand-success;
+    color: #fff;
+  }
 }

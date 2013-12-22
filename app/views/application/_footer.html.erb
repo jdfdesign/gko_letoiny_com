@@ -22,8 +22,9 @@
         <div class="widget widget-lastest-post">
             <h5 class="widget-heading">Recent news</h5>
             <hr/>
+            <%= link_to("Blog", "http://letoiny.blogspot.fr/", :target => "_blank")%>
             <% current_site.features.live.each_with_index do |feature, index| %>
-            <div class="post">
+            <div class="footer-post">
                <%= "<p><strong>#{feature.title}</strong></p> ".html_safe if feature.title.present? %>
                <%= "<p class='title'>#{feature.body}</p>".html_safe if feature.body.present? %>
             </div>
@@ -45,7 +46,7 @@
         <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
         <script type="IN/FollowCompany" data-id="2937262" data-counter="right"></script>
         <br/>
-        <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FHotel-Le-Toiny-St-Barth%2F102215559842737%3Fv%3Dinfo%23%21%2Fpages%2FHotel-Le-Toiny-St-Barth%2F102215559842737%3Fv%3Dwall&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=dark&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:22px; padding-top: 8px;padding-left: 16px;" allowtransparency="true" id="fcb"></iframe>
+        <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FHotel-Le-Toiny-St-Barth%2F102215559842737%3Fv%3Dinfo%23%21%2Fpages%2FHotel-Le-Toiny-St-Barth%2F102215559842737%3Fv%3Dwall&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=dark&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowtransparency="true" id="fcb"></iframe>
       </div>
     </div>
   </div>

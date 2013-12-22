@@ -2,14 +2,63 @@ br:
   book_table_title: Reserve sua Mesa
   click_to_enlarge: Clique para ampliar
   full_hotel_address: "Hotel Le Toiny<br/>Anse de Toiny<br/>97133 Saint-Barthélemy<br/>Guadeloupe<br/>T. (590)590278888<br/>F. (590)590278930<br/>Email. reservations@letoiny.com"
-  tollfree_address: "Ligue para o hotel gratuitamente a partir dos Estados Unidos ou Canadá ( 800 ) 680 - 0832"
+  tollfree_address: "Ligue para o hotel gratuitamente a partir dos Estados Unidos ou Canadá (800)&nbsp;680&nbsp;-&nbsp;0832"
   book_table_tab: "Reserve sua Mesa"
   book_hotel_tab: "Book a room" 
-  tool_free_btn: "Ligue para o hotel gratuitamente a partir dos Estados Unidos ou Canadá (800) 680 - 0832"
+  tool_free_btn: "Ligue para o hotel gratuitamente a partir dos Estados Unidos ou Canadá (800)&nbsp;680&nbsp;-&nbsp;0832"
   facebook_btn: "Visite nossa página Facebook"
   pinterest_btn: "Visite nossa página Pinterest"
   linkedin_btn: "Visite nossa página LinkedIn"
   google_plus_btn: "Visite nossa página Google Plus"
   twitter_btn: "Siga-nos no Twitter"
+  info_form_thanks: "O seu pedido foi enviado."
+  table_booking_thanks: "O seu pedido foi enviado."
+  form:
+    services:
+      prompt: Como podemos estar a serviço ? *
+      reserve_a_suite: Reserve uma suíte
+      reserve_a_table: Reservar uma mesa no Le Gaiac
+      serenity_spa_cottage: Serenity Spa Cottage
+      weddings_events: Casamentos e Eventos
+      boutique: Boutique
+      fitness: Fitness
+      other: Outro
   r_and_c: "<b>Quem Somos?</b><br>Criada há mais de meio século atrás, Relais & Châteaux é uma associação de melhores do mundo hoteleiros, chefs e restaurateurs, que estabeleceu o padrão de excelência em hospitalidade. Relais & Châteaux redefiniu a hospitalidade de luxo ao enfatizar experiências holísticas que transportam os seus hóspedes, levando-os a uma viagem sensual e apresentá-los a um mais profundo, mais verdadeiro entendimento da Arte de Viver."
-  locale_select_title: Idiomas   
+  locale_select_title: Idiomas
+  helpers:
+    submit:
+      table_booking:
+        create: "Enviar"
+      info_form:
+        create: "Enviar"
+  simple_form:
+    labels:
+      table_booking:
+        name: "Nome"
+        first_name: "primeiro nome"
+        last_name: "último Nome"
+        email: "Email"
+        phone: "telefone"
+        guest_count: "Número de pessoas"
+        location: "Onde está hospedado em St Barth ?"
+        day: "Dia"
+        service: "Horário"
+        message: "Considerações especiais e Arranjos"
+      info_form:
+        name: "Nome"
+        first_name: "primeiro nome"
+        last_name: "último Nome"
+        email: "Email"
+        phone: "telefone"
+        subject: "Como podemos ajudar ?"
+        other_value: "Preencha pelo serviço de sua escolha"
+        message: "Os pedidos especiais"
+      hotel_reservation:
+        welcome_champagne_moet_chanfon: "Moet Chanfon"
+        welcome_champagne_perrier_rose: "Perrier Rose"
+        welcome_european_bouquet: "European bouquet"
+        welcome_european_bouquet_price: "Price"  
+        welcome_exotic_bouquet: "Exotic bouquet"
+        welcome_exotic_bouquet_price: "Price"                        
+        welcome_colorful_fruit_plate: "Fruit plate"
+        welcome_cheese_cracker_plate: "Cracker plate"   

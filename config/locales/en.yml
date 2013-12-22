@@ -1,12 +1,14 @@
 en: 
   full_hotel_address: "Hotel Le Toiny<br/>Anse de Toiny<br/>97133 Saint-Barthélemy<br/>Guadeloupe<br/>T. (590)590278888<br/>F. (590)590278930<br/>Email. reservations@letoiny.com"
-  tollfree_address: "North America Toll-free: 1-800-680-0832"
-  tool_free_btn: "Call us for free from US and Canada at (800) 680 - 0832"
+  tollfree_address: "North America Toll-free:<br/>1-800-680-0832"
+  tool_free_btn: "Call us for free from US and Canada at (800)&nbsp;680&nbsp;-&nbsp;0832"
   facebook_btn: "Visit our Facebook page"
   pinterest_btn: "Visit our Pinterest page"
   linkedin_btn: "Visit our LinkedIn page"
   google_plus_btn: "Visit our Google Plus page "
   twitter_btn: "Follow us on Twitter"
+  info_form_thanks: "Your inquiry has been sent."
+  table_booking_thanks: "Your inquiry has been sent."
   form:
     services:
       prompt: How may we be of service? *
@@ -19,13 +21,34 @@ en:
       other: Other
   r_and_c: "<b>Who We Are?</b><br>Established over half a century ago, Relais & Châteaux is an association of the world’s finest hoteliers, chefs and restaurateurs that has set the standard for excellence in hospitality. Relais & Châteaux has redefined luxury hospitality by emphasizing holistic experiences that transport its guests, taking them on a sensual journey and introducing them to a deeper, truer understanding of the Art of Living."
   locale_select_title: Languages
+  helpers:
+    submit:
+      table_booking:
+        create: "Send"
+      info_form:
+        create: "Send"
   simple_form:
     labels:
-      inquiry:
-        other_value: Fill by the service of your choice
-        special_requests: Special Requests
-        special_considerations: Special Considerations & Arrangements
-        staying_place: Where are you staying in St Barth?
+      table_booking:
+        name: "Name"
+        first_name: "First Name"
+        last_name: "Last Name"
+        email: "Your Email"
+        phone: "Your Phone"
+        guest_count: "Guest Count"
+        location: "Where are you staying in St Barth ?"
+        day: "Day"
+        service: "Time"
+        message: "Special Considerations & Arrangements"
+      info_form:
+        name: "Name"
+        first_name: "First Name"
+        last_name: "Last Name"
+        email: "Your Email"
+        phone: "Your Phone"
+        subject: "How may we be of service ?"
+        other_value: "Fill by the service of your choice"
+        message: "Special requests"
       hotel_reservation:
         welcome_champagne_moet_chanfon: "Moet Chanfon"
         welcome_champagne_perrier_rose: "Perrier Rose"

@@ -1,9 +1,9 @@
-class TableBookingsController < ApplicationController
+class TableBookingsController < BaseController
   
   respond_to :js
   
   def new 
-    @table_booking = TableBooking.new
+    @table_booking = TableBooking.new(:guest_count => 2, :day => Date.today)
     @table_booking.set_default_values if Rails.env.development? 
   end 
   
@@ -15,6 +15,7 @@ class TableBookingsController < ApplicationController
         flash.now[:notice] = 'Thank you for your message!' 
       else 
         render :new 
+        #render :layout => false
       end 
     rescue ScriptError 
       flash[:error] = 'Sorry, this message appears to be spam and was not delivered.' 

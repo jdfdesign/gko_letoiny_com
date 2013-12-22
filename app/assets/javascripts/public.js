@@ -100,14 +100,15 @@ jQuery(function($) {
     
     $(".homepage").css('margin-top', $(window).height() + 80);
     $(".homepage.featured").css('margin-top', Math.max(0, $(window).height() - $(".news-wrapper").height() - 80));
-    $("#inquiry_services").change(function() {
-      if($( this ).val() == "other") {
-        $("#inquiry_other_value").parent().removeClass('hidden');
-      } else {
-        $("#inquiry_other_value").parent().addClass('hidden');
-      }
-    });
-    $('.form-control.date').datepicker({});
+    //$("#inquiry_services").change(function() {
+    //  if($( this ).val() == "other") {
+    //    $("#inquiry_other_value").parent().removeClass('hidden');
+    //  } else {
+     //   $("#inquiry_other_value").parent().addClass('hidden');
+    //  }
+    //});
+    $("[data-toggle='tooltip']").tooltip();
+    //$('.form-control.date').datepicker({});
     /*$("#contact_us").on("click", function(e) { 
       THEME.formstack($(this).text(), 'https://www.formstack.com/forms/?1464607-UGKf87Ck2h');
       e.preventDefault();

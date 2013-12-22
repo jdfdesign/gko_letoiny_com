@@ -3,23 +3,9 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <% if resource.images.try(:any?) %>
-      <div class="carousel slide" id="carousel" data-interval="3000">
-        <div class="carousel-inner">
-          <% resource.images.each_with_index do |img, idx| %>
-            <div class="item <%= 'active' if idx == 0 %>"><%= image_fu(img, current_site.preferred_image_carousel_size) %></div>
-          <% end %>
-        </div>
-        <a class="left carousel-control" href="#carousel" data-slide="prev">
-          <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel" data-slide="next">
-          <span class="icon-next"></span>
-        </a> 
-      </div>
-    <% end %>
-    <%= render_page_title(resource.title) %>
-    <%= render_copy_text(resource.body) %>
+      <%= render_slideshow_for(resource) %>
+      <%= render_page_title(resource.title) %>
+      <%= render_copy_text(resource.body) %>
     </div>
   </div>
   <div class="row">

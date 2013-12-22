@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :hotel_bookings, :format => :js
+  resources :info_forms, :format => :js
   resources :table_bookings, :format => :js
 end
 

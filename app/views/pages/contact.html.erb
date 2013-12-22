@@ -10,52 +10,8 @@
       <p><b><%= t("tollfree_address").html_safe %></b></p>
       <p><%= t("full_hotel_address").html_safe %></p>
     </div>
-    <div class='col-xs-12 col-sm-8'>
-      
-      <form id="contact-form" action="/inquiries" method="post" data-remote="true">
-         <input type="text" name="inquiry[ghost]" id="inquiry_ghost" value="" class="form-control hide"> 
-        <div class="row">	
-          <div class="col-xs-12 form-group">
-            <input type="text" name="inquiry[first_name]" id="inquiry_first_name" value="" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.first_name') %> *">
-          </div>
-          <div class="col-xs-12 form-group">
-            <input type="text" name="inquiry[last_name]" id="inquiry_last_name" value="" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.last_name') %> *">
-          </div>
-          <div class="col-xs-12 form-group">
-            <input type="text" name="inquiry[email]" id="inquiry_email" value="" class="form-control required email" placeholder="<%= t('simple_form.labels.inquiry.email') %> *">
-          </div>
-          <div class="col-xs-12 form-group">
-            <input type="text" name="inquiry[phone]" id="inquiry_phone" value="" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.phone') %> *">
-          </div>
-          <div class="col-xs-12 form-group">
-            <select class="select required" id="inquiry_services" name="inquiry[services]">
-              <option value=""><%= t("form.services.prompt") %></option>
-              <option value="reserve_a_suite"><%= t("form.services.reserve_a_suite") %></option>
-              <option value="reserve_a_table"><%= t("form.services.reserve_a_table") %></option>
-              <option value="serenity_spa_cottage"><%= t("form.services.serenity_spa_cottage") %></option>
-              <option value="weddings_events"><%= t("form.services.weddings_events") %></option>
-              <option value="boutique"><%= t("form.services.boutique") %></option>
-              <option value="fitness"><%= t("form.services.fitness") %></option>
-              <option value="other"><%= t("form.services.other") %></option>
-            </select>
-          </div>
-          <div class="col-xs-12 form-group hidden">
-            <input type="text" name="inquiry[other_value]" id="inquiry_other_value" value="" class="form-control required other_value" placeholder="<%= t('simple_form.labels.inquiry.other_value') %>">
-          </div>
-          <div class="col-xs-12 form-group">
-            <textarea name="inquiry[message]" id="inquiry_message" rows="20" cols="30" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.special_requests') %>"></textarea>
-          </div>
-          <div class="col-xs-12 form-group">
-            <input type="hidden" name="submitted" id="submitted" class="button" value="SEND"><button id="submit" class="btn btn-primary btn-block" type="submit"><%= t("gko.inquiry_submit") %></button>
-          </div>
-          <div class="col-xs-12 form-group">
-            <p id="error" data-alert="" class="alert"><%= t("gko.inquiry_error") %></p>
-            <p id="thanks" data-alert="" class="alert alert-success"><%= t("gko.inquiry_thanks") %></p>
-            <p id="timedout" data-alert="" class="alert"><%= t("gko.inquiry_connection_time_out") %></p>
-            <p id="state" data-alert="" class="alert"></p>
-          </div>
-        </div>
-      </form>
+    <div id="info_form_container" class='col-xs-12 col-sm-8'>
+      <%= render 'info_form' %>
     </div>
   </div>
 </div> 

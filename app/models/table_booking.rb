@@ -1,17 +1,16 @@
 class TableBooking < MailForm::Base
   
-  attributes :site_id
-  attributes :first_name, :validate => true
-  attributes :last_name, :validate => true
-  attributes :email, :validate => true, :email => true
-  attributes :phone, :validate => true
-  attributes :guest_count, :validate => true
-  attributes :location, :validate => true
-  attributes :day, :validate => true
-  attributes :service, :validate => true
-  attributes :other_value
-  attributes :message
-  attributes :nickname, :captcha => true
+  attribute :site_id
+  attribute :first_name, :validate => true
+  attribute :last_name, :validate => true
+  attribute :email, :validate => true, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+  attribute :phone, :validate => true
+  attribute :guest_count, :validate => true
+  attribute :location, :validate => true
+  attribute :day, :validate => true
+  attribute :service, :validate => true
+  attribute :message
+  attribute :nickname, :captcha => true
   
   #validates :email, :presence => true, :email => true
   
@@ -19,9 +18,9 @@ class TableBooking < MailForm::Base
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "Contact from website",
-      :to => Site.current.preferred_contact_email,
-      :from => %("#{lastname}" <#{email}>)
+      :subject => "Demande de réservation au Gaiac",
+      :to => Site.current.table_inquiry_recipients,
+      :from => %("#{first_name} #{last_name}" <#{email}>)
     }
   end
   
