@@ -1,11 +1,13 @@
 <%# cache [I18n.locale, site,'locales_select4'] do %>
    <div class="dropdown dropdown-locales">
      <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-       English&nbsp;<i class="icon-angle-down"></i>
+       <%= current_language.presentation %>&nbsp;<i class="icon-angle-down"></i>
      </button>
      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
        <% site.available_locales.each do |language| %>
+       <% unless current_locale?(language.code) %>
          <li role="presentation"><%= link_to(language.presentation, root_url(:locale => language.code), :class => [language.code.to_s, 'navbar-link'], :role => "menuitem", :tabindex => "-1") %></li>
+       <% end %>
        <% end %>
      </ul>
    </div>

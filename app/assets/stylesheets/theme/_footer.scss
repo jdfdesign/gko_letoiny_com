@@ -84,7 +84,8 @@
     margin-top: $line-height-computed * 2;
     margin-bottom: 0;
   }
-  .widget-browse {
+   
+  //.widget-browse {
     .nav {
       margin: 0;
     }
@@ -117,7 +118,7 @@
     .nav > li.submenu > a {
       padding-left: 20px;
     }
-  }
+ // }
   
   @media (min-width: $grid-float-breakpoint) { 
     padding-top: $line-height-computed * 2;

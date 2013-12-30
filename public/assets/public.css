@@ -11401,48 +11401,48 @@ form .alert-success {
   margin-top: 40px;
   margin-bottom: 0;
 }
-/* line 88, ../../app/assets/stylesheets/theme/_footer.scss */
-#footer .widget-browse .nav {
+/* line 89, ../../app/assets/stylesheets/theme/_footer.scss */
+#footer .nav {
   margin: 0;
 }
-/* line 91, ../../app/assets/stylesheets/theme/_footer.scss */
-#footer .widget-browse .nav > li {
+/* line 92, ../../app/assets/stylesheets/theme/_footer.scss */
+#footer .nav > li {
   display: block;
   float: none;
 }
 /* line 21, ../../app/assets/stylesheets/bootstrap/_mixins.scss */
-#footer .widget-browse .nav > li:before, #footer .widget-browse .nav > li:after {
+#footer .nav > li:before, #footer .nav > li:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
 /* line 25, ../../app/assets/stylesheets/bootstrap/_mixins.scss */
-#footer .widget-browse .nav > li:after {
+#footer .nav > li:after {
   clear: both;
 }
-/* line 96, ../../app/assets/stylesheets/theme/_footer.scss */
-#footer .widget-browse .nav > li > a {
+/* line 97, ../../app/assets/stylesheets/theme/_footer.scss */
+#footer .nav > li > a {
   padding: 2px;
   color: #d5d4d2;
   text-decoration: none;
   text-transform: uppercase;
   background-color: transparent;
 }
-/* line 103, ../../app/assets/stylesheets/theme/_footer.scss */
-#footer .widget-browse .nav > li > a:hover, #footer .widget-browse .nav > li > a:focus {
+/* line 104, ../../app/assets/stylesheets/theme/_footer.scss */
+#footer .nav > li > a:hover, #footer .nav > li > a:focus {
   color: white;
   background-color: transparent;
 }
-/* line 112, ../../app/assets/stylesheets/theme/_footer.scss */
-#footer .widget-browse .nav > .active > a,
-#footer .widget-browse .nav > .active > a:hover,
-#footer .widget-browse .nav > .active > a:focus {
+/* line 113, ../../app/assets/stylesheets/theme/_footer.scss */
+#footer .nav > .active > a,
+#footer .nav > .active > a:hover,
+#footer .nav > .active > a:focus {
   color: #282723;
   background-color: transparent;
 }
-/* line 117, ../../app/assets/stylesheets/theme/_footer.scss */
-#footer .widget-browse .nav > li.submenu > a {
+/* line 118, ../../app/assets/stylesheets/theme/_footer.scss */
+#footer .nav > li.submenu > a {
   padding-left: 20px;
 }
 @media (min-width: 768px) {
@@ -11450,17 +11450,17 @@ form .alert-success {
   #footer {
     padding-top: 40px;
   }
-  /* line 124, ../../app/assets/stylesheets/theme/_footer.scss */
+  /* line 125, ../../app/assets/stylesheets/theme/_footer.scss */
   #footer hr {
     margin: 20px 0;
   }
-  /* line 127, ../../app/assets/stylesheets/theme/_footer.scss */
+  /* line 128, ../../app/assets/stylesheets/theme/_footer.scss */
   #footer .widget-heading {
     margin-top: 0;
   }
 }
 
-/* line 132, ../../app/assets/stylesheets/theme/_footer.scss */
+/* line 133, ../../app/assets/stylesheets/theme/_footer.scss */
 .credits {
   padding-top: 20px;
 }
