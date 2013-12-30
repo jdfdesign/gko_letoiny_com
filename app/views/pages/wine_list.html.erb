@@ -1,40 +1,38 @@
-<%# resource_cache resource do %> 
-
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <%= render_slideshow_for(resource) %>
-      <%= render_page_title(resource.title) %>
-      <%= render_copy_text(resource.body) %>
+<% resource_cache resource do %> 
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <%= render_slideshow_for(resource) %>
+        <%= render_page_title(resource.title) %>
+        <%= render_copy_text(resource.body) %>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12"> 
-    <%
-      if resource.children.in_menu.any?
-        sections = resource.children.in_menu
-      else
-        sections = resource.parent.children.in_menu
-      end 
-    %>
-    <% if sections.try(:any?) %>
-    <div class="btn-group">
-      <button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">
-        Action <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-        <% sections.each do |section| -%>
-          <li><%= link_to(section.title, section.public_url, :data => {:remote => true}) %></li>
-        <% end -%>
-      </ul>
-    </div>
+    <div class="row">
+      <div class="col-xs-12"> 
+      <%
+        if resource.children.in_menu.any?
+          sections = resource.children.in_menu
+        else
+          sections = resource.parent.children.in_menu
+        end 
+      %>
+      <% if sections.try(:any?) %>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">
+          Action <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <% sections.each do |section| -%>
+            <li><%= link_to(section.title, section.public_url, :data => {:remote => true}) %></li>
+          <% end -%>
+        </ul>
+      </div>
     
-    <nav class="nav nav-wine-list">
-      <%= render 'menu', :sections => sections %>
-    </nav>
-    <% end %> 
+      <nav class="nav nav-wine-list">
+        <%= render 'menu', :sections => sections %>
+      </nav>
+      <% end %> 
+      </div>
     </div>
-  </div>
-</div> 
-
-<%# end %>
+  </div> 
+<% end %>
