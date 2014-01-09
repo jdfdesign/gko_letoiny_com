@@ -11973,6 +11973,22 @@ body {
 }
 
 /* line 177, ../../app/assets/stylesheets/public.css.scss */
+.partners .thumbnail {
+  height: auto;
+  text-align: left;
+}
+/* line 180, ../../app/assets/stylesheets/public.css.scss */
+.partners .thumbnail:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 183, ../../app/assets/stylesheets/public.css.scss */
+.partners .thumbnail a {
+  color: #69655a;
+  text-decoration: underline;
+}
+
+/* line 189, ../../app/assets/stylesheets/public.css.scss */
 .img-thumbnail, .thumbnail {
   display: block;
   max-width: 100%;
@@ -11980,7 +11996,7 @@ body {
   margin-right: auto;
 }
 
-/* line 184, ../../app/assets/stylesheets/public.css.scss */
+/* line 196, ../../app/assets/stylesheets/public.css.scss */
 .tooltip-inner {
   min-width: 200px;
 }
