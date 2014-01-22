@@ -12000,3 +12000,8 @@ body {
 .tooltip-inner {
   min-width: 200px;
 }
+
+/* line 201, ../../app/assets/stylesheets/public.css.scss */
+.nav-sitemap ul {
+  margin-left: 20px;
+}
