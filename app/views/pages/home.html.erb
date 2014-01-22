@@ -1,5 +1,5 @@
 <% features = current_site.features.live -%>
-
+<% @supersized_images = site.sections.root.images.order(:position) -%>
 <div class="container homepage <%= 'featured' if features.any? %>">
   <div class="row">
     <div class="col-xs-12">
