@@ -2,7 +2,7 @@
   <%# if site.sections.root.images.order(:position).any? && !is_mobile_device? %>
   <% if site.sections.root.images.order(:position).any? %>
     <script type="text/javascript">
-      <% if action_name.to_s != "index" && resource == site.sections.root && !is_mobile_device? %>
+      <% if action_name.to_s != "index" && @object == site.sections.root && !is_mobile_device? %>
         var supersized_slides = [<%= raw site.sections.root.images.order(:position).map{|c| "{image: '#{c.url}'}" }.join(",").to_s %>];
       <% else %>
         var supersized_slides = [<%= raw "{image: '#{site.sections.root.images.order(:position).sample.url}'}" %>];
