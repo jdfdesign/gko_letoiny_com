@@ -22,7 +22,7 @@ group :production do
   end
 
 #  gem 'gko_concierge', '0.0.12', :git => 'git@github.com:jdfdesign/gko_concierge.git'
-#end
+end
 
 #group :development do
 #  gem "gko_core", :path => '~/Github/gko_cms3/gko_core'
