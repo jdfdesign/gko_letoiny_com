@@ -1,14 +1,14 @@
 GIT
   remote: git@github.com:jdfdesign/gko_cms3.git
-  revision: b92f5ddab4c9c70f0658ddaad6b55b7866269a83
-  tag: v0.8.09.rc19
+  revision: 10945b5710762bce5329d8a287fc6758b61814a5
+  tag: v0.8.09.rc20
   specs:
-    gko_auth (0.8.09.rc19)
+    gko_auth (0.8.09.rc20)
       cancan (~> 1.6.10)
       devise (~> 2.2.3)
-    gko_blog (0.8.09.rc19)
-    gko_categories (0.8.09.rc19)
-    gko_core (0.8.09.rc19)
+    gko_blog (0.8.09.rc20)
+    gko_categories (0.8.09.rc20)
+    gko_core (0.8.09.rc20)
       RedCloth (= 4.2.9)
       activesupport-slices (= 0.0.2)
       acts_as_indexed (~> 0.7.7)
@@ -50,15 +50,15 @@ GIT
       uglifier (~> 2.4.0)
       uuid (~> 2.3.7)
       will_paginate (~> 3.0.2)
-    gko_documents (0.8.09.rc19)
+    gko_documents (0.8.09.rc20)
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
-    gko_features (0.8.09.rc19)
-    gko_image_bank (0.8.09.rc19)
-    gko_inquiries (0.8.09.rc19)
+    gko_features (0.8.09.rc20)
+    gko_image_bank (0.8.09.rc20)
+    gko_inquiries (0.8.09.rc20)
       filters_spam (~> 0.2)
-    gko_stickers (0.8.09.rc19)
-    gko_twits (0.8.09.rc19)
+    gko_stickers (0.8.09.rc20)
+    gko_twits (0.8.09.rc20)
 
 GEM
   remote: https://rubygems.org/
@@ -109,7 +109,7 @@ GEM
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
       json (>= 1.7)
-    codemirror-rails (3.16)
+    codemirror-rails (3.21)
       railties (>= 3.0, < 5)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -175,7 +175,7 @@ GEM
       rack-mobile-detect
       rails
     multi_json (1.8.2)
-    mysql2 (0.3.14)
+    mysql2 (0.3.15)
     nested_set (1.7.1)
       activerecord (>= 3.0.0)
       railties (>= 3.0.0)
