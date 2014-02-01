@@ -7,6 +7,7 @@
 	<%#= render_collection_header %>
   <div class="container">
 	<div class="row">
+    <%= render_page_title(parent.title) if parent.show_title_in_page %>
     <%= render collection %>
   </div>
 	<div class="row">
