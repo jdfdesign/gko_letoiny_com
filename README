@@ -4,10 +4,7 @@ tail -f log/development.log
 cd ~/Github/gko_letoiny_com
 tail -f log/production.log
 
-
 rvm use 1.8.7 --default
-bundle install
-
 cd ~/Github/gko_letoiny_com
 bundle install
 rails s

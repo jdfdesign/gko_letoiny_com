@@ -118,7 +118,9 @@ jQuery(function($) {
       e.preventDefault();
     })*/
       
-    
+      $(".image-bank-filter select:first").change(function() {
+        $( ".image-bank-filter" ).submit();
+      });
   })  
 
 })

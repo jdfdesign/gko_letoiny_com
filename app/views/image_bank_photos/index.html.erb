@@ -8,6 +8,9 @@
   <div class="container">
 	<div class="row">
     <%= render_page_title(parent.title) if parent.show_title_in_page %>
+    <%= simple_form_for(:search, :url => parent.public_url, :remote => false, :html => {:method => :get, :class => "image-bank-filter" }) do |f| %> 
+      <%= render "parent_categories_select", :f => f %> 
+    <% end %>
     <%= render collection %>
   </div>
 	<div class="row">

@@ -1812,7 +1812,7 @@ th {
 .copy-text table tfoot > tr > th,
 .table tfoot > tr > td,
 .copy-text table tfoot > tr > td {
-  padding: 8px;
+  padding: 2px;
   line-height: 1.42857;
   vertical-align: top;
   border-top: 1px solid #69655a;
@@ -11956,39 +11956,52 @@ body {
   color: #d5d4d2;
   background-color: #69655a;
 }
+/* line 160, ../../app/assets/stylesheets/public.css.scss */
+.copy-text table {
+  max-width: 540px;
+}
+/* line 169, ../../app/assets/stylesheets/public.css.scss */
+.copy-text table thead > tr > th,
+.copy-text table thead > tr > td,
+.copy-text table tbody > tr > th,
+.copy-text table tbody > tr > td,
+.copy-text table tfoot > tr > th,
+.copy-text table tfoot > tr > td {
+  padding: 3px;
+}
 
-/* line 165, ../../app/assets/stylesheets/public.css.scss */
+/* line 174, ../../app/assets/stylesheets/public.css.scss */
 .thumbnail {
   height: 200px;
   text-align: center;
 }
-/* line 168, ../../app/assets/stylesheets/public.css.scss */
+/* line 177, ../../app/assets/stylesheets/public.css.scss */
 .thumbnail:hover {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
-/* line 172, ../../app/assets/stylesheets/public.css.scss */
+/* line 181, ../../app/assets/stylesheets/public.css.scss */
 .thumbnail a {
   color: #44413a;
 }
 
-/* line 177, ../../app/assets/stylesheets/public.css.scss */
+/* line 186, ../../app/assets/stylesheets/public.css.scss */
 .partners .thumbnail {
   height: auto;
   text-align: left;
 }
-/* line 180, ../../app/assets/stylesheets/public.css.scss */
+/* line 189, ../../app/assets/stylesheets/public.css.scss */
 .partners .thumbnail:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-/* line 183, ../../app/assets/stylesheets/public.css.scss */
+/* line 192, ../../app/assets/stylesheets/public.css.scss */
 .partners .thumbnail a {
   color: #69655a;
   text-decoration: underline;
 }
 
-/* line 189, ../../app/assets/stylesheets/public.css.scss */
+/* line 198, ../../app/assets/stylesheets/public.css.scss */
 .img-thumbnail, .thumbnail {
   display: block;
   max-width: 100%;
@@ -11996,12 +12009,12 @@ body {
   margin-right: auto;
 }
 
-/* line 196, ../../app/assets/stylesheets/public.css.scss */
+/* line 205, ../../app/assets/stylesheets/public.css.scss */
 .tooltip-inner {
   min-width: 200px;
 }
 
-/* line 201, ../../app/assets/stylesheets/public.css.scss */
+/* line 210, ../../app/assets/stylesheets/public.css.scss */
 .nav-sitemap ul {
   margin-left: 20px;
 }
