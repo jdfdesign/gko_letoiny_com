@@ -13,6 +13,8 @@ br:
   twitter_btn: "Siga-nos no Twitter"
   info_form_thanks: "O seu pedido foi enviado."
   table_booking_thanks: "O seu pedido foi enviado."
+  features:
+    view_more: Saiba mais
   form:
     services:
       prompt: Como podemos estar a serviço ? *

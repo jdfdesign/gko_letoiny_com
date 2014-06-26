@@ -13,6 +13,8 @@ fr:
   twitter_btn: "Suiver nous sur notre compte twitter"
   info_form_thanks: "Your inquiry has been sent."
   table_booking_thanks: "Your inquiry has been sent."
+  features:
+    view_more: Plus de détails
   form:
     services:
       prompt: Comment pouvons-nous vous aider? *

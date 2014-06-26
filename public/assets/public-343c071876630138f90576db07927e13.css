@@ -11761,6 +11761,10 @@ img {
   vertical-align: middle;
   display: inline-block;
 }
+/* line 32, ../../app/assets/stylesheets/theme/_home.scss */
+.alert-content-wrapper h4, .alert-content-wrapper p {
+  margin: 0;
+}
 
 /* FIX FOR IE DEVICE_WIDTH BUG
 -------------------------------------------------- */

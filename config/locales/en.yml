@@ -9,6 +9,8 @@ en:
   twitter_btn: "Follow us on Twitter"
   info_form_thanks: "Your inquiry has been sent."
   table_booking_thanks: "Your inquiry has been sent."
+  features:
+    view_more: Find out more
   form:
     services:
       prompt: How may we be of service? *

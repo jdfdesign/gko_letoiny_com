@@ -16,7 +16,7 @@
                   <%= "<h4>#{feature.title}</h4> ".html_safe if feature.title.present? %>
                   <%= "<p>#{feature.body}</p>".html_safe if feature.body.present? %>
                   <% if feature.owner and url = feature.owner.public_url %>
-                    <%= link_to(t("features.view_more"), url, :class => 'btn btn-link') %>
+                    <%= link_to(t("features.view_more"), url) %>
                   <% end %>
                 </div>
               </div>
