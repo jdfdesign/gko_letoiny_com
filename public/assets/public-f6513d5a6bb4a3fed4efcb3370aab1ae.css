@@ -10986,6 +10986,24 @@ form .alert-success {
   opacity: 1;
   filter: alpha(opacity=100);
 }
+/* line 20, ../../app/assets/stylesheets/theme/_navbar.scss */
+.navbar .rc-film {
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  margin-top: 20px;
+  display: block;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+/* line 28, ../../app/assets/stylesheets/theme/_navbar.scss */
+.navbar .rc-film:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  text-decoration: none;
+}
 @media (min-width: 768px) {
   /* line 8, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar {
@@ -11000,7 +11018,7 @@ form .alert-success {
     padding-top: 0;
     width: 250px;
   }
-  /* line 31, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 44, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar .container {
     padding-left: 0;
     padding-right: 0;
@@ -11018,7 +11036,7 @@ form .alert-success {
 /* Navbar Header
 -------------------------------------------------- */
 @media (min-width: 768px) {
-  /* line 44, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 57, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-header {
     float: none;
   }
@@ -11026,7 +11044,7 @@ form .alert-success {
 
 /* Navbar Header
 -------------------------------------------------- */
-/* line 51, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 64, ../../app/assets/stylesheets/theme/_navbar.scss */
 .dropdown-locales {
   font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -11034,7 +11052,7 @@ form .alert-success {
   font-size: 11px;
   text-align: center;
 }
-/* line 57, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 70, ../../app/assets/stylesheets/theme/_navbar.scss */
 .dropdown-locales .dropdown-toggle {
   margin: 0;
   background-color: #69655a;
@@ -11042,29 +11060,29 @@ form .alert-success {
   font-weight: 300;
   width: 100%;
 }
-/* line 64, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 77, ../../app/assets/stylesheets/theme/_navbar.scss */
 .dropdown-locales .dropdown-toggle:hover, .dropdown-locales .dropdown-toggle:focus {
   text-decoration: none;
   background-color: #69655a;
 }
-/* line 69, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 82, ../../app/assets/stylesheets/theme/_navbar.scss */
 .dropdown-locales .dropdown-menu {
   width: 100%;
 }
-/* line 71, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 84, ../../app/assets/stylesheets/theme/_navbar.scss */
 .dropdown-locales .dropdown-menu > li > a {
   font-size: 11px;
   font-weight: 300;
 }
 
-/* line 79, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 92, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-brand {
   margin: 0;
   padding-top: 16px;
   padding-bottom: 4px;
 }
 @media (min-width: 768px) {
-  /* line 79, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 92, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-brand {
     margin: 0;
     padding-left: 0;
@@ -11078,19 +11096,19 @@ form .alert-success {
     float: none;
     text-align: center;
   }
-  /* line 95, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 108, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar > .container .navbar-brand {
     margin-left: 0;
   }
 }
 
-/* line 101, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 114, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-toggle {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* line 105, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 118, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-collapse {
   max-height: none;
 }
@@ -11098,22 +11116,22 @@ form .alert-success {
 /* Navbar Menu
 -------------------------------------------------- */
 @media (min-width: 768px) {
-  /* line 110, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 123, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-collapse {
     padding-right: 0;
     padding-left: 0;
   }
 }
 
-/* line 117, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 130, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav li {
   border-top: 1px solid #69655a;
 }
-/* line 119, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 132, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav li:last-child {
   border-bottom: 1px solid #69655a;
 }
-/* line 122, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 135, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav li > a {
   font-size: 11px;
   font-weight: 300;
@@ -11121,11 +11139,11 @@ form .alert-success {
   letter-spacing: 1px;
   padding: 8px 15px;
 }
-/* line 133, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 146, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li {
   border-top: 1px solid #69655a;
 }
-/* line 136, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 149, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li > a {
   font-size: 11px;
   font-weight: 300;
@@ -11133,31 +11151,31 @@ form .alert-success {
   letter-spacing: 1px;
   padding: 8px 15px;
 }
-/* line 143, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 156, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li.text {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 116, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 129, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav {
     width: 100%;
   }
-  /* line 149, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 162, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav > li {
     display: block;
     float: none;
     position: relative;
   }
-  /* line 153, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 166, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav > li > a {
     text-align: center;
     padding: 4px 14px;
   }
-  /* line 160, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 173, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown:hover .dropdown-menu {
     display: block;
   }
-  /* line 165, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 178, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu {
     top: -2px;
     left: 248px;
@@ -11167,11 +11185,11 @@ form .alert-success {
     min-width: 500px;
     width: 500px;
   }
-  /* line 173, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 186, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.submenu > a {
     padding-left: 40px;
   }
-  /* line 176, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 189, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text {
     border-top: 1px solid #d5d4d2;
     display: block;
@@ -11182,7 +11200,7 @@ form .alert-success {
     font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
   }
-  /* line 185, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 198, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text h2 {
     font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: left;
@@ -11192,11 +11210,11 @@ form .alert-success {
   }
 }
 @media (min-width: 768px) and (min-width: 1200px) {
-  /* line 165, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 178, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu {
     background-color: rgba(68, 65, 58, 0.85);
   }
-  /* line 195, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 208, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text {
     background-color: rgba(105, 101, 90, 0.85);
   }

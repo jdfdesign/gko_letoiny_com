@@ -1,12 +1,12 @@
 <%# Render submenu on sidebar if site does not use dropdown menu %>
 <%
    #if !site.drop_down_menu 
-	if !(is_mobile_device?)
-     if @section 
-       current_section = @section
-     end
+	if !is_mobile_device?
+    if @section 
+      current_section = @section
+    end
 
-     return unless current_section
+    return unless current_section
 	 
   	if (current_section.root? || current_section.parent.root?)
       sections = current_section.children.in_menu
@@ -20,9 +20,9 @@
 %>
 <% if sections.try(:any?) %>
     <% content_for(:left_sidebar) do %>
-	<nav id="secondary-menu" class="secondary-menu-container">
+	   <nav id="secondary-menu" class="secondary-menu-container">
         <%= render 'menu', :sections => sections %>
-	</nav>
+      </nav>
     <% end %>
 <% end %>
 <%# END Render submenu %>
