@@ -64,11 +64,12 @@ jQuery(function($) {
       // start the carousel if there is more than one image
       // else hide controls
       $('.carousel').each(function(index) {
-        var _self = $(this);
-        if (_self.find('.item').length > 1) {
-          _self.carousel({
-            interval: 3000
-          });
+        var _self = $(this),
+            items = _self.find('.item');
+            
+        if (items.length > 1) {
+          _self.carousel();
+          
         } else {
           _self.find('.carousel-control').each(function(index) {
             $(this).css({
@@ -82,6 +83,23 @@ jQuery(function($) {
           })
         }
       })
+      
+      if($("#carousel-alert").length) {
+      
+        var itemHeight = 0;
+        var alerts = $("#carousel-alert").find('.item');
+
+        $.each(alerts, function( index, value ) {
+          if($(value).height() > itemHeight) {
+            itemHeight = $(value).height();
+          };
+        });
+      
+        $.each(alerts, function( index, value ) {
+          $(value).height(itemHeight);
+        });
+      }
+
     };
 
     /* ==================================================

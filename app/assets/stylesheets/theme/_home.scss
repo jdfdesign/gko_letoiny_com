@@ -12,23 +12,35 @@
     padding: $line-height-computed;
   }
 }
-.alert-info {
+
+#carousel-alert {
   background-color: rgba(68, 65, 58, .85);
   color: $theme-light-color;
   margin-bottom: $line-height-computed;
+  border: 1px solid $theme-light-color;
+  min-height: 180px;
   a {
     color: $theme-light-color;
   }
-}
-.alert-content-wrapper {
-  display: table;
-  vertical-align: middle;
-  .alert-content {
-    display: table-cell;
-    vertical-align: middle;
-    display: inline-block;
-    
+  .item {
+
   }
+  .carousel-caption {
+    text-align: center;
+    margin-top: 0;
+    padding: 20px 80px;
+    
+    p {
+      text-transform: none;
+      line-height: 18px;
+      margin: 0;
+    }
+    
+    .feature-link {
+      font-size: 12px;
+      text-decoration: underline;
+    }
+  }  
   h4, p {
     margin: 0;
   }

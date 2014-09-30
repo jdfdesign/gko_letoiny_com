@@ -4,25 +4,31 @@
   <div class="row">
     <div class="col-xs-12">
       <% if features.any? -%>
-        <div class="news-wrapper">
-          <% features.each_with_index do |feature, index| %>
-            <div class="alert alert-info fade in">
-              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-              <div class="alert-content-wrapper">
-                <div class="alert-content">
-                  <% if image = feature.thumbnail(current_site.preferred_features_image_size) %>
-                      <%= image_tag(image.url, :class => "img-responsive") %>
-                  <% end %>
-                  <%= "<h4>#{feature.title}</h4> ".html_safe if feature.title.present? %>
-                  <%= "#{feature.body}".html_safe if feature.body.present? %>
-                  <% if feature.owner and url = feature.owner.public_url %>
-                    <%= link_to(t("features.view_more"), url) %>
-                  <% end %>
-                </div>
-              </div>
+      <div id="carousel-alert" class="carousel slide" data-ride="carousel" data-interval="false">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+           <% features.each_with_index do |feature, index| %>
+          <div class="item <%= 'active' if index == 0 %>">
+            <div class="carousel-caption">
+              <%= "<h4>#{feature.title}</h4>".html_safe if feature.title.present? %>
+              <%= "#{feature.body}".html_safe if feature.body.present? %>
+              <% if feature.owner and url = feature.owner.public_url %>
+                <%= link_to(t("features.view_more"), url, :class => "feature-link") %>
+              <% end %>
             </div>
-        <% end %>
+          </div>
+          <% end %>
         </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-alert" data-slide="prev">
+          <span class="icon-angle-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-alert" data-slide="next">
+          <span class="icon-angle-right"></span>
+        </a> 
+      </div>
       <% end -%>
       <% if resource.body.present? %>
         <div class="homepage-content">
