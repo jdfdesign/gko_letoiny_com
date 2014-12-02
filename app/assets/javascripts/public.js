@@ -125,7 +125,7 @@ jQuery(function($) {
     THEME.supersized();
     
     $(".homepage").css('margin-top', $(window).height() + 80);
-    $(".homepage.featured").css('margin-top', Math.max(0, $(window).height() - $(".news-wrapper").height() - 80));
+    $(".homepage.featured").css('margin-top', Math.max(0, $(window).height() - $("#carousel-alert").height() - 40));
     //$("#inquiry_services").change(function() {
     //  if($( this ).val() == "other") {
     //    $("#inquiry_other_value").parent().removeClass('hidden');
