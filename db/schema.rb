@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140804081630) do
+ActiveRecord::Schema.define(:version => 20150901132158) do
 
   create_table "assets", :force => true do |t|
     t.integer  "site_id"
@@ -578,6 +578,7 @@ ActiveRecord::Schema.define(:version => 20140804081630) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "path"
+    t.string   "css"
   end
 
   add_index "stickers", ["name"], :name => "index_stickers_on_name"

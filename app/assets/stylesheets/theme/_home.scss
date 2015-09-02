@@ -14,7 +14,7 @@
 }
 
 #carousel-alert {
-  background-color: rgba(68, 65, 58, .85);
+  background-color: $theme-color-overlay;//rgba(68, 65, 58, .85);
   color: $theme-light-color;
   margin-bottom: $line-height-computed;
   border: 1px solid $theme-light-color;

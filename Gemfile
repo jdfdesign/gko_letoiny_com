@@ -9,7 +9,7 @@ end
 
 
 group :production do
-  git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.14.1" do
+  git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.22" do
    gem 'gko_core'
    gem 'gko_auth'
    gem "gko_documents"

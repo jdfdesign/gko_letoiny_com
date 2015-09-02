@@ -1,15 +1,15 @@
 
 // overwrite default bootstrap
-$theme-color: #44413A; // dark brown > rgba(68, 65, 58, 1)
-$theme-medium-color: #69655a; // rgba(105, 101, 90, 1);
-$theme-light-color: #d5d4d2; // light brown                   
+$theme-medium-color: #6D8FDB;//#6D8FDB;//#69655a; // rgba(105, 101, 90, 1);
+$theme-color: darken($theme-medium-color, 10%);;// > rgba(109, 143, 219, 1)  #44413A; // dark brown > rgba(68, 65, 58, 1)
+$theme-color-overlay: rgba(109, 143, 219, .85);
+$theme-light-color: lighten($theme-medium-color, 25%); //#d5d4d2; // light brown                   
 $theme-accent-color: #63cbd8; // orange                                           
 $theme-break-point: 1020px; 
 $toolbar-height: 40px;
 $navbar-fixed-left: 250px;                   
 
 @import "theme/font";
-@import "theme/additionnal-variables"; 
 @import "theme/bootstrap-variables";
 @import "bootstrap/bootstrap";
 @import "font-awesome-3.2.1/font-awesome";
