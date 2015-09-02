@@ -11029,14 +11029,14 @@ form .alert-success {
   .navbar {
     min-height: 0;
     height: auto !important;
-    background-color: rgba(109, 143, 219, 0.85);
+    background-color: rgba(109, 143, 219, 0.8);
   }
 }
 
 /* Navbar Header
 -------------------------------------------------- */
 @media (min-width: 768px) {
-  /* line 57, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 59, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-header {
     float: none;
   }
@@ -11044,7 +11044,7 @@ form .alert-success {
 
 /* Navbar Header
 -------------------------------------------------- */
-/* line 64, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 66, ../../app/assets/stylesheets/theme/_navbar.scss */
 .dropdown-locales {
   font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -11052,7 +11052,7 @@ form .alert-success {
   font-size: 11px;
   text-align: center;
 }
-/* line 70, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 72, ../../app/assets/stylesheets/theme/_navbar.scss */
 .dropdown-locales .dropdown-toggle {
   margin: 0;
   background-color: #6d8fdb;
@@ -11060,55 +11060,57 @@ form .alert-success {
   font-weight: 300;
   width: 100%;
 }
-/* line 77, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 79, ../../app/assets/stylesheets/theme/_navbar.scss */
 .dropdown-locales .dropdown-toggle:hover, .dropdown-locales .dropdown-toggle:focus {
   text-decoration: none;
   background-color: #6d8fdb;
 }
-/* line 82, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 84, ../../app/assets/stylesheets/theme/_navbar.scss */
 .dropdown-locales .dropdown-menu {
   width: 100%;
 }
-/* line 84, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 86, ../../app/assets/stylesheets/theme/_navbar.scss */
 .dropdown-locales .dropdown-menu > li > a {
   font-size: 11px;
   font-weight: 300;
 }
 
-/* line 92, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 94, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-brand {
   margin: 0;
-  padding-top: 16px;
+  padding-top: 28px;
   padding-bottom: 4px;
+  max-width: 280px;
 }
 @media (min-width: 768px) {
-  /* line 92, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 94, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-brand {
     margin: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 8px;
+    padding-right: 8px;
     padding-top: 40px;
     padding-bottom: 40px;
     position: relative;
+    max-width: none;
     min-width: 182px;
     width: 100%;
     min-height: 82px;
     float: none;
     text-align: center;
   }
-  /* line 108, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 112, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar > .container .navbar-brand {
     margin-left: 0;
   }
 }
 
-/* line 114, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 118, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-toggle {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* line 118, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 122, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-collapse {
   max-height: none;
 }
@@ -11116,22 +11118,22 @@ form .alert-success {
 /* Navbar Menu
 -------------------------------------------------- */
 @media (min-width: 768px) {
-  /* line 123, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 127, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-collapse {
     padding-right: 0;
     padding-left: 0;
   }
 }
 
-/* line 130, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 134, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav li {
   border-top: 1px solid #6d8fdb;
 }
-/* line 132, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 136, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav li:last-child {
   border-bottom: 1px solid #6d8fdb;
 }
-/* line 135, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 139, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav li > a {
   font-size: 11px;
   font-weight: 300;
@@ -11139,11 +11141,11 @@ form .alert-success {
   letter-spacing: 1px;
   padding: 8px 15px;
 }
-/* line 146, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 150, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li {
   border-top: 1px solid #6d8fdb;
 }
-/* line 149, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 153, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li > a {
   font-size: 11px;
   font-weight: 300;
@@ -11151,31 +11153,31 @@ form .alert-success {
   letter-spacing: 1px;
   padding: 8px 15px;
 }
-/* line 156, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 160, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li.text {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 129, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 133, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav {
     width: 100%;
   }
-  /* line 162, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 166, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav > li {
     display: block;
     float: none;
     position: relative;
   }
-  /* line 166, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 170, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav > li > a {
     text-align: center;
     padding: 4px 14px;
   }
-  /* line 173, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 177, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown:hover .dropdown-menu {
     display: block;
   }
-  /* line 178, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 182, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu {
     top: -2px;
     left: 248px;
@@ -11185,11 +11187,11 @@ form .alert-success {
     min-width: 500px;
     width: 500px;
   }
-  /* line 186, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 190, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.submenu > a {
     padding-left: 40px;
   }
-  /* line 189, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 193, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text {
     border-top: 1px solid #d3ddf4;
     display: block;
@@ -11200,7 +11202,7 @@ form .alert-success {
     font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
   }
-  /* line 198, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 202, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text h2 {
     font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: left;
@@ -11210,13 +11212,13 @@ form .alert-success {
   }
 }
 @media (min-width: 768px) and (min-width: 1200px) {
-  /* line 178, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 182, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu {
-    background-color: rgba(109, 143, 219, 0.85);
+    background-color: rgba(109, 143, 219, 0.8);
   }
-  /* line 208, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 212, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text {
-    background-color: rgba(109, 143, 219, 0.85);
+    background-color: rgba(109, 143, 219, 0.8);
   }
 }
 
@@ -11760,7 +11762,7 @@ img {
 
 /* line 16, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert {
-  background-color: rgba(109, 143, 219, 0.85);
+  background-color: rgba(109, 143, 219, 0.8);
   color: #d3ddf4;
   margin-bottom: 20px;
   border: 1px solid #d3ddf4;

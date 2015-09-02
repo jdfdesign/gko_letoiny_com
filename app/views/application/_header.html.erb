@@ -6,7 +6,7 @@
     <div class="navbar-header">
       <%= render 'locales_select' %>
       <h1 class="navbar-brand">
-        <%= link_to(image_tag('logo.png'), root_url, :alt => site.title) %>
+        <%= link_to(image_tag('logo.png', :class => "img-responsive"), root_url, :alt => site.title) %>
       </h1>
       <%= content_tag(:h4, site.subtitle.html_safe, :id => "site-subtitle") if site.subtitle.present? %>
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">

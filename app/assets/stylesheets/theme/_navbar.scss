@@ -52,6 +52,8 @@ $logo-width: 182px;
     background-color: $theme-color-overlay;//rgba(68, 65, 58, .85);
   }
 }
+
+
 /* Navbar Header
 -------------------------------------------------- */
 .navbar-header {
@@ -91,15 +93,17 @@ $logo-width: 182px;
 
 .navbar-brand {
   margin: 0;
-  padding-top: 16px; 
+  padding-top: 28px; 
   padding-bottom: 4px;
+  max-width: 280px;
   @media (min-width: $grid-float-breakpoint) { 
     margin: 0;
-    padding-left: 0; 
-    padding-right: 0;
+    padding-left: 8px; 
+    padding-right: 8px;
     padding-top: $line-height-computed * 2; 
     padding-bottom: $line-height-computed * 2;
     position: relative;
+    max-width: none;
     min-width: $logo-width;
     width: 100%;
     min-height: $logo-height;
@@ -213,7 +217,3 @@ $logo-width: 182px;
 
   }
 }
-.no-touch {
-  
-}
-
