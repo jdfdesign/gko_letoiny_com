@@ -238,20 +238,20 @@ $grid-float-breakpoint:     $screen-tablet;// !default
 // Basics of a navbar
 $navbar-height:                    90px;//50px;// !default
 $navbar-margin-bottom:             0;//$line-height-computed;// !default
-$navbar-default-color:             $theme-light-color;//#777;// !default
-$navbar-default-bg:                $theme-color;//#f8f8f8;// !default
-$navbar-default-border:            $theme-color;// !default
+$navbar-default-color:             $brand-primary;//#777;// !default
+$navbar-default-bg:                #fff;//#f8f8f8;// !default
+$navbar-default-border:            $brand-primary;// !default
 $navbar-border-radius:             $border-radius-base;// !default
 $navbar-padding-horizontal:        floor($grid-gutter-width / 2);// !default
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2);// !default
 
 // Navbar links
-$navbar-default-link-color:                $theme-light-color;//#777;// !default
-$navbar-default-link-hover-color:          white;//#333;// !default
-$navbar-default-link-hover-bg:             $theme-medium-color;//transparent;// !default
-$navbar-default-link-active-color:         $theme-light-color;//#555;// !default
-$navbar-default-link-active-bg:            $theme-medium-color;// !default
-$navbar-default-link-disabled-color:       ligthen($theme-color, 8%);//#ccc;// !default
+$navbar-default-link-color:                $brand-primary;//#777;// !default
+$navbar-default-link-hover-color:          #fff;//#333;// !default
+$navbar-default-link-hover-bg:             $brand-primary;//transparent;// !default
+$navbar-default-link-active-color:         #fff;//#555;// !default
+$navbar-default-link-active-bg:            $brand-primary;// !default
+$navbar-default-link-disabled-color:       ligthen($brand-primary, 10%);//#ccc;// !default
 $navbar-default-link-disabled-bg:          transparent;// !default
 
 // Navbar brand label

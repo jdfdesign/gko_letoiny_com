@@ -6,7 +6,7 @@
     <div class="navbar-header">
       <%= render 'locales_select' %>
       <h1 class="navbar-brand">
-        <%= link_to(image_tag('logo.png', :class => "img-responsive"), root_url, :alt => site.title) %>
+        <%= link_to(image_tag('logo-primary.png', :class => "img-responsive"), root_url, :alt => site.title) %>
       </h1>
       <%= content_tag(:h4, site.subtitle.html_safe, :id => "site-subtitle") if site.subtitle.present? %>
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -21,7 +21,7 @@
     </nav>
     
     <div class="logo-affiliate hidden-xs">
-    <%= link_to(image_tag("logo_relais_chateaux_white.png"), "http://www.relaischateaux.com", 
+    <%= link_to(image_tag("logo_relais_chateaux_color.png"), "http://www.relaischateaux.com", 
         :id => "rc-logo", :target => "_blank", :class => 'visible-md visible-lg', 
         :title => t("r_and_c").html_safe, 
         :data => { :placement => 'right', :html => "true", :toggle => "tooltip"}) %>

@@ -11,7 +11,7 @@ $logo-width: 182px;
   .logo-affiliate {
     text-align: center;
     padding: $line-height-computed*2 0;
-    @include opacity(.5);
+    @include opacity(.9);
     @include transition(opacity 0.4s ease-in-out);
     &:hover {
       @include opacity(1);
@@ -69,6 +69,7 @@ $logo-width: 182px;
   letter-spacing: 1px;
   font-size: 11px;
   text-align: center;
+  
   .dropdown-toggle {
     margin : 0;
     background-color: $theme-medium-color; 
@@ -85,7 +86,8 @@ $logo-width: 182px;
     width: 100%;
      > li > a {
       font-size: 11px;
-      font-weight: 300;                              
+      font-weight: 300;   
+      color: #fff;                           
     }                               
   }
 
@@ -147,6 +149,7 @@ $logo-width: 182px;
   } 
 
   .dropdown-menu { 
+    background-color: $theme-light-color;
     li {
       border-top: 1px solid $theme-medium-color;
     }
@@ -156,6 +159,13 @@ $logo-width: 182px;
       text-transform: uppercase;
       letter-spacing: 1px;
       padding: 8px 15px;
+      color: $brand-primary;
+      &:hover,
+      &:focus,
+      &.active {
+        color: #fff;
+        text-decoration: none;
+      }
     }
     li.text {
       display: none;
@@ -187,16 +197,16 @@ $logo-width: 182px;
       max-width: 400px;
       min-width: 500px;
       width: 500px;
+      background-color: $theme-light-color;
       li.submenu > a {
         padding-left: 40px;
       }
       li.text { 
         border-top: 1px solid $theme-light-color;
         display: block;
-        background-color: $theme-medium-color; 
         padding: 20px;
         font-size: 12px;
-        color: $theme-light-color;
+        color: $brand-primary;
         font-family: $font-family-sans-serif;
         letter-spacing: 1px;
         h2 {
@@ -208,9 +218,9 @@ $logo-width: 182px;
         }
       } 
       @media (min-width: $screen-lg-desktop) {
-        background-color: $theme-color-overlay;//rgba(68, 65, 58, .85);
+        background-color: $theme-light-color;//rgba(68, 65, 58, .85);
         li.text { 
-           background-color: $theme-color-overlay;//rgba(105, 101, 90, .85);
+           //background-color: $theme-color-overlay;//rgba(105, 101, 90, .85);
         }
       }
     }

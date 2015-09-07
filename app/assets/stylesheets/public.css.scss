@@ -2,7 +2,7 @@
 // overwrite default bootstrap
 $theme-medium-color: #6D8FDB;//#6D8FDB;//#69655a; // rgba(105, 101, 90, 1);
 $theme-color: darken($theme-medium-color, 10%);;// > rgba(109, 143, 219, 1)  #44413A; // dark brown > rgba(68, 65, 58, 1)
-$theme-color-overlay: rgba(109, 143, 219, .80);
+$theme-color-overlay: rgba(255, 255, 255, 1);
 $theme-light-color: lighten($theme-medium-color, 25%); //#d5d4d2; // light brown                   
 $theme-accent-color: #63cbd8; // orange                                           
 $theme-break-point: 1020px; 
