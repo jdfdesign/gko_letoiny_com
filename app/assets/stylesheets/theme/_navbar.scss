@@ -150,6 +150,7 @@ $logo-width: 182px;
 
   .dropdown-menu { 
     background-color: $theme-light-color;
+    
     li {
       border-top: 1px solid $theme-medium-color;
     }
@@ -197,7 +198,7 @@ $logo-width: 182px;
       max-width: 400px;
       min-width: 500px;
       width: 500px;
-      background-color: $theme-light-color;
+      background-color: $theme-color-overlay;
       li.submenu > a {
         padding-left: 40px;
       }

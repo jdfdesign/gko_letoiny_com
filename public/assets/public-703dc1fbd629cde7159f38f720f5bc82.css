@@ -11029,7 +11029,7 @@ form .alert-success {
   .navbar {
     min-height: 0;
     height: auto !important;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -11146,11 +11146,11 @@ form .alert-success {
 .navbar-nav .dropdown-menu {
   background-color: #d3ddf4;
 }
-/* line 153, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 154, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li {
   border-top: 1px solid #6d8fdb;
 }
-/* line 156, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 157, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li > a {
   font-size: 11px;
   font-weight: 300;
@@ -11159,12 +11159,12 @@ form .alert-success {
   padding: 8px 15px;
   color: #4470d1;
 }
-/* line 165, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 166, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li > a:hover, .navbar-nav .dropdown-menu li > a:focus, .navbar-nav .dropdown-menu li > a.active {
   color: #fff;
   text-decoration: none;
 }
-/* line 170, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 171, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li.text {
   display: none;
 }
@@ -11173,22 +11173,22 @@ form .alert-success {
   .navbar-nav {
     width: 100%;
   }
-  /* line 176, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 177, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav > li {
     display: block;
     float: none;
     position: relative;
   }
-  /* line 180, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 181, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav > li > a {
     text-align: center;
     padding: 4px 14px;
   }
-  /* line 187, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 188, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown:hover .dropdown-menu {
     display: block;
   }
-  /* line 192, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 193, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu {
     top: -2px;
     left: 248px;
@@ -11197,13 +11197,13 @@ form .alert-success {
     max-width: 400px;
     min-width: 500px;
     width: 500px;
-    background-color: #d3ddf4;
+    background-color: rgba(255, 255, 255, 0.8);
   }
-  /* line 201, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 202, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.submenu > a {
     padding-left: 40px;
   }
-  /* line 204, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 205, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text {
     border-top: 1px solid #d3ddf4;
     display: block;
@@ -11213,7 +11213,7 @@ form .alert-success {
     font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
   }
-  /* line 212, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 213, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text h2 {
     font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: left;
@@ -11223,7 +11223,7 @@ form .alert-success {
   }
 }
 @media (min-width: 768px) and (min-width: 1200px) {
-  /* line 192, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 193, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu {
     background-color: #d3ddf4;
   }
@@ -11765,7 +11765,7 @@ img {
 
 /* line 16, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   color: #d3ddf4;
   margin-bottom: 20px;
   border: 1px solid #d3ddf4;
