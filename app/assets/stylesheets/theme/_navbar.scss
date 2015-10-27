@@ -149,7 +149,7 @@ $logo-width: 182px;
   } 
 
   .dropdown-menu { 
-    background-color: $theme-light-color;
+    background-color: $theme-color-overlay;
     
     li {
       border-top: 1px solid $theme-medium-color;
@@ -219,7 +219,7 @@ $logo-width: 182px;
         }
       } 
       @media (min-width: $screen-lg-desktop) {
-        background-color: $theme-light-color;//rgba(68, 65, 58, .85);
+        background-color: $theme-color-overlay;
         li.text { 
            //background-color: $theme-color-overlay;//rgba(105, 101, 90, .85);
         }

@@ -193,11 +193,11 @@ ActiveRecord::Schema.define(:version => 20150901132158) do
 
   create_table "feature_translations", :force => true do |t|
     t.integer  "feature_id"
-    t.string   "locale"
-    t.text     "body"
-    t.string   "title"
+    t.string   "locale",     :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.text     "body"
+    t.string   "title"
   end
 
   add_index "feature_translations", ["feature_id"], :name => "index_feature_translations_on_feature_id"
@@ -538,11 +538,9 @@ ActiveRecord::Schema.define(:version => 20150901132158) do
     t.text     "mailer_settings"
     t.text     "stylesheet"
     t.text     "javascript"
-    t.integer  "theme_id"
   end
 
   add_index "sites", ["host"], :name => "index_sites_on_host", :unique => true
-  add_index "sites", ["theme_id"], :name => "index_sites_on_theme_id"
 
   create_table "spa_reservations", :force => true do |t|
     t.integer  "site_id"
@@ -629,42 +627,6 @@ ActiveRecord::Schema.define(:version => 20150901132158) do
 
   add_index "text_elements", ["key"], :name => "index_text_elements_on_name"
   add_index "text_elements", ["section_id"], :name => "index_text_elements_on_section_id"
-
-  create_table "theme_assets", :force => true do |t|
-    t.integer  "theme_id"
-    t.string   "content_type"
-    t.integer  "width"
-    t.integer  "height"
-    t.integer  "size"
-    t.string   "source"
-    t.string   "local_path"
-    t.string   "folder"
-    t.boolean  "compile",      :default => false
-    t.datetime "created_at",                      :null => false
-    t.datetime "updated_at",                      :null => false
-  end
-
-  add_index "theme_assets", ["local_path"], :name => "index_theme_assets_on_local_path"
-  add_index "theme_assets", ["theme_id"], :name => "index_theme_assets_on_theme_id"
-
-  create_table "themes", :force => true do |t|
-    t.integer  "site_id"
-    t.string   "name"
-    t.string   "theme_id"
-    t.string   "author"
-    t.string   "version"
-    t.string   "homepage"
-    t.text     "summary"
-    t.integer  "active"
-    t.string   "document_mime_type"
-    t.string   "document_name"
-    t.integer  "document_size"
-    t.string   "document_uid"
-    t.string   "document_ext"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
-    t.text     "settings"
-  end
 
   create_table "tokenized_permissions", :force => true do |t|
     t.integer  "permissable_id"

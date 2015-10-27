@@ -11144,7 +11144,7 @@ form .alert-success {
 }
 /* line 151, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu {
-  background-color: #d3ddf4;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 /* line 154, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li {
@@ -11225,7 +11225,7 @@ form .alert-success {
 @media (min-width: 768px) and (min-width: 1200px) {
   /* line 193, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu {
-    background-color: #d3ddf4;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 }
 
