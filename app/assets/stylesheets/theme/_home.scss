@@ -15,12 +15,18 @@
 
 #carousel-alert {
   background-color: $theme-color-overlay;//rgba(68, 65, 58, .85);
-  color: $theme-light-color;
+  color: $theme-color;
   margin-bottom: $line-height-computed;
   border: 1px solid $theme-light-color;
   min-height: 180px;
   a {
-    color: $theme-light-color;
+    color: $theme-color;
+    text-decoration: underline;
+    &:hover,
+    &:focus {
+      color: $theme-color;
+      text-decoration: underline;
+    }
   }
   .item {
 

@@ -11501,15 +11501,25 @@ form .alert-success {
   padding: 0 20px;
   margin-top: 150px;
   text-align: center;
-  color: white;
+  color: #4470d1;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 /* line 14, ../../app/assets/stylesheets/theme/_carousel.scss */
+.carousel-caption a {
+  color: #4470d1;
+  text-decoration: underline;
+}
+/* line 18, ../../app/assets/stylesheets/theme/_carousel.scss */
+.carousel-caption a:hover, .carousel-caption a:focus {
+  color: #4470d1;
+  text-decoration: underline;
+}
+/* line 23, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption p {
   line-height: 28px;
 }
-/* line 17, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 26, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption hr {
   margin-left: auto;
   margin-right: auto;
@@ -11518,14 +11528,14 @@ form .alert-success {
   border-bottom: none;
 }
 
-/* line 25, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 34, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption .btn {
   margin-top: 20px;
   background-color: #4470d1;
   color: white;
 }
 
-/* line 30, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 39, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control {
   border: 1px solid #d3ddf4;
   background-color: transparent;
@@ -11535,20 +11545,20 @@ form .alert-success {
   width: 32px;
   height: 32px;
 }
-/* line 39, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 48, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control.right, .carousel-control.left {
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-/* line 44, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 53, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control.right {
   border-right: none;
 }
-/* line 48, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 57, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control.left {
   border-left: none;
 }
-/* line 54, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 63, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control:hover, .carousel-control:focus {
   background-color: #4470d1;
   color: white;
@@ -11556,7 +11566,7 @@ form .alert-success {
   filter: alpha(opacity=90);
 }
 @media (min-width: 768px) {
-  /* line 30, ../../app/assets/stylesheets/theme/_carousel.scss */
+  /* line 39, ../../app/assets/stylesheets/theme/_carousel.scss */
   .carousel-control {
     width: 50px;
     height: 50px;
@@ -11564,7 +11574,7 @@ form .alert-success {
   }
 }
 @media (min-width: 1200px) {
-  /* line 30, ../../app/assets/stylesheets/theme/_carousel.scss */
+  /* line 39, ../../app/assets/stylesheets/theme/_carousel.scss */
   .carousel-control {
     width: 60px;
     height: 60px;
@@ -11572,7 +11582,7 @@ form .alert-success {
   }
 }
 
-/* line 68, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 77, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-indicators {
   top: auto;
   bottom: 20px;
@@ -11766,33 +11776,39 @@ img {
 /* line 16, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert {
   background-color: rgba(255, 255, 255, 0.8);
-  color: #d3ddf4;
+  color: #4470d1;
   margin-bottom: 20px;
   border: 1px solid #d3ddf4;
   min-height: 180px;
 }
 /* line 22, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert a {
-  color: #d3ddf4;
+  color: #4470d1;
+  text-decoration: underline;
 }
-/* line 28, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 26, ../../app/assets/stylesheets/theme/_home.scss */
+#carousel-alert a:hover, #carousel-alert a:focus {
+  color: #4470d1;
+  text-decoration: underline;
+}
+/* line 34, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert .carousel-caption {
   text-align: center;
   margin-top: 0;
   padding: 20px 80px;
 }
-/* line 33, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 39, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert .carousel-caption p {
   text-transform: none;
   line-height: 18px;
   margin: 0;
 }
-/* line 39, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 45, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert .carousel-caption .feature-link {
   font-size: 12px;
   text-decoration: underline;
 }
-/* line 44, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 50, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert h4, #carousel-alert p {
   margin: 0;
 }

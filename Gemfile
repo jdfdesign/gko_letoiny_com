@@ -3,10 +3,11 @@ source 'https://rubygems.org'
 group :assets do
   gem 'sass', '= 3.2.14'
   gem 'sass-rails', '~> 3.2.6'
-  gem 'coffee-rails', '~> 3.2.2'
+  #gem 'coffee-rails', '~> 3.2.2'
   gem 'uglifier', '~> 2.4.0'
 end
 
+gem 'tins', '~> 1.0.0'
 
 group :production do
   git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.28" do
@@ -21,7 +22,6 @@ group :production do
    gem 'gko_features'
    gem 'gko_image_bank'
   end
-##  gem 'gko_concierge', '0.0.12', :git => 'git@github.com:jdfdesign/gko_concierge.git'
 end
 
 #group :development do
