@@ -81,11 +81,15 @@
   bottom: 10px;
   left: 50%;
   z-index: 15;
-  width: 120px;
+  max-width: 320px;
   padding-left: 0;
-  margin-left: -60px;
+  margin-left: -160px;
   text-align: center;
   list-style: none;
+  display: none;
+  @media (min-width: $grid-float-breakpoint) {
+    display: block;
+  }
   li {
     border-width: 2px;
   }

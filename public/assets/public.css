@@ -5039,15 +5039,15 @@ input[type="button"].btn-block {
 }
 /* line 398, ../../app/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-toggle, .navbar .navbar-toggle {
-  border-color: #dddddd;
+  border-color: #4470d1;
 }
 /* line 401, ../../app/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-toggle:hover, .navbar .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar .navbar-toggle:focus {
-  background-color: #dddddd;
+  background-color: rgba(68, 112, 209, 0.4);
 }
 /* line 404, ../../app/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-toggle .icon-bar, .navbar .navbar-toggle .icon-bar {
-  background-color: #cccccc;
+  background-color: #4470d1;
 }
 /* line 410, ../../app/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-collapse, .navbar .navbar-collapse,
@@ -11454,13 +11454,20 @@ form .alert-success {
   bottom: 10px;
   left: 50%;
   z-index: 15;
-  width: 120px;
+  max-width: 320px;
   padding-left: 0;
-  margin-left: -60px;
+  margin-left: -160px;
   text-align: center;
   list-style: none;
+  display: none;
 }
-/* line 89, ../../app/assets/stylesheets/theme/_carousel.scss */
+@media (min-width: 768px) {
+  /* line 77, ../../app/assets/stylesheets/theme/_carousel.scss */
+  .carousel-indicators {
+    display: block;
+  }
+}
+/* line 93, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-indicators li {
   border-width: 2px;
 }
@@ -11500,11 +11507,6 @@ form .alert-success {
   background-color: transparent;
 }
 
-/* line 4, ../../app/assets/stylesheets/theme/_home.scss */
-.homepage {
-  margin-top: 600px;
-}
-
 @media (min-width: 1020px) {
   /* line 7, ../../app/assets/stylesheets/theme/_home.scss */
   .homepage-content {
@@ -11516,42 +11518,43 @@ form .alert-success {
 #carousel-alert {
   background-color: rgba(255, 255, 255, 0.8);
   color: #4470d1;
+  margin-top: 20px;
   margin-bottom: 20px;
   border: 1px solid #d3ddf4;
   min-height: 180px;
 }
-/* line 20, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 21, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert .carousel-caption {
   text-align: center;
   margin-top: 0;
   padding: 20px 80px;
 }
-/* line 24, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 25, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert .carousel-caption h2 {
   font-size: 22px;
 }
-/* line 27, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 28, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert .carousel-caption a {
   color: #4470d1;
   text-decoration: underline;
 }
-/* line 31, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 32, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert .carousel-caption a:focus, #carousel-alert .carousel-caption a:hover {
   color: #4470d1;
   text-decoration: underline;
 }
-/* line 36, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 37, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert .carousel-caption p {
   text-transform: none;
   line-height: 18px;
   margin: 0;
 }
-/* line 41, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 42, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert .carousel-caption .feature-link {
   font-size: 12px;
   text-decoration: underline;
 }
-/* line 47, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 48, ../../app/assets/stylesheets/theme/_home.scss */
 #carousel-alert h4,
 #carousel-alert p {
   margin: 0;
