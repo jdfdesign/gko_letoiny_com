@@ -5,19 +5,14 @@
   <div class="page-wrapper">
   	<%= render 'header' %>
     <%= yield :news %>
-    <section class="main-content <%= @body_id %>">
-      <%= yield %>
-    </section>
-  </div> 
+    <%= yield %>
+  </div>
   <%= render 'footer' %>
   <%= render 'toolbar' %>
-  <%= render 'supersized' %>
-  <%#= render 'modals' %>
-  
+
   <!-- Le javascript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 	<%= yield :before_javascript_libraries %>

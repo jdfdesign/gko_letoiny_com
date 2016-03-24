@@ -30,34 +30,34 @@
     border-top: 1px solid $theme-color;
     border-bottom: none;
   }
-} 
+}
 .carousel-caption .btn {
   margin-top: 20px;
   background-color: $theme-color;
   color: white;
 }
 .carousel-control {
-  border: 1px solid $theme-light-color;
-  background-color: transparent;
+  border: 1px solid $theme-color;
   top: 50%;
-  line-height: 30px; 
+  line-height: 30px;
   margin-top: -30px;
+  background-color: rgba($theme-color, .4);
   @include square($carousel-control-width);
 
   &.right,
   &.left {
     background-image: none;
-    @include reset-filter();   
+    @include reset-filter();
   }
-  
+
   &.right {
-    border-right: none;    
+    border-right: none;
   }
-  
+
   &.left {
-    border-left: none;    
+    border-left: none;
   }
-   
+
   // Hover/focus state
   &:hover,
   &:focus {
@@ -65,11 +65,11 @@
     color: white;
     @include opacity(.9);
   }
-  @media (min-width: $grid-float-breakpoint) { 
+  @media (min-width: $grid-float-breakpoint) {
     @include square(50px);
     line-height: 50px;
   }
-  @media (min-width: $screen-lg-desktop) { 
+  @media (min-width: $screen-lg-desktop) {
     @include square(60px);
     line-height: 60px;
   }
@@ -86,4 +86,7 @@
   margin-left: -60px;
   text-align: center;
   list-style: none;
+  li {
+    border-width: 2px;
+  }
 }

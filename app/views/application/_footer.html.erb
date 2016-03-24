@@ -10,12 +10,12 @@
             <% site.sections.roots.find_by_name('pipe').children.in_menu.each do |section| %>
               <li id="<%= dom_id(section) %>">
                 <%= menu_link(section) -%>
-              </li> 
+              </li>
               <% section.children.in_menu.each do |c| %>
                 <li class="submenu"><%= menu_link(c) -%></li>
-              <% end %> 
+              <% end %>
             <% end %>
-          </ul>      
+          </ul>
         </div>
       </div>
       <div class="col-sm-3">
@@ -26,13 +26,13 @@
               <li>
                 <%= link_to("Blog", "http://letoiny.blogspot.fr/", :target => "_blank") %>
               </li>
-              <li> 
+              <li>
                 <%= link_to("Pinterest","http://www.pinterest.com/letoiny", :target => "_blank") %>
-              </li> 
-              <li> 
+              </li>
+              <li>
                 <%= link_to("Google +","https://plus.google.com/+LetoinyStBarth/posts", :target => "_blank") %>
               </li>
-              <li> 
+              <li>
                 <%= link_to("Facebook","https://www.facebook.com/HOTELLETOINYSTBARTH", :target => "_blank") %>
               </li>
             </ul>
@@ -42,10 +42,15 @@
         <div class="widget widget-intouch">
             <h5 class="widget-heading">Get in touch with us</h5>
             <hr/>
-            <p class="address">Hotel Le Toiny St. Barth<br>Anse de Toiny<br>97133 Saint Barthelemy<br>French West Indies, Caribbean<br>Tel: +590 (0)590 27 88 88<br>Fax: +590 (0)590 27 89 30<br><a href="mailto:reservations@letoiny.com">reservations@letoiny.com</a></p>  
+            <p class="address">Hotel Le Toiny St. Barth<br>Anse de Toiny<br>97133 Saint Barthelemy<br>French West Indies, Caribbean<br>Tel: +590 (0)590 27 88 88<br>Fax: +590 (0)590 27 89 30<br><a href="mailto:reservations@letoiny.com">reservations@letoiny.com</a></p>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 text-center">
+        <%= link_to(image_tag("logo_relais_chateaux_white.png"), "http://www.relaischateaux.com",
+            :id => "rc-logo-bootm", :target => "_blank",
+            :title => t("r_and_c").html_safe,
+            :data => { :placement => 'right', :html => "true", :toggle => "tooltip"}) %>
+        <br>
         <div class="widget widget-awards">
           <p><%= link_to(image_tag('gold_cntraveller_2014.png', :alt => "Gold Standard 2014. The best hotels in the world, as chosen by Condé Nast Traveller's experts"), "http://www.cntraveler.com/hotels/caribbean/french-west-indies/h-tel-le-toiny-st-barts-st-barts-st-barts", :target => "_blank", :class => "cntraveller") %></p>
         </div>
@@ -57,7 +62,7 @@
           </ul>
         </div>
         <script src="http://www.jscache.com/wejs?wtype=tchotel&amp;uniq=752&amp;locationId=149811&amp;lang=en_US&amp;year=2014"></script>
-        
+
         <div id="TA_certificateOfExcellence288" class="TA_certificateOfExcellence">
           <ul id="pX4vnT" class="TA_links oSSMx9YSmSxM">
           <li id="QLQTYm43zu" class="uG3eirvfDs">
@@ -66,11 +71,11 @@
           </ul>
         </div>
         <script src="http://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=288&amp;locationId=1046857&amp;lang=en_US&amp;year=2014"></script>
-        
+
 
         <!-- @import "social-links" -->
         <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-        
+
         <script type="IN/FollowCompany" data-id="2937262" data-counter="right"></script>
         <br/>
         <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FHotel-Le-Toiny-St-Barth%2F102215559842737%3Fv%3Dinfo%23%21%2Fpages%2FHotel-Le-Toiny-St-Barth%2F102215559842737%3Fv%3Dwall&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=dark&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowtransparency="true" id="fcb"></iframe>

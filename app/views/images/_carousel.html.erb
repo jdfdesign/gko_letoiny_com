@@ -1,15 +1,26 @@
-<% if images.try(:any?) %>
-  <div class="carousel slide" id="carousel" data-interval="3000">
-    <div class="carousel-inner">
-      <% images.each_with_index do |img, idx| %>
-        <div class="item <%= 'active' if idx == 0 %>"><%= image_fu(img, "732x488#") %></div>
-      <% end %>
+<%
+   image_geometry = local_assigns.has_key?(:image_style) ? image_style : site.preferred_image_carousel_size
+   rand_id = "carousel_#{rand(10000)}"
+%>
+<% if images.length > 1 %>
+<div class="carousel slide" id="<%= rand_id %>">
+  <!-- Carousel indicator -->
+  <ol class="carousel-indicators">
+    <% images.each_with_index do |img, index| %>
+      <li data-target="#<%= rand_id %>" data-slide-to="<%= index %>" class="<%= 'active' if index == 0 %>"></li>
+    <% end %>
+  </ol>
+  <div class="carousel-inner">
+  <% images.each_with_index do |img, index| %>
+    <div class="item <%= 'active' if index == 0 %>">
+      <%= image_fu(img, "1400x900#", :rel => "external") %>
     </div>
-    <a class="left carousel-control" href="#carousel" data-slide="prev">
-      <span class="icon-angle-left"></span>
-    </a>
-    <a class="right carousel-control" href="#carousel" data-slide="next">
-      <span class="icon-angle-right"></span>
-    </a> 
+  <% end %>
   </div>
+  <!-- Carousel nav -->
+  <a class="left carousel-control" href="#<%= rand_id %>" data-slide="prev"><span class="icon-angle-left"></span></a>
+  <a class="right carousel-control" href="#<%= rand_id %>" data-slide="next"><span class="icon-angle-right"></span></a>
+</div>
+<% else %>
+  <%= image_fu(images.first, "1400x900#", :rel => "external") %>
 <% end %>

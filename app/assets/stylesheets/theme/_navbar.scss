@@ -1,81 +1,30 @@
 
-$logo-height: 82px;
-$logo-width: 182px;
-
-
 /* Navbar
--------------------------------------------------- */ 
+-------------------------------------------------- */
 .navbar {
   @extend .navbar-default;
-  font-family: $font-family-serif;
-  .logo-affiliate {
-    text-align: center;
-    padding: $line-height-computed*2 0;
-    @include opacity(.9);
-    @include transition(opacity 0.4s ease-in-out);
-    &:hover {
-      @include opacity(1);
-    }
-  }
-  .rc-film {
-    text-align: center;
-    font-size: $font-size-small;
-    color: #fff;
-    margin-top: $line-height-computed;
-    display: block;
-    @include opacity(.5);
-    @include transition(opacity 0.4s ease-in-out);
-    &:hover {
-      @include opacity(1);
-      text-decoration: none;
-    }
-  }
-  @media (min-width: $grid-float-breakpoint) {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    position: absolute;
-    right: auto;
-    left: 0;
-    top: 0;
-    z-index: $zindex-navbar-fixed;
-    padding-top: 0;
-    width: $navbar-fixed-left;
-   .container {
-     padding-left: 0;
-     padding-right: 0;
-   }
-  }
-  @media (min-width: $theme-break-point) {
-    min-height: 0;
-    height: auto !important;
-    background-color: $theme-color-overlay;//rgba(68, 65, 58, .85);
-  }
+  border-left: none;
+  border-right: none;
+  top: 28px;
+  border: none;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
 }
 
-
-/* Navbar Header
--------------------------------------------------- */
-.navbar-header {
-  @media (min-width: $grid-float-breakpoint) { 
-    float: none;
-  }
-} 
-/* Navbar Header
--------------------------------------------------- */
 .dropdown-locales {
-  font-family: $font-family-sans-serif; 
+  //font-family: $font-family-sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 11px;
   text-align: center;
-  
+
   .dropdown-toggle {
     margin : 0;
-    background-color: $theme-medium-color; 
+    background-color: $theme-medium-color;
     color: $theme-light-color;
     font-weight: 300;
     width: 100%;
+    padding: 4px 0;
     &:hover,
     &:focus {
       text-decoration: none;
@@ -86,57 +35,46 @@ $logo-width: 182px;
     width: 100%;
      > li > a {
       font-size: 11px;
-      font-weight: 300;   
-      color: #fff;                           
-    }                               
+      font-weight: 300;
+      color: #fff;
+    }
   }
+}
 
+.navbar-header {
+  width: 100%;
+  border-bottom: 1px solid $theme-medium-color;
 }
 
 .navbar-brand {
   margin: 0;
-  padding-top: 28px; 
-  padding-bottom: 4px;
-  max-width: 280px;
-  @media (min-width: $grid-float-breakpoint) { 
-    margin: 0;
-    padding-left: 8px; 
-    padding-right: 8px;
-    padding-top: $line-height-computed * 2; 
-    padding-bottom: $line-height-computed * 2;
-    position: relative;
-    max-width: none;
-    min-width: $logo-width;
-    width: 100%;
-    min-height: $logo-height;
-    float: none; 
-    text-align: center;
-    .navbar > .container & {
-      margin-left: 0;
-    }
-    
-  }
+  padding: 10px 15px;
+  width: 200px;
 }
 .navbar-toggle {
   text-transform: uppercase;
   letter-spacing: 1px;
+  @media (min-width: $grid-float-breakpoint) {
+    display: block !important;
+    float: right;
+  }
 }
+
 .navbar-collapse {
-  max-height: none;
-}
-/* Navbar Menu
--------------------------------------------------- */
-.navbar-collapse {
+  //max-height: none;
   @media (min-width: $grid-float-breakpoint) {
     padding-right: 0;
     padding-left: 0;
+    &.collapse {
+      display: none !important;
+    }
   }
 }
 .navbar-nav {
   li {
-    border-top: 1px solid $theme-medium-color;
+    //border-top: 1px solid $theme-medium-color;
     &:last-child {
-      border-bottom: 1px solid $theme-medium-color;
+      //border-bottom: 1px solid $theme-medium-color;
     }
     > a {
       font-size: 11px;
@@ -146,63 +84,56 @@ $logo-width: 182px;
       padding: 8px 15px;
       //text-shadow: none;
     }
-  } 
+  }
 
-  .dropdown-menu { 
+  .dropdown-menu {
     background-color: $theme-color-overlay;
-    
     li {
       border-top: 1px solid $theme-medium-color;
-    }
-    li > a {
-      font-size: 11px;
-      font-weight: 300;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      padding: 8px 15px;
-      color: $brand-primary;
-      &:hover,
-      &:focus,
-      &.active {
-        color: #fff;
-        text-decoration: none;
+      > a {
+        font-size: 11px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 8px 15px;
+        color: $brand-primary;
+        &:hover,
+        &:focus,
+        &.active {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+      &.text {
+        display: none;
       }
     }
-    li.text {
-      display: none;
-    }
+
   }
   @media (min-width: $grid-float-breakpoint) {
     width:100%;
     > li {
-      display:block;
-      float: none; 
-      position: relative;
+      //display:block;
+      //float: none;
+      //position: relative;
       > a {
         text-align: center;
         padding: 4px 14px;
       }
     }
-    .dropdown {
-      &:hover {
-        .dropdown-menu{
-          display: block; 
-        }
-      } 
-    }
     .dropdown-menu {
-      top: -2px;
-      left: $navbar-fixed-left - 2; // position it to the right side
+      //top: -2px;
+      //left: $navbar-fixed-left - 2; // position it to the right side
       margin: 0;
       padding: 0; // remove the padding
       max-width: 400px;
-      min-width: 500px;
-      width: 500px;
+      //min-width: 500px;
+      //width: 500px;
       background-color: $theme-color-overlay;
       li.submenu > a {
         padding-left: 40px;
       }
-      li.text { 
+      li.text {
         border-top: 1px solid $theme-light-color;
         display: block;
         padding: 20px;
@@ -211,18 +142,15 @@ $logo-width: 182px;
         font-family: $font-family-sans-serif;
         letter-spacing: 1px;
         h2 {
-          font-family: $font-family-sans-serif; 
+          font-family: $font-family-sans-serif;
           text-align: left;
           font-size: 14px;
           margin: 0 0 12px 0;
           text-transform: uppercase;
         }
-      } 
+      }
       @media (min-width: $screen-lg-desktop) {
         background-color: $theme-color-overlay;
-        li.text { 
-           //background-color: $theme-color-overlay;//rgba(105, 101, 90, .85);
-        }
       }
     }
 

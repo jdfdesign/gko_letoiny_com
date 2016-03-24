@@ -9,7 +9,7 @@
        li_classes = li_classes.join(" ")
     %>
     <li id="<%= dom_id(section) %>" class="<%= li_classes unless li_classes.blank? %>">
-      <%= menu_link(section, :dropdown => has_children, :caret => "&nbsp;<i class='icon-angle-right'></i>") -%> 
+      <%= menu_link(section, :dropdown => has_children, :caret => "&nbsp;<i class='icon-angle-down'></i>") -%> 
       <% if !section.leaf? && has_children %>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
         <% section.children.in_menu.each do |c| %>
@@ -23,7 +23,7 @@
             </li>
           <% end %>
         <% end %>
-        
+
         <% if !section.alt.blank? %>
           <li class="text">
             <%= section.alt.html_safe %>
@@ -34,4 +34,3 @@
     </li>
   <% end %>
 </ul>
-

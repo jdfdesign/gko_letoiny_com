@@ -1,81 +1,57 @@
 /* Toolbar
--------------------------------------------------- */ 
-.toolbar { 
+-------------------------------------------------- */
+.toolbar {
   position: fixed;
   z-index: $zindex-navbar-fixed;
-  left: 0;
-  bottom: 0;
+  height: auto;
+  top: 0;
+  bottom: auto;
   width: 100%;
-  background-color: #fff;
-  color: $brand-primary; 
-  @media (min-width: $grid-float-breakpoint) {
-    height: auto;
-    top: 0;
-    bottom: auto;
-  }
-  
-  p {
-    font-size: $font-size-small;
-    line-height: 44px; 
-    text-align: center;
-    margin-bottom: 0;
-    @media (min-width: $grid-float-breakpoint) {
-      text-align: left;
-      line-height: inherit;
-      font-size: $font-size-small;
-      margin-left: 20px;
-      margin-top: (($toolbar-height - $line-height-computed) / 2);
-      margin-bottom: (($toolbar-height - $line-height-computed) / 2);
-    }
-  }
-  .hidden-sm img {
-    @include img-responsive();
-    max-width: 40px;
-    vertical-align: middle;
-    padding: 4px 0;
-  }
+  background-color: $brand-primary;
+  color: #fff;
+
   .nav {
     position: relative;
     width: 100%;
     > li {
       float: left;
       width: 33.33333333333333%;
-      min-height: 34px;
-      border-right: 1px solid lighten($theme-color, 20%);
-      //border-top: 1px solid lighten($theme-color, 20%);
-      &:last-child {
-        border-right: none;
-      }
-      > a { 
+
+      > a {
         background-color: transparent;
         padding: 4px 0;
         text-decoration: none;
         font-size: 9px;
         font-weight: bold;
         text-transform: uppercase;
-        color: $brand-primary;
-        text-align: center; 
+        color: white;
+        text-align: center;
         &:hover,
         &:focus {
           color: white;
-          background-color: $brand-primary;
+          background-color: transparent;
         }
-      } 
+      }
     }
     @media (min-width: $grid-float-breakpoint) {
       @include pull-right;
       width: auto !important;
-      border-top: 0;
+      //border-top: 0;
+
       > li {
         width: auto !important;
+        border-right: 1px solid lighten($theme-color, 20%);
+        &:last-child {
+          border-right: none;
+        }
         > a {
           font-size: 11px;
           font-weight: 300;
           letter-spacing: 1px;
-          padding: (($toolbar-height - $line-height-computed) / 2) 15px; 
+          padding: 6px 15px;
         }
       }
-    } 
+    }
   }
 
 }

@@ -27,8 +27,8 @@ $brand-info:            #5bc0de;// !default
 // Scaffolding
 // -------------------------
 
-$body-bg:               $theme-medium-color;//#fff;// !default
-$text-color:            $theme-color;//$gray-dark;// !default
+$body-bg:               #fefefe;//$theme-medium-color;//#fff;// !default
+$text-color:            $gray;// !default
 
 // Links
 // -------------------------
@@ -236,7 +236,7 @@ $grid-float-breakpoint:     $screen-tablet;// !default
 // -------------------------
 
 // Basics of a navbar
-$navbar-height:                    90px;//50px;// !default
+$navbar-height:                    48px;// !default
 $navbar-margin-bottom:             0;//$line-height-computed;// !default
 $navbar-default-color:             $brand-primary;//#777;// !default
 $navbar-default-bg:                #fff;//#f8f8f8;// !default

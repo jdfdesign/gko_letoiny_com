@@ -3,11 +3,11 @@
 $theme-medium-color: #6D8FDB;//#6D8FDB;//#69655a; // rgba(105, 101, 90, 1);
 $theme-color: darken($theme-medium-color, 10%);;// > rgba(109, 143, 219, 1)  #44413A; // dark brown > rgba(68, 65, 58, 1)
 $theme-color-overlay: rgba(255, 255, 255, .8);
-$theme-light-color: lighten($theme-medium-color, 25%); //#d5d4d2; // light brown                   
-$theme-accent-color: #63cbd8; // orange                                           
-$theme-break-point: 1020px; 
+$theme-light-color: lighten($theme-medium-color, 25%); //#d5d4d2; // light brown
+$theme-accent-color: #63cbd8; // orange
+$theme-break-point: 1020px;
 $toolbar-height: 40px;
-$navbar-fixed-left: 250px;                   
+$navbar-fixed-left: 250px;
 
 @import "theme/font";
 @import "theme/bootstrap-variables";
@@ -16,24 +16,23 @@ $navbar-fixed-left: 250px;
 @import "theme/datepicker3";
 @import "theme/form";
 @import "theme/navbar";
-@import "theme/toolbar"; 
+@import "theme/toolbar";
 @import "theme/footer";
 @import "theme/carousel";
-@import "theme/modal";         
-@import "theme/supersized";
-@import "theme/home"; 
+@import "theme/modal";
+@import "theme/home";
 
 
 /* FIX FOR IE DEVICE_WIDTH BUG
 -------------------------------------------------- */
 @-webkit-viewport{width:device-width}
 @-moz-viewport{width:device-width}
-@-ms-viewport{width:device-width}                                                   
+@-ms-viewport{width:device-width}
 @-o-viewport{width:device-width}
-@viewport{width:device-width}                                     
+@viewport{width:device-width}
 
 
-// Color for the placeholder plugin                        
+// Color for the placeholder plugin
 .placeholder {
   color: $input-color-placeholder;
 }
@@ -56,19 +55,19 @@ $navbar-fixed-left: 250px;
 // -------------------------
 a:focus,
 .btn:focus {
-  outline: 0;     
-}                  
+  outline: 0;
+}
 ::selection {
 	background-color: $theme-medium-color;
-	color: #fff;                                                                         
+	color: #fff;
 }
 a {
-  @include transition(all 0.4s ease-in-out);  
+  @include transition(all 0.4s ease-in-out);
 }
 
 a[data-pin-log="button_pinit_floating"] {
   z-index: 1000000;
-} 
+}
 
 html {
   overflow-y: scroll;
@@ -77,30 +76,31 @@ html {
 body {
   font-weight: 300;
 	height: 100%;
+  padding-top: 76px;
 }
 
 .page-wrapper {
   min-height: 100%;
   position: relative;
-  
+
   @media (min-width: $grid-float-breakpoint) {
     @include center-block;
-    max-width: 1000px;
+    //max-width: 1000px;
   }
 }
 .main-content {
-  position: relative; 
-  background-color: rgba(241, 237, 228, 1);
+  position: relative;
+  //background-color: rgba(241, 237, 228, 1);
   padding-top: $line-height-computed;
   @media (min-width: $grid-float-breakpoint) {
-    margin-left: $navbar-fixed-left;
+    //margin-left: $navbar-fixed-left;
     margin-top: $toolbar-height;
   }
-  @media (min-width: $theme-break-point) { 
+  @media (min-width: $theme-break-point) {
     padding: $line-height-computed;
-    margin-left: $navbar-fixed-left + $line-height-computed;
+    //margin-left: $navbar-fixed-left + $line-height-computed;
     margin-bottom: $line-height-computed;
-    background-color: rgba(241, 237, 228, .85);
+    //background-color: rgba(241, 237, 228, .85);
   }
 }
 .page-title {
@@ -117,11 +117,11 @@ height: 0;
 margin-bottom: 16px;
 overflow: hidden;
 }
-.flex-video.widescreen { 
-  padding-bottom: 57.25%; 
+.flex-video.widescreen {
+  padding-bottom: 57.25%;
 }
-.flex-video.vimeo { 
-  padding-top: 0; 
+.flex-video.vimeo {
+  padding-top: 0;
 }
 .flex-video iframe,
 .flex-video object,
@@ -140,18 +140,20 @@ overflow: hidden;
   font-weight: 300;
   ul { list-style: disc outside; margin-left: 30px; }
   ol { margin-left: 30px; }
+  h1, h2, h3, h4 {
+    color: $theme-color;
+  }
 	h3 {
 		text-transform: uppercase;
 		font-size: 18px;
 		font-weight: 500;
-		//text-align: left;
 		letter-spacing: 1px;
 	}
 	a {
 	  color: $theme-medium-color;
 	  text-decoration: underline;
 	  &:hover,
-	  &:focus { 
+	  &:focus {
 	    text-decoration: none;
 	    color: $theme-light-color;
 	    background-color: $theme-medium-color;
@@ -161,11 +163,11 @@ overflow: hidden;
     @extend .table;
     max-width: 540px;
   }
-  table thead > tr > th, 
-  table thead > tr > td, 
-  table tbody > tr > th, 
-  table tbody > tr > td, 
-  table tfoot > tr > th, 
+  table thead > tr > th,
+  table thead > tr > td,
+  table tbody > tr > th,
+  table tbody > tr > td,
+  table tfoot > tr > th,
   table tfoot > tr > td {
     padding: 3px;
   }
@@ -173,11 +175,11 @@ overflow: hidden;
 
 .thumbnail {
   height: 200px;
-  text-align: center; 
+  text-align: center;
   &:hover {
     @include opacity(.8);
   }
-  
+
   a {
     color: $theme-color;
   }

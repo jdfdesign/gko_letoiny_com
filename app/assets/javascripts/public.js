@@ -1,7 +1,6 @@
 //= require jquery_ujs
 //= require bootstrap-datepicker
 //= require remote_form
-//= require supersized.3.2.7.js
 
 /**
  * jQuery.browser.mobile (http://detectmobilebrowser.com/)
@@ -19,13 +18,13 @@ window.console || (console = {
 jQuery(function($) {
   'use strict';
   var THEME = window.THEME || {};
-  
+
   /* ==================================================
   	Fix
   ================================================== */
 
   THEME.fix = function(){
-    // fix for ie device_width bug 
+    // fix for ie device_width bug
     if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
       var msViewportStyle = document.createElement("style");
       msViewportStyle.appendChild(
@@ -34,28 +33,7 @@ jQuery(function($) {
       appendChild(msViewportStyle);
     }
   };
-  /* ==================================================
-  	Formstack
-  ================================================== */
-  /*THEME.formstack = function(title, source){
-    $('<div class="modal fade">' +
-      '<div class="modal-dialog">' +
-        '<div class="modal-content">' +
-          '<div class="modal-header">' +
-            '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>' +
-            '<h4 class="modal-title" id="myModalLabel">' + title + '</h4>' +
-          '</div>' +
-          '<div class="modal-body">' +
-            '<iframe src="' + source + '" title="' + title + '" width="' + ($(window).width() - 60) + '" height="' + ($(window).height() - 60) + '" scrolling="yes" frameBorder="0"></iframe>' +
-          '</div>' +
-        '</div>' +
-      '</div>' +
-    '</div>').appendTo($('body')).on('show.bs.modal', function(e) {
-      $(this).find('.modal-dialog:first').css({'width': $(window).width() - 60, 'height': $(window).height() - 60});
-      }).on('hidden.bs.modal', function (e) {
-        $(this).remove();
-      }).modal( { backdrop: 'static', show: true } );
-  };*/
+
   /* ==================================================
   	Carousel
   ================================================== */
@@ -66,10 +44,10 @@ jQuery(function($) {
       $('.carousel').each(function(index) {
         var _self = $(this),
             items = _self.find('.item');
-            
+
         if (items.length > 1) {
           _self.carousel();
-          
+
         } else {
           _self.find('.carousel-control').each(function(index) {
             $(this).css({
@@ -83,9 +61,9 @@ jQuery(function($) {
           })
         }
       })
-      
+
       if($("#carousel-alert").length) {
-      
+
         var itemHeight = 0;
         var alerts = $("#carousel-alert").find('.item');
 
@@ -94,7 +72,7 @@ jQuery(function($) {
             itemHeight = $(value).height();
           };
         });
-      
+
         $.each(alerts, function( index, value ) {
           $(value).height(itemHeight);
         });
@@ -102,55 +80,28 @@ jQuery(function($) {
 
     };
 
-    /* ==================================================
-    	Supersized
-    ================================================== */
-
-      THEME.supersized = function() {
-      	$.supersized({
-      		slide_interval : 3000, // Length between transitions
-      		transition : 3, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-      		transition_speed : 1200, // Speed of transition
-      		slides : supersized_slides
-        });
-      };
-      
     /*==================================================
       	Init
     ==================================================*/
-    
+
   $(document).ready(function() {
     THEME.fix();
     THEME.carousel();
     THEME.supersized();
-    
+
     $(".homepage").css('margin-top', $(window).height() + 80);
     $(".homepage.featured").css('margin-top', Math.max(0, $(window).height() - $("#carousel-alert").height() - 40));
-    //$("#inquiry_services").change(function() {
-    //  if($( this ).val() == "other") {
-    //    $("#inquiry_other_value").parent().removeClass('hidden');
-    //  } else {
-     //   $("#inquiry_other_value").parent().addClass('hidden');
-    //  }
-    //});
+
     $("[data-toggle='tooltip']").tooltip();
-    //$('.form-control.date').datepicker({});
-    /*$("#contact_us").on("click", function(e) { 
-      THEME.formstack($(this).text(), 'https://www.formstack.com/forms/?1464607-UGKf87Ck2h');
-      e.preventDefault();
-    })
-    $("#table-booking").on("click", function(e) {
-      THEME.formstack($(this).text(), 'http://www.formstack.com/forms/?1464587-Dog5K8aIvq');
-      e.preventDefault();
-    })*/
+
       if(jQuery.browser.mobile)
       {
         $("#online-booking").attr("href", "https://mobile.synxis.com/22812?shell=mobile_shared_toiny2&template=mobile_shared_toiny");
       }
-      
+
       $(".image-bank-filter select:first").change(function() {
         $( ".image-bank-filter" ).submit();
       });
-  })  
+  })
 
 })

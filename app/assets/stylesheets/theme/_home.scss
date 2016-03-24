@@ -1,58 +1,50 @@
-.main-content.home { 
+.main-content.home {
   background-color: transparent;
 }
 .homepage {
   margin-top: 600px; // set by js
 }
-
 .homepage-content {
-  background-color: rgba(241, 237, 228, 1);
-  @media (min-width: $theme-break-point) { 
-    background-color: rgba(241, 237, 228, .85);
+  //background-color: rgba(241, 237, 228, 1);
+  @media (min-width: $theme-break-point) {
+    //background-color: rgba(241, 237, 228, .85);
     padding: $line-height-computed;
   }
 }
-
 #carousel-alert {
-  background-color: $theme-color-overlay;//rgba(68, 65, 58, .85);
+  background-color: $theme-color-overlay; //rgba(68, 65, 58, .85);
   color: $theme-color;
   margin-bottom: $line-height-computed;
   border: 1px solid $theme-light-color;
   min-height: 180px;
-  a {
-    color: $theme-color;
-    text-decoration: underline;
-    &:hover,
-    &:focus {
-      color: $theme-color;
-      text-decoration: underline;
-    }
-  }
-  .item {
-
-  }
   .carousel-caption {
     text-align: center;
     margin-top: 0;
     padding: 20px 80px;
-    
+    h2 {
+      font-size: 22px;
+    }
+    a {
+      color: $theme-color;
+      text-decoration: underline;
+      &:focus,
+      &:hover {
+        color: $theme-color;
+        text-decoration: underline;
+      }
+    }
     p {
       text-transform: none;
       line-height: 18px;
       margin: 0;
     }
-    
     .feature-link {
       font-size: 12px;
       text-decoration: underline;
     }
-  }  
-  h4, p {
+  }
+  h4,
+  p {
     margin: 0;
   }
 }
-
-
-
-
-

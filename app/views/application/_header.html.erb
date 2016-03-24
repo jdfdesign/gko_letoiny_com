@@ -1,12 +1,11 @@
 <%# cache [I18n.locale, site, 'site_header2'] do %>
 <!-- Header
 ================================================== -->
-<header class="navbar hide-on-print">
-  <div class="container">
+<header class="navbar navbar-fixed-top hide-on-print">
+  <div class="container-fluid">
     <div class="navbar-header">
-      <%= render 'locales_select' %>
       <h1 class="navbar-brand">
-        <%= link_to(image_tag('logo-primary.png', :class => "img-responsive"), root_url, :alt => site.title) %>
+        <%= link_to(image_tag('logo-toiny.svg', :class => "img-responsive"), root_url, :alt => site.title) %>
       </h1>
       <%= content_tag(:h4, site.subtitle.html_safe, :id => "site-subtitle") if site.subtitle.present? %>
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -19,14 +18,6 @@
     <nav class="collapse navbar-collapse">
       <%= render 'menu', :sections => site.primary_menu, :menu_name => 'navbar-nav' %>
     </nav>
-    
-    <div class="logo-affiliate hidden-xs">
-    <%= link_to(image_tag("logo_rc_gray.png"), "http://www.relaischateaux.com", 
-        :id => "rc-logo", :target => "_blank", :class => 'visible-md visible-lg', 
-        :title => t("r_and_c").html_safe, 
-        :data => { :placement => 'right', :html => "true", :toggle => "tooltip"}) %>
-      <%#= link_to("R&C in North American film", "https://www.youtube.com/watch?v=D4bohTaYt6E&feature=youtu.be", :target => "_blank", :class => "rc-film") %>
-    </div> 
   </div>
 </header>
 <%# end %>
