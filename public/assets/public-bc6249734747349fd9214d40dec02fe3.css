@@ -11514,49 +11514,75 @@ form .alert-success {
   }
 }
 
-/* line 14, ../../app/assets/stylesheets/theme/_home.scss */
-#carousel-alert {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #4470d1;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 1px solid #d3ddf4;
-  min-height: 180px;
+/* line 15, ../../app/assets/stylesheets/theme/_home.scss */
+#feature-modal {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  outline: none;
 }
 /* line 21, ../../app/assets/stylesheets/theme/_home.scss */
-#carousel-alert .carousel-caption {
+#feature-modal .modal-header {
+  padding: 4px;
+  border-bottom: none;
+  min-height: 34px;
+}
+/* line 26, ../../app/assets/stylesheets/theme/_home.scss */
+#feature-modal .close {
+  color: #4470d1;
+  font-size: 34px;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+@media screen and (min-width: 768px) {
+  /* line 32, ../../app/assets/stylesheets/theme/_home.scss */
+  #feature-modal .modal-dialog {
+    width: 80%;
+    max-width: 800px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    left: auto;
+    right: 0;
+    margin-right: 0;
+  }
+}
+/* line 45, ../../app/assets/stylesheets/theme/_home.scss */
+#feature-modal .carousel-caption {
   text-align: center;
   margin-top: 0;
   padding: 20px 80px;
 }
-/* line 25, ../../app/assets/stylesheets/theme/_home.scss */
-#carousel-alert .carousel-caption h2 {
+/* line 50, ../../app/assets/stylesheets/theme/_home.scss */
+#feature-modal .carousel-caption h2 {
   font-size: 22px;
 }
-/* line 28, ../../app/assets/stylesheets/theme/_home.scss */
-#carousel-alert .carousel-caption a {
+/* line 53, ../../app/assets/stylesheets/theme/_home.scss */
+#feature-modal .carousel-caption a {
   color: #4470d1;
   text-decoration: underline;
 }
-/* line 32, ../../app/assets/stylesheets/theme/_home.scss */
-#carousel-alert .carousel-caption a:focus, #carousel-alert .carousel-caption a:hover {
+/* line 57, ../../app/assets/stylesheets/theme/_home.scss */
+#feature-modal .carousel-caption a:focus, #feature-modal .carousel-caption a:hover {
   color: #4470d1;
   text-decoration: underline;
 }
-/* line 37, ../../app/assets/stylesheets/theme/_home.scss */
-#carousel-alert .carousel-caption p {
+/* line 62, ../../app/assets/stylesheets/theme/_home.scss */
+#feature-modal .carousel-caption p {
   text-transform: none;
   line-height: 18px;
   margin: 0;
 }
-/* line 42, ../../app/assets/stylesheets/theme/_home.scss */
-#carousel-alert .carousel-caption .feature-link {
+/* line 67, ../../app/assets/stylesheets/theme/_home.scss */
+#feature-modal .carousel-caption .feature-link {
   font-size: 12px;
   text-decoration: underline;
 }
-/* line 48, ../../app/assets/stylesheets/theme/_home.scss */
-#carousel-alert h4,
-#carousel-alert p {
+/* line 73, ../../app/assets/stylesheets/theme/_home.scss */
+#feature-modal h4,
+#feature-modal p {
   margin: 0;
 }
 

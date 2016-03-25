@@ -4,7 +4,7 @@
     <h3><%= t("form.inquiry.title")%></h3>
   </div>
   <%= simple_form_for(:inquiry, :url => inquiries_path,
-    :html => {:data => { :remote => true, :type => :json }, 
+    :html => {:data => { :remote => true, :type => :json },
     :method => :post, :class => [:inquiry]}) do |form| %>
     <div class="modal-body">
       <div class='row'>

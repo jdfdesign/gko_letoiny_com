@@ -1,0 +1,35 @@
+<% @features ||= site.features.live -%>
+<div class="modal fade" id="feature-modal" tabindex="-1" role="dialog"  data-backdrop="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-header">
+          <a href="#" class="close" data-dismiss="modal">&times;</a>
+        </div>
+        <div class="carousel slide" id="carousel-alert" data-ride="carousel" data-interval="false">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <% @features.each_with_index do |feature, index| %>
+            <div class="item <%= 'active' if index == 0 %>">
+              <div class="carousel-caption">
+                <%= "<h4>#{feature.title}</h4>".html_safe if feature.title.present? %>
+                <%= "#{feature.body}".html_safe if feature.body.present? %>
+                <% if feature.owner and url = feature.owner.public_url %>
+                <%= link_to(t("features.view_more"), url, :class => "feature-link") %>
+                <% end %>
+              </div>
+            </div>
+            <% end %>
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-alert" data-slide="prev">
+            <span class="icon-angle-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-alert" data-slide="next">
+            <span class="icon-angle-right"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

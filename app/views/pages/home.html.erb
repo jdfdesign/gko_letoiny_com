@@ -1,43 +1,16 @@
-<% features = site.features.live -%>
+<% @features ||= site.features.live -%>
 <%= render_slideshow_for(resource) %>
 <%# @supersized_images = site.sections.root.images.order(:position) -%>
-<div class="container homepage <%= 'featured' if features.any? %>">
+<div class="container homepage">
   <div class="row">
     <div class="col-xs-12">
-      <% if features.any? -%>
-      <div id="carousel-alert" class="carousel slide" data-ride="carousel" data-interval="false">
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-           <% features.each_with_index do |feature, index| %>
-          <div class="item <%= 'active' if index == 0 %>">
-            <div class="carousel-caption">
-              <%= "<h4>#{feature.title}</h4>".html_safe if feature.title.present? %>
-              <%= "#{feature.body}".html_safe if feature.body.present? %>
-              <% if feature.owner and url = feature.owner.public_url %>
-                <%= link_to(t("features.view_more"), url, :class => "feature-link") %>
-              <% end %>
-            </div>
-          </div>
-          <% end %>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-alert" data-slide="prev">
-          <span class="icon-angle-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-alert" data-slide="next">
-          <span class="icon-angle-right"></span>
-        </a>
-      </div>
-
-      <% end -%>
       <% if resource.body.present? %>
-        <div class="homepage-content">
-          <%= render_page_title(resource.title) %>
-          <%= render_copy_text(resource.body) %>
-        </div>
+      <div class="homepage-content">
+        <%= render_page_title(resource.title) %>
+        <%= render_copy_text(resource.body) %>
+      </div>
       <% end %>
     </div>
   </div>
 </div>
+<%= render 'feature_modal' if @features.any? -%>

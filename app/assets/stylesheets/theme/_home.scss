@@ -11,17 +11,42 @@
     padding: $line-height-computed;
   }
 }
-#carousel-alert {
-  background-color: $theme-color-overlay; //rgba(68, 65, 58, .85);
-  color: $theme-color;
-  margin-top: $line-height-computed;
-  margin-bottom: $line-height-computed;
-  border: 1px solid $theme-light-color;
-  min-height: 180px;
+
+#feature-modal {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  outline: none;
+  .modal-header {
+    padding: 4px;
+    border-bottom: none;
+    min-height: 34px;
+}
+  .close {
+    color: $theme-color;
+    font-size: 34px;
+    @include opacity(.6);
+  }
+  @media screen and (min-width: $grid-float-breakpoint) {
+    .modal-dialog {
+      width: 80%;
+      max-width: 800px;
+      padding-top: 0;
+      padding-left: 0;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      left: auto;
+      right: 0;
+      margin-right: 0;
+    }
+  }
+
   .carousel-caption {
     text-align: center;
     margin-top: 0;
     padding: 20px 80px;
+
     h2 {
       font-size: 22px;
     }
