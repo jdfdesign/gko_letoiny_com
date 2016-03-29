@@ -5,19 +5,22 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <h1 class="navbar-brand">
-        <%= link_to(image_tag('logo-toiny.svg', :class => "img-responsive"), root_url, :alt => site.title) %>
+        <%= link_to(image_tag('logo-toiny-lt.svg', :class => "img-responsive"), root_url, :alt => site.title) %>
       </h1>
       <%= content_tag(:h4, site.subtitle.html_safe, :id => "site-subtitle") if site.subtitle.present? %>
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Menu</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span>Menu</span>
+        <i class="icon-reorder"></i>
       </button>
+      <%= render_menu('tools') %>
+      <%= render 'locales_select' %>
+
     </div>
     <nav class="collapse navbar-collapse">
       <%= render 'menu', :sections => site.primary_menu, :menu_name => 'navbar-nav' %>
+      <%= render_menu('booking') %>
     </nav>
+
   </div>
 </header>
 <%# end %>

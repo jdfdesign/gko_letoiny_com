@@ -1,14 +1,12 @@
-
 // overwrite default bootstrap
-$theme-medium-color: #6D8FDB;//#6D8FDB;//#69655a; // rgba(105, 101, 90, 1);
-$theme-color: darken($theme-medium-color, 10%);;// > rgba(109, 143, 219, 1)  #44413A; // dark brown > rgba(68, 65, 58, 1)
+$theme-medium-color: #6D8FDB; //#6D8FDB;//#69655a; // rgba(105, 101, 90, 1);
+$theme-color: darken($theme-medium-color, 10%); // > rgba(109, 143, 219, 1)  #44413A; // dark brown > rgba(68, 65, 58, 1)
 $theme-color-overlay: rgba(255, 255, 255, .8);
 $theme-light-color: lighten($theme-medium-color, 25%); //#d5d4d2; // light brown
 $theme-accent-color: #63cbd8; // orange
 $theme-break-point: 1020px;
 $toolbar-height: 40px;
 $navbar-fixed-left: 250px;
-
 @import "theme/font";
 @import "theme/bootstrap-variables";
 @import "bootstrap/bootstrap";
@@ -16,27 +14,31 @@ $navbar-fixed-left: 250px;
 @import "theme/datepicker3";
 @import "theme/form";
 @import "theme/navbar";
-@import "theme/toolbar";
 @import "theme/footer";
 @import "theme/carousel";
 @import "theme/modal";
 @import "theme/home";
-
-
 /* FIX FOR IE DEVICE_WIDTH BUG
 -------------------------------------------------- */
-@-webkit-viewport{width:device-width}
-@-moz-viewport{width:device-width}
-@-ms-viewport{width:device-width}
-@-o-viewport{width:device-width}
-@viewport{width:device-width}
-
-
+@-webkit-viewport {
+  width: device-width;
+}
+@-moz-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
 // Color for the placeholder plugin
 .placeholder {
   color: $input-color-placeholder;
 }
-
 /* FIX FOR GMAP BUG
 -------------------------------------------------- */
 #map-canvas {
@@ -48,74 +50,68 @@ $navbar-fixed-left: 250px;
     -ms-interpolation-mode: bicubic;
   }
 }
-
 /* GLOBAL STYLE
 -------------------------------------------------- */
 // We do not want focus
 // -------------------------
-a:focus,
-.btn:focus {
+.btn:focus,
+a:focus {
   outline: 0;
 }
 ::selection {
-	background-color: $theme-medium-color;
-	color: #fff;
+  background-color: $theme-medium-color;
+  color: #fff;
 }
 a {
   @include transition(all 0.4s ease-in-out);
 }
-
 a[data-pin-log="button_pinit_floating"] {
   z-index: 1000000;
 }
-
 html {
   overflow-y: scroll;
   height: 100%;
 }
 body {
   font-weight: 300;
-	height: 100%;
-  padding-top: 76px;
+  height: 100%;
+  padding-top: $navbar-height;
 }
-
 .page-wrapper {
   min-height: 100%;
   position: relative;
-
   @media (min-width: $grid-float-breakpoint) {
-    @include center-block;
-    //max-width: 1000px;
+     @include center-block;
   }
 }
 .main-content {
   position: relative;
-  //background-color: rgba(241, 237, 228, 1);
   padding-top: $line-height-computed;
   @media (min-width: $grid-float-breakpoint) {
-    //margin-left: $navbar-fixed-left;
     margin-top: $toolbar-height;
   }
   @media (min-width: $theme-break-point) {
     padding: $line-height-computed;
-    //margin-left: $navbar-fixed-left + $line-height-computed;
     margin-bottom: $line-height-computed;
-    //background-color: rgba(241, 237, 228, .85);
   }
 }
+.container + img,
+.container + .carousel {
+  margin-top: $line-height-computed * 3;
+}
 .page-title {
-	padding: $line-height-computed 0 0 0;
-	font-size: 36px;
-	font-weight: 500;
-	letter-spacing: 1px;
+  padding: $line-height-computed 0 0;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .flex-video {
-position: relative;
-padding-top: 25px;
-padding-bottom: 67.5%;
-height: 0;
-margin-bottom: 16px;
-overflow: hidden;
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
 }
 .flex-video.widescreen {
   padding-bottom: 57.25%;
@@ -123,9 +119,9 @@ overflow: hidden;
 .flex-video.vimeo {
   padding-top: 0;
 }
+.flex-video embed,
 .flex-video iframe,
-.flex-video object,
-.flex-video embed {
+.flex-video object {
   position: absolute;
   top: 0;
   left: 0;
@@ -133,87 +129,90 @@ overflow: hidden;
   height: 100%;
 }
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-  .flex-video { padding-top: 0; }
+  .flex-video {
+    padding-top: 0;
+  }
 }
 .copy-text {
   font-size: 14px;
   font-weight: 300;
-  ul { list-style: disc outside; margin-left: 30px; }
-  ol { margin-left: 30px; }
-  h1, h2, h3, h4 {
+  ul {
+    list-style: disc outside;
+    margin-left: 30px;
+  }
+  ol {
+    margin-left: 30px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
     color: $theme-color;
   }
-	h3 {
-		text-transform: uppercase;
-		font-size: 18px;
-		font-weight: 500;
-		letter-spacing: 1px;
-	}
-	a {
-	  color: $theme-medium-color;
-	  text-decoration: underline;
-	  &:hover,
-	  &:focus {
-	    text-decoration: none;
-	    color: $theme-light-color;
-	    background-color: $theme-medium-color;
-	  }
-	}
-	table {
+  h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  a {
+    color: $theme-medium-color;
+    text-decoration: underline;
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      color: $theme-light-color;
+      background-color: $theme-medium-color;
+    }
+  }
+  table {
     @extend .table;
     max-width: 540px;
   }
-  table thead > tr > th,
-  table thead > tr > td,
-  table tbody > tr > th,
   table tbody > tr > td,
+  table tbody > tr > th,
+  table tfoot > tr > td,
   table tfoot > tr > th,
-  table tfoot > tr > td {
+  table thead > tr > td,
+  table thead > tr > th {
     padding: 3px;
   }
 }
-
 .thumbnail {
   height: 200px;
   text-align: center;
   &:hover {
     @include opacity(.8);
   }
-
   a {
     color: $theme-color;
   }
 }
-
 .partners .thumbnail {
   height: auto;
   text-align: left;
   &:hover {
     @include opacity(1);
   }
-	a {
-	  color: $theme-medium-color;
-	  text-decoration: underline;
+  a {
+    color: $theme-medium-color;
+    text-decoration: underline;
   }
 }
-
 .img-thumbnail {
   display: block;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-
 .tooltip-inner {
   min-width: 200px;
 }
-
 .nav-sitemap {
   ul {
     margin-left: 20px;
   }
 }
-
 // adjust tripadvisor logo
 #CDSWIDCOE {
   margin-left: 0 !important;

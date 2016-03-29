@@ -1,67 +1,66 @@
-
 /* Navbar
 -------------------------------------------------- */
 .navbar {
   @extend .navbar-default;
   border-left: none;
   border-right: none;
-  top: 28px;
   border: none;
   -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
 }
-
-.dropdown-locales {
-  //font-family: $font-family-sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 11px;
-  text-align: center;
-
-  .dropdown-toggle {
-    margin : 0;
-    background-color: $theme-medium-color;
-    color: $theme-light-color;
-    font-weight: 300;
-    width: 100%;
-    padding: 4px 0;
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      background-color: $theme-medium-color;
-    }
-  }
-  .dropdown-menu {
-    width: 100%;
-     > li > a {
+.tools-menu-container {
+  float: right;
+  .nav > li {
+    float: left;
+    > a {
+      @include navbar-vertical-align(34px);
+      text-transform: uppercase;
       font-size: 11px;
       font-weight: 300;
-      color: #fff;
+      &:hover,
+      &:focus {
+        background-color: $navbar-default-toggle-hover-bg;
+      }
     }
   }
 }
-
+.nav-locales {
+  float: right;
+  margin-bottom: 0;
+  > li {
+    float: left;
+    > a {
+      @include navbar-vertical-align(34px);
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 300;
+      &:hover,
+      &:focus {
+        background-color: $navbar-default-toggle-hover-bg;
+      }
+    }
+  }
+}
 .navbar-header {
   width: 100%;
   border-bottom: 1px solid $theme-medium-color;
 }
-
 .navbar-brand {
   margin: 0;
-  padding: 10px 15px;
-  width: 200px;
+  padding: 6px 15px;
+  width: 70px;
 }
 .navbar-toggle {
   text-transform: uppercase;
   letter-spacing: 1px;
+  float: left;
+  color: $brand-primary;
+  border: none;
   @media (min-width: $grid-float-breakpoint) {
     display: block !important;
-    float: right;
   }
 }
-
 .navbar-collapse {
-  //max-height: none;
   @media (min-width: $grid-float-breakpoint) {
     padding-right: 0;
     padding-left: 0;
@@ -70,22 +69,51 @@
     }
   }
 }
-.navbar-nav {
-  li {
-    //border-top: 1px solid $theme-medium-color;
-    &:last-child {
-      //border-bottom: 1px solid $theme-medium-color;
+.booking-menu-container {
+  border-top: 1px solid $theme-medium-color;
+  @media (min-width: $grid-float-breakpoint) {
+    float: left;
+    width: 100%;
+  }
+}
+.nav.booking {
+
+  > li > a {
+      text-align:left;
+      font-size: 11px;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding: 8px 8px;
+      color: $navbar-default-link-color;
+      line-height: 20px;
+      &:hover,
+      &:focus {
+        color: $navbar-default-link-hover-color;
+        background-color: $navbar-default-link-hover-bg;
+      }
     }
+
+  @media (min-width: $grid-float-breakpoint) {
+    //margin: 0;
+    > li {
+      float: left;
+      > a {
+        text-align: center;
+        padding: 4px 10px;
+      }
+    }
+  }
+}
+.navbar-nav {
+  margin:0;
+  li {
     > a {
       font-size: 11px;
       font-weight: 300;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      padding: 8px 15px;
-      //text-shadow: none;
+      padding: 8px 8px;
     }
   }
-
   .dropdown-menu {
     background-color: $theme-color-overlay;
     li {
@@ -94,12 +122,12 @@
         font-size: 11px;
         font-weight: 300;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        //letter-spacing: 1px;
         padding: 8px 15px;
         color: $brand-primary;
-        &:hover,
+        &.active,
         &:focus,
-        &.active {
+        &:hover {
           color: #fff;
           text-decoration: none;
         }
@@ -108,27 +136,18 @@
         display: none;
       }
     }
-
   }
   @media (min-width: $grid-float-breakpoint) {
-    width:100%;
     > li {
-      //display:block;
-      //float: none;
-      //position: relative;
       > a {
         text-align: center;
-        padding: 4px 14px;
+        padding: 4px 10px;
       }
     }
     .dropdown-menu {
-      //top: -2px;
-      //left: $navbar-fixed-left - 2; // position it to the right side
       margin: 0;
       padding: 0; // remove the padding
       max-width: 400px;
-      //min-width: 500px;
-      //width: 500px;
       background-color: $theme-color-overlay;
       li.submenu > a {
         padding-left: 40px;
@@ -145,7 +164,7 @@
           font-family: $font-family-sans-serif;
           text-align: left;
           font-size: 14px;
-          margin: 0 0 12px 0;
+          margin: 0 0 12px;
           text-transform: uppercase;
         }
       }
@@ -153,6 +172,5 @@
         background-color: $theme-color-overlay;
       }
     }
-
   }
 }
