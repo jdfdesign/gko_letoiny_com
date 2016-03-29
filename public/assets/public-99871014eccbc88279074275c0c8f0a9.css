@@ -11339,11 +11339,43 @@ form .alert-success {
 }
 
 /* line 1, ../../app/assets/stylesheets/theme/_carousel.scss */
+header + .carousel {
+  max-height: 50%;
+  /* Background images are set within the HTML using inline CSS, not here */
+}
+@media (orientation: landscape) {
+  /* line 1, ../../app/assets/stylesheets/theme/_carousel.scss */
+  header + .carousel {
+    max-height: 100%;
+    overflow: hidden;
+  }
+}
+/* line 15, ../../app/assets/stylesheets/theme/_carousel.scss */
+header + .carousel .active,
+header + .carousel .item {
+  height: 100%;
+}
+/* line 18, ../../app/assets/stylesheets/theme/_carousel.scss */
+header + .carousel .carousel-inner {
+  height: 100%;
+}
+/* line 22, ../../app/assets/stylesheets/theme/_carousel.scss */
+header + .carousel .fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* line 32, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel {
   margin-bottom: 0;
 }
 
-/* line 4, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 35, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption {
   background-color: transparent;
   position: static;
@@ -11355,21 +11387,21 @@ form .alert-success {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 14, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 45, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption a {
   color: #4470d1;
   text-decoration: underline;
 }
-/* line 18, ../../app/assets/stylesheets/theme/_carousel.scss */
-.carousel-caption a:hover, .carousel-caption a:focus {
+/* line 49, ../../app/assets/stylesheets/theme/_carousel.scss */
+.carousel-caption a:focus, .carousel-caption a:hover {
   color: #4470d1;
   text-decoration: underline;
 }
-/* line 23, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 54, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption p {
   line-height: 28px;
 }
-/* line 26, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 57, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption hr {
   margin-left: auto;
   margin-right: auto;
@@ -11378,14 +11410,14 @@ form .alert-success {
   border-bottom: none;
 }
 
-/* line 34, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 65, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption .btn {
   margin-top: 20px;
   background-color: #4470d1;
   color: white;
 }
 
-/* line 39, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 70, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control {
   border: 1px solid #4470d1;
   top: 50%;
@@ -11395,28 +11427,28 @@ form .alert-success {
   width: 32px;
   height: 32px;
 }
-/* line 48, ../../app/assets/stylesheets/theme/_carousel.scss */
-.carousel-control.right, .carousel-control.left {
+/* line 78, ../../app/assets/stylesheets/theme/_carousel.scss */
+.carousel-control.left, .carousel-control.right {
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-/* line 53, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 82, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control.right {
   border-right: none;
 }
-/* line 57, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 85, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control.left {
   border-left: none;
 }
-/* line 63, ../../app/assets/stylesheets/theme/_carousel.scss */
-.carousel-control:hover, .carousel-control:focus {
+/* line 90, ../../app/assets/stylesheets/theme/_carousel.scss */
+.carousel-control:focus, .carousel-control:hover {
   background-color: #4470d1;
   color: white;
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
 @media (min-width: 768px) {
-  /* line 39, ../../app/assets/stylesheets/theme/_carousel.scss */
+  /* line 70, ../../app/assets/stylesheets/theme/_carousel.scss */
   .carousel-control {
     width: 50px;
     height: 50px;
@@ -11424,7 +11456,7 @@ form .alert-success {
   }
 }
 @media (min-width: 1200px) {
-  /* line 39, ../../app/assets/stylesheets/theme/_carousel.scss */
+  /* line 70, ../../app/assets/stylesheets/theme/_carousel.scss */
   .carousel-control {
     width: 60px;
     height: 60px;
@@ -11432,7 +11464,7 @@ form .alert-success {
   }
 }
 
-/* line 77, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 104, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-indicators {
   top: auto;
   bottom: 20px;
@@ -11448,12 +11480,12 @@ form .alert-success {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 77, ../../app/assets/stylesheets/theme/_carousel.scss */
+  /* line 104, ../../app/assets/stylesheets/theme/_carousel.scss */
   .carousel-indicators {
     display: block;
   }
 }
-/* line 93, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 120, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-indicators li {
   border-width: 2px;
 }

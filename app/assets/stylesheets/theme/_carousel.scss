@@ -1,3 +1,34 @@
+header + .carousel {
+  max-height: 50%;
+
+  @media (max-width: $screen-sm-max) {
+    //height: 460px;
+  }
+  @media (max-width: $screen-xs-max) {
+    //height: 360px;
+  }
+  @media (orientation: landscape) {
+    max-height: 100%;
+    overflow: hidden;
+  }
+  .active,
+  .item {
+    height: 100%;
+  }
+  .carousel-inner {
+    height: 100%;
+  }
+  /* Background images are set within the HTML using inline CSS, not here */
+  .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+}
 .carousel {
   margin-bottom: 0;
 }
@@ -14,8 +45,8 @@
   a {
     color: $theme-color;
     text-decoration: underline;
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       color: $theme-color;
       text-decoration: underline;
     }
@@ -43,34 +74,30 @@
   margin-top: -30px;
   background-color: rgba($theme-color, .4);
   @include square($carousel-control-width);
-
-  &.right,
-  &.left {
+  &.left,
+  &.right {
     background-image: none;
     @include reset-filter();
   }
-
   &.right {
     border-right: none;
   }
-
   &.left {
     border-left: none;
   }
-
   // Hover/focus state
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     background-color: $theme-color;
     color: white;
     @include opacity(.9);
   }
   @media (min-width: $grid-float-breakpoint) {
-    @include square(50px);
+     @include square(50px);
     line-height: 50px;
   }
   @media (min-width: $screen-lg-desktop) {
-    @include square(60px);
+     @include square(60px);
     line-height: 60px;
   }
 }

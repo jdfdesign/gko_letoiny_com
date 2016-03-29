@@ -13,7 +13,7 @@
   <div class="carousel-inner">
   <% images.each_with_index do |img, index| %>
     <div class="item <%= 'active' if index == 0 %>">
-      <%= image_fu(img, "1400x900#", :rel => "external") %>
+      <%= image_fu(img, "1400x900#", :rel => "external", :class => 'img-responsive') %>
     </div>
   <% end %>
   </div>

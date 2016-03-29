@@ -2,11 +2,9 @@
 <%= render 'html_tag' %>
 <%= render 'head' %>
 <body class='<%= @body_id %>'>
-  <div class="page-wrapper">
-  	<%= render 'header' %>
-    <%= yield :news %>
-    <%= yield %>
-  </div>
+  <%= render 'header' %>
+  <%= yield :news %>
+  <%= yield %>
   <%= render 'footer' %>
 
   <!-- Le javascript
@@ -14,10 +12,10 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-	<%= yield :before_javascript_libraries %>
-	<%= javascript_include_tag "public" %>
-	<%= yield :after_javascript_libraries %>
-	<%= render 'google_analytics' %>
-	<script type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+  <%= yield :before_javascript_libraries %>
+  <%= javascript_include_tag "public" %>
+  <%= yield :after_javascript_libraries %>
+  <%= render 'google_analytics' %>
+  <script type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 </html>
