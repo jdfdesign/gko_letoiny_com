@@ -10978,14 +10978,6 @@ form .alert-success {
 }
 
 /* line 11, ../../app/assets/stylesheets/theme/_navbar.scss */
-.tools-menu-container {
-  float: right;
-}
-/* line 13, ../../app/assets/stylesheets/theme/_navbar.scss */
-.tools-menu-container .nav > li {
-  float: left;
-}
-/* line 15, ../../app/assets/stylesheets/theme/_navbar.scss */
 .tools-menu-container .nav > li > a {
   margin-top: 7px;
   margin-bottom: 7px;
@@ -10993,21 +10985,63 @@ form .alert-success {
   font-size: 11px;
   font-weight: 300;
 }
-/* line 21, ../../app/assets/stylesheets/theme/_navbar.scss */
-.tools-menu-container .nav > li > a:hover, .tools-menu-container .nav > li > a:focus {
+
+/* line 19, ../../app/assets/stylesheets/theme/_navbar.scss */
+.navbar-header .tools-menu-container {
+  display: none;
+  float: right;
+}
+/* line 22, ../../app/assets/stylesheets/theme/_navbar.scss */
+.navbar-header .tools-menu-container .nav > li {
+  float: left;
+}
+/* line 26, ../../app/assets/stylesheets/theme/_navbar.scss */
+.navbar-header .tools-menu-container .nav > li > a:focus, .navbar-header .tools-menu-container .nav > li > a:hover {
   background-color: rgba(68, 112, 209, 0.4);
 }
 
-/* line 27, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 35, ../../app/assets/stylesheets/theme/_navbar.scss */
+.navbar-collapse .tools-menu-container .nav > li > a {
+  color: #4470d1;
+  padding: 8px;
+}
+/* line 39, ../../app/assets/stylesheets/theme/_navbar.scss */
+.navbar-collapse .tools-menu-container .nav > li > a:hover, .navbar-collapse .tools-menu-container .nav > li > a:focus {
+  color: white;
+  background-color: #4470d1;
+}
+/* line 47, ../../app/assets/stylesheets/theme/_navbar.scss */
+.navbar-collapse .tools-menu-container > .active > a, .navbar-collapse .tools-menu-container > .active > a:hover, .navbar-collapse .tools-menu-container > .active > a:focus {
+  color: white;
+  background-color: #4470d1;
+}
+/* line 55, ../../app/assets/stylesheets/theme/_navbar.scss */
+.navbar-collapse .tools-menu-container > .disabled > a, .navbar-collapse .tools-menu-container > .disabled > a:hover, .navbar-collapse .tools-menu-container > .disabled > a:focus {
+  color: ligthen(#4470d1, 10%);
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  /* line 64, ../../app/assets/stylesheets/theme/_navbar.scss */
+  .navbar-header .tools-menu-container {
+    display: block;
+  }
+
+  /* line 69, ../../app/assets/stylesheets/theme/_navbar.scss */
+  .navbar-collapse .tools-menu-container {
+    display: none;
+  }
+}
+/* line 74, ../../app/assets/stylesheets/theme/_navbar.scss */
 .nav-locales {
   float: right;
   margin-bottom: 0;
 }
-/* line 30, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 77, ../../app/assets/stylesheets/theme/_navbar.scss */
 .nav-locales > li {
   float: left;
 }
-/* line 32, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 79, ../../app/assets/stylesheets/theme/_navbar.scss */
 .nav-locales > li > a {
   margin-top: 7px;
   margin-bottom: 7px;
@@ -11015,25 +11049,25 @@ form .alert-success {
   font-size: 11px;
   font-weight: 300;
 }
-/* line 38, ../../app/assets/stylesheets/theme/_navbar.scss */
-.nav-locales > li > a:hover, .nav-locales > li > a:focus {
+/* line 85, ../../app/assets/stylesheets/theme/_navbar.scss */
+.nav-locales > li > a:focus, .nav-locales > li > a:hover {
   background-color: rgba(68, 112, 209, 0.4);
 }
 
-/* line 44, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 91, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-header {
   width: 100%;
   border-bottom: 1px solid #6d8fdb;
 }
 
-/* line 48, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 95, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-brand {
   margin: 0;
   padding: 6px 15px;
   width: 70px;
 }
 
-/* line 53, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 100, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-toggle {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -11042,83 +11076,83 @@ form .alert-success {
   border: none;
 }
 @media (min-width: 768px) {
-  /* line 53, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 100, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-toggle {
     display: block !important;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 63, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 110, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-collapse {
     padding-right: 0;
     padding-left: 0;
   }
-  /* line 67, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 114, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-collapse.collapse {
     display: none !important;
   }
 }
 
-/* line 72, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 119, ../../app/assets/stylesheets/theme/_navbar.scss */
 .booking-menu-container {
   border-top: 1px solid #6d8fdb;
 }
 @media (min-width: 768px) {
-  /* line 72, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 119, ../../app/assets/stylesheets/theme/_navbar.scss */
   .booking-menu-container {
     float: left;
     width: 100%;
   }
 }
 
-/* line 81, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 127, ../../app/assets/stylesheets/theme/_navbar.scss */
 .nav.booking > li > a {
   text-align: left;
   font-size: 11px;
   font-weight: 300;
   text-transform: uppercase;
-  padding: 8px 8px;
+  padding: 8px;
   color: #4470d1;
   line-height: 20px;
 }
-/* line 90, ../../app/assets/stylesheets/theme/_navbar.scss */
-.nav.booking > li > a:hover, .nav.booking > li > a:focus {
+/* line 136, ../../app/assets/stylesheets/theme/_navbar.scss */
+.nav.booking > li > a:focus, .nav.booking > li > a:hover {
   color: white;
   background-color: #4470d1;
 }
 @media (min-width: 768px) {
-  /* line 98, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 143, ../../app/assets/stylesheets/theme/_navbar.scss */
   .nav.booking > li {
     float: left;
   }
-  /* line 100, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 145, ../../app/assets/stylesheets/theme/_navbar.scss */
   .nav.booking > li > a {
     text-align: center;
     padding: 4px 10px;
   }
 }
 
-/* line 107, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 152, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav {
   margin: 0;
 }
-/* line 110, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 155, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav li > a {
   font-size: 11px;
   font-weight: 300;
   text-transform: uppercase;
-  padding: 8px 8px;
+  padding: 8px;
 }
-/* line 117, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 162, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu {
   background-color: rgba(255, 255, 255, 0.8);
 }
-/* line 119, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 164, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li {
   border-top: 1px solid #6d8fdb;
 }
-/* line 121, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 166, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li > a {
   font-size: 11px;
   font-weight: 300;
@@ -11126,33 +11160,33 @@ form .alert-success {
   padding: 8px 15px;
   color: #4470d1;
 }
-/* line 130, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 175, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li > a.active, .navbar-nav .dropdown-menu li > a:focus, .navbar-nav .dropdown-menu li > a:hover {
   color: #fff;
   text-decoration: none;
 }
-/* line 135, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 180, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li.text {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 142, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 187, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav > li > a {
     text-align: center;
     padding: 4px 10px;
   }
-  /* line 147, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 192, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu {
     margin: 0;
     padding: 0;
     max-width: 400px;
     background-color: rgba(255, 255, 255, 0.8);
   }
-  /* line 152, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 197, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.submenu > a {
     padding-left: 40px;
   }
-  /* line 155, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 200, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text {
     border-top: 1px solid #d3ddf4;
     display: block;
@@ -11162,7 +11196,7 @@ form .alert-success {
     font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
   }
-  /* line 163, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 208, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text h2 {
     font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: left;
@@ -11172,7 +11206,7 @@ form .alert-success {
   }
 }
 @media (min-width: 768px) and (min-width: 1200px) {
-  /* line 147, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 192, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu {
     background-color: rgba(255, 255, 255, 0.8);
   }
@@ -11339,43 +11373,57 @@ form .alert-success {
 }
 
 /* line 1, ../../app/assets/stylesheets/theme/_carousel.scss */
-header + .carousel {
-  max-height: 50%;
-  /* Background images are set within the HTML using inline CSS, not here */
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  z-index: 1000;
+  font-size: 30px;
+  color: rgba(68, 112, 209, 0.5);
+  font-weight: 100;
+  display: none;
 }
-@media (orientation: landscape) {
-  /* line 1, ../../app/assets/stylesheets/theme/_carousel.scss */
-  header + .carousel {
-    max-height: 100%;
-    overflow: hidden;
-  }
+/* line 11, ../../app/assets/stylesheets/theme/_carousel.scss */
+.scroll-down span {
+  text-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
 }
 /* line 15, ../../app/assets/stylesheets/theme/_carousel.scss */
+.scroll-down:hover, .scroll-down:focus {
+  text-decoration: none;
+}
+
+/* line 20, ../../app/assets/stylesheets/theme/_carousel.scss */
+header + .carousel {
+  max-height: 50%;
+  overflow: hidden;
+}
+@media (orientation: landscape) {
+  /* line 20, ../../app/assets/stylesheets/theme/_carousel.scss */
+  header + .carousel {
+    max-height: 100%;
+  }
+  /* line 28, ../../app/assets/stylesheets/theme/_carousel.scss */
+  header + .carousel .scroll-down {
+    display: block;
+  }
+}
+/* line 33, ../../app/assets/stylesheets/theme/_carousel.scss */
 header + .carousel .active,
 header + .carousel .item {
   height: 100%;
 }
-/* line 18, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 36, ../../app/assets/stylesheets/theme/_carousel.scss */
 header + .carousel .carousel-inner {
   height: 100%;
 }
-/* line 22, ../../app/assets/stylesheets/theme/_carousel.scss */
-header + .carousel .fill {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
 
-/* line 32, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 40, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel {
   margin-bottom: 0;
 }
 
-/* line 35, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 43, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption {
   background-color: transparent;
   position: static;
@@ -11387,21 +11435,21 @@ header + .carousel .fill {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 45, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 53, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption a {
   color: #4470d1;
   text-decoration: underline;
 }
-/* line 49, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 57, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption a:focus, .carousel-caption a:hover {
   color: #4470d1;
   text-decoration: underline;
 }
-/* line 54, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 62, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption p {
   line-height: 28px;
 }
-/* line 57, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 65, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption hr {
   margin-left: auto;
   margin-right: auto;
@@ -11410,14 +11458,14 @@ header + .carousel .fill {
   border-bottom: none;
 }
 
-/* line 65, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 73, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption .btn {
   margin-top: 20px;
   background-color: #4470d1;
   color: white;
 }
 
-/* line 70, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 78, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control {
   border: 1px solid #4470d1;
   top: 50%;
@@ -11427,20 +11475,20 @@ header + .carousel .fill {
   width: 32px;
   height: 32px;
 }
-/* line 78, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 86, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control.left, .carousel-control.right {
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-/* line 82, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 90, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control.right {
   border-right: none;
 }
-/* line 85, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 93, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control.left {
   border-left: none;
 }
-/* line 90, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 98, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control:focus, .carousel-control:hover {
   background-color: #4470d1;
   color: white;
@@ -11448,7 +11496,7 @@ header + .carousel .fill {
   filter: alpha(opacity=90);
 }
 @media (min-width: 768px) {
-  /* line 70, ../../app/assets/stylesheets/theme/_carousel.scss */
+  /* line 78, ../../app/assets/stylesheets/theme/_carousel.scss */
   .carousel-control {
     width: 50px;
     height: 50px;
@@ -11456,7 +11504,7 @@ header + .carousel .fill {
   }
 }
 @media (min-width: 1200px) {
-  /* line 70, ../../app/assets/stylesheets/theme/_carousel.scss */
+  /* line 78, ../../app/assets/stylesheets/theme/_carousel.scss */
   .carousel-control {
     width: 60px;
     height: 60px;
@@ -11464,7 +11512,7 @@ header + .carousel .fill {
   }
 }
 
-/* line 104, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 112, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-indicators {
   top: auto;
   bottom: 20px;
@@ -11480,12 +11528,12 @@ header + .carousel .fill {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 104, ../../app/assets/stylesheets/theme/_carousel.scss */
+  /* line 112, ../../app/assets/stylesheets/theme/_carousel.scss */
   .carousel-indicators {
     display: block;
   }
 }
-/* line 120, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 128, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-indicators li {
   border-width: 2px;
 }
@@ -11534,15 +11582,17 @@ header + .carousel .fill {
 
 /* line 9, ../../app/assets/stylesheets/theme/_home.scss */
 #feature-modal {
+  top: auto;
+  bottom: 0;
   outline: none;
 }
-/* line 15, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 13, ../../app/assets/stylesheets/theme/_home.scss */
 #feature-modal .modal-header {
   padding: 4px;
   border-bottom: none;
   min-height: 34px;
 }
-/* line 20, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 18, ../../app/assets/stylesheets/theme/_home.scss */
 #feature-modal .close {
   color: #4470d1;
   font-size: 34px;
@@ -11550,47 +11600,46 @@ header + .carousel .fill {
   filter: alpha(opacity=60);
 }
 @media screen and (min-width: 768px) {
-  /* line 26, ../../app/assets/stylesheets/theme/_home.scss */
+  /* line 24, ../../app/assets/stylesheets/theme/_home.scss */
   #feature-modal .modal-dialog {
     width: 80%;
     max-width: 800px;
   }
 }
-/* line 35, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 29, ../../app/assets/stylesheets/theme/_home.scss */
 #feature-modal .carousel-caption {
   text-align: center;
   margin-top: 0;
   padding: 20px 80px;
 }
-/* line 39, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 33, ../../app/assets/stylesheets/theme/_home.scss */
 #feature-modal .carousel-caption h2 {
   font-size: 22px;
 }
-/* line 42, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 36, ../../app/assets/stylesheets/theme/_home.scss */
+#feature-modal .carousel-caption h4 {
+  margin: 0;
+}
+/* line 39, ../../app/assets/stylesheets/theme/_home.scss */
 #feature-modal .carousel-caption a {
   color: #4470d1;
   text-decoration: underline;
 }
-/* line 46, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 43, ../../app/assets/stylesheets/theme/_home.scss */
 #feature-modal .carousel-caption a:focus, #feature-modal .carousel-caption a:hover {
   color: #4470d1;
   text-decoration: underline;
 }
-/* line 51, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 48, ../../app/assets/stylesheets/theme/_home.scss */
 #feature-modal .carousel-caption p {
   text-transform: none;
   line-height: 18px;
   margin: 0;
 }
-/* line 56, ../../app/assets/stylesheets/theme/_home.scss */
+/* line 53, ../../app/assets/stylesheets/theme/_home.scss */
 #feature-modal .carousel-caption .feature-link {
   font-size: 12px;
   text-decoration: underline;
-}
-/* line 62, ../../app/assets/stylesheets/theme/_home.scss */
-#feature-modal h4,
-#feature-modal p {
-  margin: 0;
 }
 
 /* FIX FOR IE DEVICE_WIDTH BUG

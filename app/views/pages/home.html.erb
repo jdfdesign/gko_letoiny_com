@@ -1,16 +1,13 @@
 <% @features ||= site.features.live -%>
 <%= render_slideshow_for(resource) %>
-<%# @supersized_images = site.sections.root.images.order(:position) -%>
-<div class="container homepage">
+<% if resource.body.present? %>
+<div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <% if resource.body.present? %>
-      <div class="homepage-content">
-        <%= render_page_title(resource.title) %>
-        <%= render_copy_text(resource.body) %>
-      </div>
-      <% end %>
+      <%= render_page_title(resource.title) if resource.show_title_in_page %>
+      <%= render_copy_text(resource.body) %>
     </div>
   </div>
 </div>
+<% end %>
 <%= render 'feature_modal' if @features.any? -%>

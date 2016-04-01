@@ -7,10 +7,8 @@
   }
 }
 #feature-modal {
-  //top: auto;
-  //bottom: 0;
-  //left: auto;
-  //right: 0;
+  top: auto;
+  bottom: 0;
   outline: none;
   .modal-header {
     padding: 4px;
@@ -26,10 +24,6 @@
     .modal-dialog {
       width: 80%;
       max-width: 800px;
-      //padding: 0 10px 10px 0;
-      //left: auto;
-      //right: 0;
-      //margin-right: 0;
     }
   }
   .carousel-caption {
@@ -38,6 +32,9 @@
     padding: 20px 80px;
     h2 {
       font-size: 22px;
+    }
+    h4 {
+      margin: 0;
     }
     a {
       color: $theme-color;
@@ -57,9 +54,5 @@
       font-size: 12px;
       text-decoration: underline;
     }
-  }
-  h4,
-  p {
-    margin: 0;
   }
 }

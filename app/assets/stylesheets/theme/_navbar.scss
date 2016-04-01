@@ -5,22 +5,69 @@
   border-left: none;
   border-right: none;
   border: none;
-  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.37));
 }
 .tools-menu-container {
-  float: right;
-  .nav > li {
-    float: left;
-    > a {
-      @include navbar-vertical-align(34px);
-      text-transform: uppercase;
-      font-size: 11px;
-      font-weight: 300;
+  .nav > li > a {
+    @include navbar-vertical-align(34px);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+  }
+}
+.navbar-header {
+  .tools-menu-container {
+    display: none;
+    float: right;
+    .nav > li {
+      float: left;
+      > a {
+        &:focus,
+        &:hover {
+          background-color: $navbar-default-toggle-hover-bg;
+        }
+      }
+    }
+  }
+}
+.navbar-collapse {
+  .tools-menu-container {
+    .nav > li > a {
+      color: $navbar-default-link-color;
+      padding: 8px;
       &:hover,
       &:focus {
-        background-color: $navbar-default-toggle-hover-bg;
+        color: $navbar-default-link-hover-color;
+        background-color: $navbar-default-link-hover-bg;
       }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-default-link-active-color;
+        background-color: $navbar-default-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-default-link-disabled-color;
+        background-color: $navbar-default-link-disabled-bg;
+      }
+    }
+  }
+}
+@media (min-width: $grid-float-breakpoint) {
+  .navbar-header {
+    .tools-menu-container {
+      display: block;
+    }
+  }
+  .navbar-collapse {
+    .tools-menu-container {
+      display: none;
     }
   }
 }
@@ -34,8 +81,8 @@
       text-transform: uppercase;
       font-size: 11px;
       font-weight: 300;
-      &:hover,
-      &:focus {
+      &:focus,
+      &:hover {
         background-color: $navbar-default-toggle-hover-bg;
       }
     }
@@ -77,22 +124,20 @@
   }
 }
 .nav.booking {
-
   > li > a {
-      text-align:left;
-      font-size: 11px;
-      font-weight: 300;
-      text-transform: uppercase;
-      padding: 8px 8px;
-      color: $navbar-default-link-color;
-      line-height: 20px;
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-hover-color;
-        background-color: $navbar-default-link-hover-bg;
-      }
+    text-align: left;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 8px;
+    color: $navbar-default-link-color;
+    line-height: 20px;
+    &:focus,
+    &:hover {
+      color: $navbar-default-link-hover-color;
+      background-color: $navbar-default-link-hover-bg;
     }
-
+  }
   @media (min-width: $grid-float-breakpoint) {
     //margin: 0;
     > li {
@@ -105,13 +150,13 @@
   }
 }
 .navbar-nav {
-  margin:0;
+  margin: 0;
   li {
     > a {
       font-size: 11px;
       font-weight: 300;
       text-transform: uppercase;
-      padding: 8px 8px;
+      padding: 8px;
     }
   }
   .dropdown-menu {

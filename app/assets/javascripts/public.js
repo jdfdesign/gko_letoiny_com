@@ -81,23 +81,7 @@ jQuery(function($) {
 
 
     if ($("#feature-modal").length) {
-
-      /*var itemHeight = 0;
-      var alerts = $("#feature-modal").find('.item');
-
-      $.each(alerts, function(index, value) {
-        if ($(value).height() > itemHeight) {
-          itemHeight = $(value).height();
-        };
-      });
-
-      $.each(alerts, function(index, value) {
-        $(value).height(itemHeight);
-      });*/
-
-      $('#feature-modal').on('shown.bs.modal', function (e) {
-        //THEME.carousel();
-      }).modal('show');
+      $('#feature-modal').modal('show');
     }
 
     $("[data-toggle='tooltip']").tooltip();
