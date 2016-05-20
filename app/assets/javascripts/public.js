@@ -79,6 +79,10 @@ jQuery(function($) {
     //$(".homepage").css('margin-top', $(window).height() + 80);
     //$(".homepage.featured").css('margin-top', Math.max(0, $(window).height() - $("#carousel-alert").height() - 40));
 
+    $("#scroll-btn").click(function() {
+      $('html, body').animate({ scrollTop: $(window).height() - 80 }, 1000);
+        console.log($(window).height())
+    });
 
     if ($("#feature-modal").length) {
       $('#feature-modal').modal('show');

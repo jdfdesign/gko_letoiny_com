@@ -65,9 +65,9 @@ a:focus {
 a {
   @include transition(all 0.4s ease-in-out);
 }
-a[data-pin-log="button_pinit_floating"] {
-  z-index: 1000000;
-}
+// a[data-pin-log="button_pinit_floating"] {
+//   z-index: 1000000;
+// }
 html {
   overflow-y: scroll;
   height: 100%;

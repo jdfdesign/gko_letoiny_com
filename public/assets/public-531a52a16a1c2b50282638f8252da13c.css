@@ -11064,7 +11064,7 @@ form .alert-success {
 .navbar-brand {
   margin: 0;
   padding: 6px 15px;
-  width: 70px;
+  max-width: 70px;
 }
 
 /* line 100, ../../app/assets/stylesheets/theme/_navbar.scss */
@@ -11701,11 +11701,6 @@ a:focus {
 a {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-/* line 68, ../../app/assets/stylesheets/public.css.scss */
-a[data-pin-log="button_pinit_floating"] {
-  z-index: 1000000;
 }
 
 /* line 71, ../../app/assets/stylesheets/public.css.scss */
