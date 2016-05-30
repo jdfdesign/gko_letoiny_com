@@ -6,7 +6,7 @@ group :assets do
   gem 'uglifier', '~> 2.4.0'
 end
 
-gem 'tins', '~> 1.0.0'
+#gem 'tins', '~> 1.0.0'
 gem 'bcrypt', '= 3.1.10'
 gem 'mysql2', '= 0.3.20'
 group :production do
