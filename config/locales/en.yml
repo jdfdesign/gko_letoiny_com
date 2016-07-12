@@ -1,5 +1,5 @@
-en: 
-  full_hotel_address: "Hotel Le Toiny<br/>Anse de Toiny<br/>97133 Saint-Barthélemy<br/>Guadeloupe<br/>T. (590)590278888<br/>F. (590)590278930<br/>Email. reservations@letoiny.com"
+en:
+  full_hotel_address: "Hotel Le Toiny<br/>Anse de Toiny<br/>97133 Saint-Barthélemy<br/>Guadeloupe<br/>T. (+59) 0590 27 88 88<br/>F. (+59) 0590 27 89 30<br/>Email. reservations@letoiny.com"
   tollfree_address: "North America Toll-free:<br/>1-800-680-0832"
   tool_free_btn: "Call us for free from US and Canada at (800)&nbsp;680&nbsp;-&nbsp;0832"
   facebook_btn: "Visit our Facebook page"
@@ -9,6 +9,10 @@ en:
   twitter_btn: "Follow us on Twitter"
   info_form_thanks: "Your inquiry has been sent."
   table_booking_thanks: "Your inquiry has been sent."
+  footer:
+    get_in_touch_with_us: "Get in touch with us"
+    recent_news: "Recent news"
+    find_out_more: "Find out more"
   features:
     view_more: Find out more
   form:
@@ -55,8 +59,8 @@ en:
         welcome_champagne_moet_chanfon: "Moet Chanfon"
         welcome_champagne_perrier_rose: "Perrier Rose"
         welcome_european_bouquet: "European bouquet"
-        welcome_european_bouquet_price: "Price"  
+        welcome_european_bouquet_price: "Price"
         welcome_exotic_bouquet: "Exotic bouquet"
-        welcome_exotic_bouquet_price: "Price"                        
+        welcome_exotic_bouquet_price: "Price"
         welcome_colorful_fruit_plate: "Fruit plate"
         welcome_cheese_cracker_plate: "Cracker plate"

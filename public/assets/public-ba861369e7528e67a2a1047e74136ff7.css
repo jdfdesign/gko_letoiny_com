@@ -10977,7 +10977,7 @@ form .alert-success {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
 }
 
-/* line 11, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 12, ../../app/assets/stylesheets/theme/_navbar.scss */
 .tools-menu-container .nav > li > a {
   margin-top: 7px;
   margin-bottom: 7px;
@@ -10986,62 +10986,69 @@ form .alert-success {
   font-weight: 300;
 }
 
-/* line 19, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 20, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-header .tools-menu-container {
   display: none;
   float: right;
 }
-/* line 22, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 23, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-header .tools-menu-container .nav > li {
   float: left;
 }
-/* line 26, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 27, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-header .tools-menu-container .nav > li > a:focus, .navbar-header .tools-menu-container .nav > li > a:hover {
   background-color: rgba(68, 112, 209, 0.4);
 }
+@media (min-width: 768px) {
+  /* line 25, ../../app/assets/stylesheets/theme/_navbar.scss */
+  .navbar-header .tools-menu-container .nav > li > a {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+}
 
-/* line 35, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 40, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-collapse .tools-menu-container .nav > li > a {
   color: #4470d1;
   padding: 8px;
 }
-/* line 39, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 44, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-collapse .tools-menu-container .nav > li > a:hover, .navbar-collapse .tools-menu-container .nav > li > a:focus {
   color: white;
   background-color: #4470d1;
 }
-/* line 47, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 53, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-collapse .tools-menu-container > .active > a, .navbar-collapse .tools-menu-container > .active > a:hover, .navbar-collapse .tools-menu-container > .active > a:focus {
   color: white;
   background-color: #4470d1;
 }
-/* line 55, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 61, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-collapse .tools-menu-container > .disabled > a, .navbar-collapse .tools-menu-container > .disabled > a:hover, .navbar-collapse .tools-menu-container > .disabled > a:focus {
   color: ligthen(#4470d1, 10%);
   background-color: transparent;
 }
 
 @media (min-width: 768px) {
-  /* line 64, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 70, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-header .tools-menu-container {
     display: block;
   }
 
-  /* line 69, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 75, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-collapse .tools-menu-container {
     display: none;
   }
 }
-/* line 74, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 80, ../../app/assets/stylesheets/theme/_navbar.scss */
 .nav-locales {
   float: right;
   margin-bottom: 0;
 }
-/* line 77, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 83, ../../app/assets/stylesheets/theme/_navbar.scss */
 .nav-locales > li {
   float: left;
 }
-/* line 79, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 85, ../../app/assets/stylesheets/theme/_navbar.scss */
 .nav-locales > li > a {
   margin-top: 7px;
   margin-bottom: 7px;
@@ -11049,26 +11056,38 @@ form .alert-success {
   font-size: 11px;
   font-weight: 300;
 }
-/* line 85, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 91, ../../app/assets/stylesheets/theme/_navbar.scss */
 .nav-locales > li > a:focus, .nav-locales > li > a:hover {
   background-color: rgba(68, 112, 209, 0.4);
 }
+@media (min-width: 768px) {
+  /* line 85, ../../app/assets/stylesheets/theme/_navbar.scss */
+  .nav-locales > li > a {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+}
 
-/* line 91, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 101, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-header {
   width: 100%;
   border-bottom: 1px solid #6d8fdb;
 }
 
-/* line 95, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 105, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-brand {
   margin: 0;
   padding: 6px 15px;
-  max-width: 70px;
-  max-height: 49px;
+  width: 70px;
+}
+@media (min-width: 768px) {
+  /* line 105, ../../app/assets/stylesheets/theme/_navbar.scss */
+  .navbar-brand {
+    width: 100px;
+  }
 }
 
-/* line 101, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 113, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-toggle {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -11077,37 +11096,39 @@ form .alert-success {
   border: none;
 }
 @media (min-width: 768px) {
-  /* line 101, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 113, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-toggle {
     display: block !important;
+    margin-bottom: 22px;
+    margin-top: 22px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 111, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 125, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-collapse {
     padding-right: 0;
     padding-left: 0;
   }
-  /* line 115, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 129, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-collapse.collapse {
     display: none !important;
   }
 }
 
-/* line 120, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 134, ../../app/assets/stylesheets/theme/_navbar.scss */
 .booking-menu-container {
   border-top: 1px solid #6d8fdb;
 }
 @media (min-width: 768px) {
-  /* line 120, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 134, ../../app/assets/stylesheets/theme/_navbar.scss */
   .booking-menu-container {
     float: left;
     width: 100%;
   }
 }
 
-/* line 128, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 142, ../../app/assets/stylesheets/theme/_navbar.scss */
 .nav.booking > li > a {
   text-align: left;
   font-size: 11px;
@@ -11117,43 +11138,43 @@ form .alert-success {
   color: #4470d1;
   line-height: 20px;
 }
-/* line 137, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 151, ../../app/assets/stylesheets/theme/_navbar.scss */
 .nav.booking > li > a:focus, .nav.booking > li > a:hover {
   color: white;
   background-color: #4470d1;
 }
 @media (min-width: 768px) {
-  /* line 144, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 158, ../../app/assets/stylesheets/theme/_navbar.scss */
   .nav.booking > li {
     float: left;
   }
-  /* line 146, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 160, ../../app/assets/stylesheets/theme/_navbar.scss */
   .nav.booking > li > a {
     text-align: center;
     padding: 4px 10px;
   }
 }
 
-/* line 153, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 167, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav {
   margin: 0;
 }
-/* line 156, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 170, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav li > a {
   font-size: 11px;
   font-weight: 300;
   text-transform: uppercase;
   padding: 8px;
 }
-/* line 163, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 177, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu {
   background-color: rgba(255, 255, 255, 0.8);
 }
-/* line 165, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 179, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li {
   border-top: 1px solid #6d8fdb;
 }
-/* line 167, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 181, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li > a {
   font-size: 11px;
   font-weight: 300;
@@ -11161,33 +11182,33 @@ form .alert-success {
   padding: 8px 15px;
   color: #4470d1;
 }
-/* line 176, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 190, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li > a.active, .navbar-nav .dropdown-menu li > a:focus, .navbar-nav .dropdown-menu li > a:hover {
   color: #fff;
   text-decoration: none;
 }
-/* line 181, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 195, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav .dropdown-menu li.text {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 188, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 202, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav > li > a {
     text-align: center;
     padding: 4px 10px;
   }
-  /* line 193, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 207, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu {
     margin: 0;
     padding: 0;
     max-width: 400px;
     background-color: rgba(255, 255, 255, 0.8);
   }
-  /* line 198, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 212, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.submenu > a {
     padding-left: 40px;
   }
-  /* line 201, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 215, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text {
     border-top: 1px solid #d3ddf4;
     display: block;
@@ -11197,7 +11218,7 @@ form .alert-success {
     font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
   }
-  /* line 209, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 223, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu li.text h2 {
     font-family: "johnsans_text_proregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: left;
@@ -11207,7 +11228,7 @@ form .alert-success {
   }
 }
 @media (min-width: 768px) and (min-width: 1200px) {
-  /* line 193, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 207, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-nav .dropdown-menu {
     background-color: rgba(255, 255, 255, 0.8);
   }
@@ -11385,46 +11406,76 @@ form .alert-success {
   font-weight: 100;
   display: none;
 }
-/* line 11, ../../app/assets/stylesheets/theme/_carousel.scss */
-.scroll-down span {
-  text-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+/* line 12, ../../app/assets/stylesheets/theme/_carousel.scss */
+.scroll-down span:before {
+  text-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 15, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 17, ../../app/assets/stylesheets/theme/_carousel.scss */
 .scroll-down:hover, .scroll-down:focus {
   text-decoration: none;
 }
 
-/* line 20, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 21, ../../app/assets/stylesheets/theme/_carousel.scss */
+.scroll-down {
+  animation: blink 1s steps(1) infinite;
+  -webkit-animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  /* line 25, ../../app/assets/stylesheets/theme/_carousel.scss */
+  50% {
+    color: #fff;
+  }
+}
+
+@-webkit-keyframes blink {
+  /* line 26, ../../app/assets/stylesheets/theme/_carousel.scss */
+  50% {
+    color: #fff;
+  }
+}
+
+/* line 28, ../../app/assets/stylesheets/theme/_carousel.scss */
 header + .carousel {
   max-height: 50%;
   overflow: hidden;
 }
 @media (orientation: landscape) {
-  /* line 20, ../../app/assets/stylesheets/theme/_carousel.scss */
+  /* line 28, ../../app/assets/stylesheets/theme/_carousel.scss */
   header + .carousel {
     max-height: 100%;
   }
-  /* line 28, ../../app/assets/stylesheets/theme/_carousel.scss */
+  /* line 36, ../../app/assets/stylesheets/theme/_carousel.scss */
   header + .carousel .scroll-down {
     display: block;
   }
 }
-/* line 33, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 41, ../../app/assets/stylesheets/theme/_carousel.scss */
 header + .carousel .active,
 header + .carousel .item {
   height: 100%;
 }
-/* line 36, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 44, ../../app/assets/stylesheets/theme/_carousel.scss */
 header + .carousel .carousel-inner {
   height: 100%;
 }
 
-/* line 40, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 48, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel {
   margin-bottom: 0;
 }
 
-/* line 43, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 53, ../../app/assets/stylesheets/theme/_carousel.scss */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  line-height: 1;
+  text-align: center;
+}
+
+/* line 60, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption {
   background-color: transparent;
   position: static;
@@ -11436,21 +11487,21 @@ header + .carousel .carousel-inner {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 53, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 70, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption a {
   color: #4470d1;
   text-decoration: underline;
 }
-/* line 57, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 74, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption a:focus, .carousel-caption a:hover {
   color: #4470d1;
   text-decoration: underline;
 }
-/* line 62, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 79, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption p {
   line-height: 28px;
 }
-/* line 65, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 82, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption hr {
   margin-left: auto;
   margin-right: auto;
@@ -11459,14 +11510,14 @@ header + .carousel .carousel-inner {
   border-bottom: none;
 }
 
-/* line 73, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 90, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-caption .btn {
   margin-top: 20px;
   background-color: #4470d1;
   color: white;
 }
 
-/* line 78, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 95, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control {
   border: 1px solid #4470d1;
   top: 50%;
@@ -11476,20 +11527,20 @@ header + .carousel .carousel-inner {
   width: 32px;
   height: 32px;
 }
-/* line 86, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 103, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control.left, .carousel-control.right {
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-/* line 90, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 107, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control.right {
   border-right: none;
 }
-/* line 93, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 110, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control.left {
   border-left: none;
 }
-/* line 98, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 115, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-control:focus, .carousel-control:hover {
   background-color: #4470d1;
   color: white;
@@ -11497,7 +11548,7 @@ header + .carousel .carousel-inner {
   filter: alpha(opacity=90);
 }
 @media (min-width: 768px) {
-  /* line 78, ../../app/assets/stylesheets/theme/_carousel.scss */
+  /* line 95, ../../app/assets/stylesheets/theme/_carousel.scss */
   .carousel-control {
     width: 50px;
     height: 50px;
@@ -11505,7 +11556,7 @@ header + .carousel .carousel-inner {
   }
 }
 @media (min-width: 1200px) {
-  /* line 78, ../../app/assets/stylesheets/theme/_carousel.scss */
+  /* line 95, ../../app/assets/stylesheets/theme/_carousel.scss */
   .carousel-control {
     width: 60px;
     height: 60px;
@@ -11513,7 +11564,7 @@ header + .carousel .carousel-inner {
   }
 }
 
-/* line 112, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 129, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-indicators {
   top: auto;
   bottom: 20px;
@@ -11529,12 +11580,12 @@ header + .carousel .carousel-inner {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 112, ../../app/assets/stylesheets/theme/_carousel.scss */
+  /* line 129, ../../app/assets/stylesheets/theme/_carousel.scss */
   .carousel-indicators {
     display: block;
   }
 }
-/* line 128, ../../app/assets/stylesheets/theme/_carousel.scss */
+/* line 145, ../../app/assets/stylesheets/theme/_carousel.scss */
 .carousel-indicators li {
   border-width: 2px;
 }
@@ -11643,6 +11694,361 @@ header + .carousel .carousel-inner {
   text-decoration: underline;
 }
 
+/*
+ * jQuery FlexSlider v2.6.1
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url("flexslider-icon.eot");
+  src: url("flexslider-icon.eot?#iefix") format("embedded-opentype"), url("flexslider-icon.woff") format("woff"), url("flexslider-icon.ttf") format("truetype"), url("flexslider-icon.svg#flexslider-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+/* line 26, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-container a:hover,
+.flex-slider a:hover {
+  outline: none;
+}
+
+/* line 32, ../../app/assets/stylesheets/theme/flexslider.scss */
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 37, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+/* line 43, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 47, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 51, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* line 55, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 63, ../../app/assets/stylesheets/theme/flexslider.scss */
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+
+/* line 66, ../../app/assets/stylesheets/theme/flexslider.scss */
+* html .flexslider .slides {
+  height: 1%;
+}
+
+/* line 69, ../../app/assets/stylesheets/theme/flexslider.scss */
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+/* line 75, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flexslider {
+  margin: 0;
+  background: #fff;
+  border-bottom: 4px solid #fff;
+  position: relative;
+  zoom: 1;
+}
+
+/* line 91, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+
+/* line 94, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flexslider .slides img {
+  height: auto;
+  -moz-user-select: none;
+}
+
+/* line 98, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 106, ../../app/assets/stylesheets/theme/flexslider.scss */
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+/* line 109, ../../app/assets/stylesheets/theme/flexslider.scss */
+.carousel li {
+  margin-right: 5px;
+}
+
+/* line 112, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-direction-nav {
+  *height: 0;
+}
+
+/* line 115, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  border: 1px solid #4470d1;
+  line-height: 16px;
+  margin-top: -32px;
+  background-color: rgba(68, 112, 209, 0.4);
+  width: 32px;
+  height: 32px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 142, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-direction-nav a:focus, .flex-direction-nav a:hover {
+  background-color: #4470d1;
+  color: white;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+@media (min-width: 768px) {
+  /* line 115, ../../app/assets/stylesheets/theme/flexslider.scss */
+  .flex-direction-nav a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 115, ../../app/assets/stylesheets/theme/flexslider.scss */
+  .flex-direction-nav a {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+/* line 156, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-direction-nav a:before {
+  font-family: "FontAwesome";
+  font-size: 30px;
+  display: inline-block;
+  content: "\f104";
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* line 164, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-direction-nav a.flex-next:before {
+  content: "\f105";
+}
+
+/* line 167, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-direction-nav .flex-prev {
+  left: 0;
+}
+
+/* line 170, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-direction-nav .flex-next {
+  right: 0;
+}
+
+/* line 188, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default;
+  z-index: -1;
+}
+
+/* line 194, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+
+/* line 207, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004';
+}
+
+/* line 213, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+
+/* line 216, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-pauseplay a.flex-play:before {
+  content: '\f003';
+}
+
+/* line 219, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
+
+/* line 225, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 231, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+/* line 247, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* line 251, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+
+/* line 256, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+
+/* line 261, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+
+/* line 266, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-control-thumbs img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 279, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+
+/* line 282, ../../app/assets/stylesheets/theme/flexslider.scss */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 860px) {
+  /* line 290, ../../app/assets/stylesheets/theme/flexslider.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+
+  /* line 294, ../../app/assets/stylesheets/theme/flexslider.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
 /* FIX FOR IE DEVICE_WIDTH BUG
 -------------------------------------------------- */
 @-webkit-viewport {
@@ -11665,18 +12071,18 @@ header + .carousel .carousel-inner {
   width: device-width;
 }
 
-/* line 39, ../../app/assets/stylesheets/public.css.scss */
+/* line 40, ../../app/assets/stylesheets/public.css.scss */
 .placeholder {
   color: #999999;
 }
 
 /* FIX FOR GMAP BUG
 -------------------------------------------------- */
-/* line 44, ../../app/assets/stylesheets/public.css.scss */
+/* line 45, ../../app/assets/stylesheets/public.css.scss */
 #map-canvas {
   height: 400px;
 }
-/* line 46, ../../app/assets/stylesheets/public.css.scss */
+/* line 47, ../../app/assets/stylesheets/public.css.scss */
 #map-canvas img {
   max-width: none;
   vertical-align: middle;
@@ -11686,44 +12092,50 @@ header + .carousel .carousel-inner {
 
 /* GLOBAL STYLE
 -------------------------------------------------- */
-/* line 58, ../../app/assets/stylesheets/public.css.scss */
+/* line 59, ../../app/assets/stylesheets/public.css.scss */
 .btn:focus,
 a:focus {
   outline: 0;
 }
 
-/* line 61, ../../app/assets/stylesheets/public.css.scss */
+/* line 62, ../../app/assets/stylesheets/public.css.scss */
 ::selection {
   background-color: #6d8fdb;
   color: #fff;
 }
 
-/* line 65, ../../app/assets/stylesheets/public.css.scss */
+/* line 66, ../../app/assets/stylesheets/public.css.scss */
 a {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-/* line 71, ../../app/assets/stylesheets/public.css.scss */
+/* line 72, ../../app/assets/stylesheets/public.css.scss */
 html {
   overflow-y: scroll;
   height: 100%;
 }
 
-/* line 75, ../../app/assets/stylesheets/public.css.scss */
+/* line 76, ../../app/assets/stylesheets/public.css.scss */
 body {
   font-weight: 300;
   height: 100%;
   padding-top: 48px;
 }
+@media (min-width: 768px) {
+  /* line 76, ../../app/assets/stylesheets/public.css.scss */
+  body {
+    padding-top: 82px;
+  }
+}
 
-/* line 80, ../../app/assets/stylesheets/public.css.scss */
+/* line 84, ../../app/assets/stylesheets/public.css.scss */
 .page-wrapper {
   min-height: 100%;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 80, ../../app/assets/stylesheets/public.css.scss */
+  /* line 84, ../../app/assets/stylesheets/public.css.scss */
   .page-wrapper {
     display: block;
     margin-left: auto;
@@ -11731,32 +12143,32 @@ body {
   }
 }
 
-/* line 87, ../../app/assets/stylesheets/public.css.scss */
+/* line 91, ../../app/assets/stylesheets/public.css.scss */
 .main-content {
   position: relative;
   padding-top: 20px;
 }
 @media (min-width: 768px) {
-  /* line 87, ../../app/assets/stylesheets/public.css.scss */
+  /* line 91, ../../app/assets/stylesheets/public.css.scss */
   .main-content {
     margin-top: 40px;
   }
 }
 @media (min-width: 1020px) {
-  /* line 87, ../../app/assets/stylesheets/public.css.scss */
+  /* line 91, ../../app/assets/stylesheets/public.css.scss */
   .main-content {
     padding: 20px;
     margin-bottom: 20px;
   }
 }
 
-/* line 99, ../../app/assets/stylesheets/public.css.scss */
+/* line 103, ../../app/assets/stylesheets/public.css.scss */
 .container + img,
 .container + .carousel {
   margin-top: 60px;
 }
 
-/* line 102, ../../app/assets/stylesheets/public.css.scss */
+/* line 106, ../../app/assets/stylesheets/public.css.scss */
 .page-title {
   padding: 20px 0 0;
   font-size: 36px;
@@ -11764,7 +12176,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* line 108, ../../app/assets/stylesheets/public.css.scss */
+/* line 112, ../../app/assets/stylesheets/public.css.scss */
 .flex-video {
   position: relative;
   padding-top: 25px;
@@ -11774,17 +12186,17 @@ body {
   overflow: hidden;
 }
 
-/* line 116, ../../app/assets/stylesheets/public.css.scss */
+/* line 120, ../../app/assets/stylesheets/public.css.scss */
 .flex-video.widescreen {
   padding-bottom: 57.25%;
 }
 
-/* line 119, ../../app/assets/stylesheets/public.css.scss */
+/* line 123, ../../app/assets/stylesheets/public.css.scss */
 .flex-video.vimeo {
   padding-top: 0;
 }
 
-/* line 124, ../../app/assets/stylesheets/public.css.scss */
+/* line 128, ../../app/assets/stylesheets/public.css.scss */
 .flex-video embed,
 .flex-video iframe,
 .flex-video object {
@@ -11796,55 +12208,55 @@ body {
 }
 
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-  /* line 132, ../../app/assets/stylesheets/public.css.scss */
+  /* line 136, ../../app/assets/stylesheets/public.css.scss */
   .flex-video {
     padding-top: 0;
   }
 }
-/* line 136, ../../app/assets/stylesheets/public.css.scss */
+/* line 140, ../../app/assets/stylesheets/public.css.scss */
 .copy-text {
   font-size: 14px;
   font-weight: 300;
 }
-/* line 139, ../../app/assets/stylesheets/public.css.scss */
+/* line 143, ../../app/assets/stylesheets/public.css.scss */
 .copy-text ul {
   list-style: disc outside;
   margin-left: 30px;
 }
-/* line 143, ../../app/assets/stylesheets/public.css.scss */
+/* line 147, ../../app/assets/stylesheets/public.css.scss */
 .copy-text ol {
   margin-left: 30px;
 }
-/* line 149, ../../app/assets/stylesheets/public.css.scss */
+/* line 153, ../../app/assets/stylesheets/public.css.scss */
 .copy-text h1,
 .copy-text h2,
 .copy-text h3,
 .copy-text h4 {
   color: #4470d1;
 }
-/* line 152, ../../app/assets/stylesheets/public.css.scss */
+/* line 156, ../../app/assets/stylesheets/public.css.scss */
 .copy-text h3 {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
 }
-/* line 158, ../../app/assets/stylesheets/public.css.scss */
+/* line 162, ../../app/assets/stylesheets/public.css.scss */
 .copy-text a {
   color: #6d8fdb;
   text-decoration: underline;
 }
-/* line 162, ../../app/assets/stylesheets/public.css.scss */
+/* line 166, ../../app/assets/stylesheets/public.css.scss */
 .copy-text a:focus, .copy-text a:hover {
   text-decoration: none;
   color: #d3ddf4;
   background-color: #6d8fdb;
 }
-/* line 168, ../../app/assets/stylesheets/public.css.scss */
+/* line 172, ../../app/assets/stylesheets/public.css.scss */
 .copy-text table {
   max-width: 540px;
 }
-/* line 177, ../../app/assets/stylesheets/public.css.scss */
+/* line 181, ../../app/assets/stylesheets/public.css.scss */
 .copy-text table tbody > tr > td,
 .copy-text table tbody > tr > th,
 .copy-text table tfoot > tr > td,
@@ -11853,39 +12265,47 @@ body {
 .copy-text table thead > tr > th {
   padding: 3px;
 }
-
-/* line 181, ../../app/assets/stylesheets/public.css.scss */
-.thumbnail {
-  height: 200px;
-  text-align: center;
-}
 /* line 184, ../../app/assets/stylesheets/public.css.scss */
-.thumbnail:hover {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+.copy-text .font-color-normal {
+  color: #555;
 }
 /* line 187, ../../app/assets/stylesheets/public.css.scss */
-.thumbnail a {
+.copy-text .font-color-blue {
   color: #4470d1;
 }
 
 /* line 191, ../../app/assets/stylesheets/public.css.scss */
+.thumbnail {
+  height: 200px;
+  text-align: center;
+}
+/* line 194, ../../app/assets/stylesheets/public.css.scss */
+.thumbnail:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+/* line 197, ../../app/assets/stylesheets/public.css.scss */
+.thumbnail a {
+  color: #4470d1;
+}
+
+/* line 201, ../../app/assets/stylesheets/public.css.scss */
 .partners .thumbnail {
   height: auto;
   text-align: left;
 }
-/* line 194, ../../app/assets/stylesheets/public.css.scss */
+/* line 204, ../../app/assets/stylesheets/public.css.scss */
 .partners .thumbnail:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-/* line 197, ../../app/assets/stylesheets/public.css.scss */
+/* line 207, ../../app/assets/stylesheets/public.css.scss */
 .partners .thumbnail a {
   color: #6d8fdb;
   text-decoration: underline;
 }
 
-/* line 202, ../../app/assets/stylesheets/public.css.scss */
+/* line 212, ../../app/assets/stylesheets/public.css.scss */
 .img-thumbnail, .thumbnail {
   display: block;
   max-width: 100%;
@@ -11893,17 +12313,22 @@ body {
   margin-right: auto;
 }
 
-/* line 208, ../../app/assets/stylesheets/public.css.scss */
+/* line 218, ../../app/assets/stylesheets/public.css.scss */
 .tooltip-inner {
   min-width: 200px;
 }
 
-/* line 212, ../../app/assets/stylesheets/public.css.scss */
+/* line 222, ../../app/assets/stylesheets/public.css.scss */
 .nav-sitemap ul {
   margin-left: 20px;
 }
 
-/* line 217, ../../app/assets/stylesheets/public.css.scss */
+/* line 227, ../../app/assets/stylesheets/public.css.scss */
+.image-bank-filter {
+  margin-top: 20px;
+}
+
+/* line 231, ../../app/assets/stylesheets/public.css.scss */
 #CDSWIDCOE {
   margin-left: 0 !important;
 }

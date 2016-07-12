@@ -1,7 +1,7 @@
 //= require jquery_ujs
 //= require bootstrap-datepicker
 //= require remote_form
-
+//= require jquery.flexslider.js
 /**
  * jQuery.browser.mobile (http://detectmobilebrowser.com/)
  *
@@ -74,10 +74,6 @@ jQuery(function($) {
   $(document).ready(function() {
     THEME.fix();
     THEME.carousel();
-    //THEME.supersized();
-
-    //$(".homepage").css('margin-top', $(window).height() + 80);
-    //$(".homepage.featured").css('margin-top', Math.max(0, $(window).height() - $("#carousel-alert").height() - 40));
 
     $("#scroll-btn").click(function() {
       $('html, body').animate({ scrollTop: $(window).height() - 80 }, 1000);
@@ -97,6 +93,27 @@ jQuery(function($) {
     $(".image-bank-filter select:first").change(function() {
       $(".image-bank-filter").submit();
     });
+
+    // The slider being synced must be initialized first
+  $('#photos-carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#photos-slider'
+  });
+
+  $('#photos-slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#photos-carousel",
+    prevText: "",
+    nextText: ""
+  });
   })
 
 })

@@ -18,6 +18,7 @@ $navbar-fixed-left: 250px;
 @import "theme/carousel";
 @import "theme/modal";
 @import "theme/home";
+@import "theme/flexslider";
 /* FIX FOR IE DEVICE_WIDTH BUG
 -------------------------------------------------- */
 @-webkit-viewport {
@@ -76,6 +77,9 @@ body {
   font-weight: 300;
   height: 100%;
   padding-top: $navbar-height;
+  @media (min-width: $grid-float-breakpoint) {
+    padding-top: 82px;
+  }
 }
 .page-wrapper {
   min-height: 100%;
@@ -177,6 +181,12 @@ body {
   table thead > tr > th {
     padding: 3px;
   }
+.font-color-normal {
+  color: #555;
+}
+  .font-color-blue {
+  color: #4470d1;
+}
 }
 .thumbnail {
   height: 200px;
@@ -212,6 +222,10 @@ body {
   ul {
     margin-left: 20px;
   }
+}
+
+.image-bank-filter {
+  margin-top: 20px;
 }
 // adjust tripadvisor logo
 #CDSWIDCOE {

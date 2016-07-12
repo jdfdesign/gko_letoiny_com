@@ -1,8 +1,8 @@
 fr:
   book_table_title: Réserver une table au Gaiac
   click_to_enlarge: Cliquer pour agrandir
-  full_hotel_address: "Hotel Le Toiny<br/>Anse de Toiny<br/>97133 Saint-Barthélemy<br/>Guadeloupe<br/>T. (590)590278888<br/>F. (590)590278930<br/>Email. reservations@letoiny.com"
-  tollfree_address: "Appeler nous gratuitement depuis les U.S. ou le Canada au (800)&nbsp;680&nbsp;0832" 
+  full_hotel_address: "Hotel Le Toiny<br/>Anse de Toiny<br/>97133 Saint-Barthélemy<br/>Guadeloupe<br/>T. (+59) 0590 27 88 88<br/>F. (+59) 0590 27 89 30<br/>Email. reservations@letoiny.com"
+  tollfree_address: "Appeler nous gratuitement depuis les U.S. ou le Canada au (800)&nbsp;680&nbsp;0832"
   book_table_tab: "Réserver une table au Gaiac"
   book_hotel_tab: "Demande d'informations"
   tool_free_btn: "Appeler nous gratuitement depuis les US ou le Canada au (800)&nbsp;680&nbsp;0832"
@@ -13,6 +13,10 @@ fr:
   twitter_btn: "Suiver nous sur notre compte twitter"
   info_form_thanks: "Your inquiry has been sent."
   table_booking_thanks: "Your inquiry has been sent."
+  footer:
+    get_in_touch_with_us: "Nous contacter"
+    recent_news: "Actualités"
+    find_out_more: "En savoir plus"
   features:
     view_more: Plus de détails
   form:
@@ -69,10 +73,8 @@ fr:
         welcome_champagne_moet_chanfon: "Moet Chanfon"
         welcome_champagne_perrier_rose: "Perrier Rose"
         welcome_european_bouquet: "European bouquet"
-        welcome_european_bouquet_price: "Price"  
+        welcome_european_bouquet_price: "Price"
         welcome_exotic_bouquet: "Exotic bouquet"
-        welcome_exotic_bouquet_price: "Price"                        
+        welcome_exotic_bouquet_price: "Price"
         welcome_colorful_fruit_plate: "Fruit plate"
         welcome_cheese_cracker_plate: "Cracker plate"
-
-

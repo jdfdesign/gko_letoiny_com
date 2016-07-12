@@ -1,0 +1,39 @@
+<%
+   image_geometry = local_assigns.has_key?(:image_style) ? image_style : site.preferred_image_carousel_size
+   rand_id = "carousel_#{rand(10000)}"
+   images = resource.images
+%>
+<% if images.length > 1 %>
+
+<!-- Place somewhere in the <body> of your page -->
+<div id="photos-slider" class="flexslider">
+  <ul class="slides">
+    <% images.each_with_index do |img, index| %>
+    <li>
+      <%= image_fu(img, "1400x900#", :rel => "external", :class => 'img-responsive') %>
+    </li>
+    <% end %>
+  </ul>
+</div>
+<div id="photos-carousel" class="flexslider">
+  <ul class="slides">
+    <% images.each_with_index do |img, index| %>
+    <li>
+      <%= image_fu(img, "1400x900#", :rel => "external", :class => 'img-responsive') %>
+    </li>
+    <% end %>
+  </ul>
+</div>
+<% else %>
+  <%= image_fu(images.first, "1400x900#", :rel => "external", :class => 'img-responsive') %>
+<% end %>
+<% if resource.body.present? %>
+<div class="container">
+  <div class="row">
+    <div id="scroll-page" class="col-xs-12">
+      <%= render_page_title(resource.title) if resource.show_title_in_page %>
+      <%= render_copy_text(resource.body) %>
+    </div>
+  </div>
+</div>
+<% end %>

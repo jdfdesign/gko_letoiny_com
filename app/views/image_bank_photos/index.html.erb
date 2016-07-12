@@ -1,21 +1,17 @@
-<%#= simple_form_for(:filter, :url => "#",
-  :html => {:data => { :remote => true, :type => :json }, 
-  :method => :post}) do |f| %>
-    <%#= render 'parent_categories_select', :f => f %>
-<%# end %>
-<%# cache [action_name, I18n.locale, site, "photos", "page", params[:page] || 1, parent.photos_cached_key] do %>
-	<%#= render_collection_header %>
-  <div class="container">
+<div class="container">
 	<div class="row">
+    <div class="col-xs-12">
     <%= render_page_title(parent.title) if parent.show_title_in_page %>
-    <%= simple_form_for(:search, :url => parent.public_url, :remote => false, :html => {:method => :get, :class => "image-bank-filter" }) do |f| %> 
-      <%= render "parent_categories_select", :f => f %> 
+    <%= simple_form_for(:search, :url => parent.public_url, :remote => false, :html => {:method => :get, :class => "image-bank-filter" }) do |f| %>
+      <%= render "parent_categories_select", :f => f %>
     <% end %>
+    </div>
+    </div>
+    <div class="row">
     <%= render collection %>
-  </div>
+    </div>
 	<div class="row">
     <%= render_pagination %>
   </div>
 </div>
 <%# end %>
-
