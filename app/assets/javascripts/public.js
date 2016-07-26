@@ -102,7 +102,9 @@ jQuery(function($) {
     slideshow: false,
     itemWidth: 210,
     itemMargin: 5,
-    asNavFor: '#photos-slider'
+    asNavFor: '#photos-slider',
+    prevText: "",
+    nextText: ""
   });
 
   $('#photos-slider').flexslider({

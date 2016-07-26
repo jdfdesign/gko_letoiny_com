@@ -7,14 +7,3 @@
     </div>
   </div>
 </div>
-<% resource.children.live.each do |c| %>
-  <%= render_slideshow_for(c) %>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <%= render_page_title(c.title) if c.show_title_in_page %>
-        <%= render_copy_text(c.body) %>
-      </div>
-    </div>
-  </div>
-<% end %>
