@@ -9,6 +9,7 @@ end
 #gem 'tins', '~> 1.0.0'
 gem 'bcrypt', '= 3.1.10'
 gem 'mysql2', '= 0.3.20'
+gem 'rmagick', '= 2.15.4'
 group :production do
   git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.31" do
    gem 'gko_core'

@@ -12332,3 +12332,16 @@ body {
 #CDSWIDCOE {
   margin-left: 0 !important;
 }
+
+/* line 235, ../../app/assets/stylesheets/public.css.scss */
+.flexslider.test .slides {
+  max-height: 400px;
+}
+
+/* line 236, ../../app/assets/stylesheets/public.css.scss */
+.flexslider.test .slides img {
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

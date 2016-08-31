@@ -67,6 +67,18 @@ jQuery(function($) {
 
   };
 
+  THEME.carousel_fix = function() {
+    var height = window.innerHeight - $('.navbar').height();
+    //var width = window.innerWidth;
+    //jQuery('body').prepend('<div id="viewportsize" style="z-index:9999;position:fixed;bottom:0px;left:0px;color:#fff;background:#000;padding:10px">Height: '+height+'<br>Width: '+width+'</div>');
+    $('.flexslider.test .slides img').css('max-height', height);
+      jQuery(window).resize(function() {
+        height = window.innerHeight - $('.navbar').height();
+        //width = window.innerWidth;
+        //jQuery('#viewportsize').html('Height: '+height+'<br>Width: '+width);
+        $('.flexslider.test .slides img').css('max-height', height);
+       });
+   }
   /*==================================================
     	Init
   ==================================================*/
@@ -74,6 +86,7 @@ jQuery(function($) {
   $(document).ready(function() {
     THEME.fix();
     THEME.carousel();
+    THEME.carousel_fix();
 
     $("#scroll-btn").click(function() {
       $('html, body').animate({ scrollTop: $(window).height() - 80 }, 1000);
